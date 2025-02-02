@@ -18,6 +18,10 @@ const Info = () => {
     <div className="homepage-container">
       <h1 className='home-title'>  עזר דיגיטלי בתחום <br></br>
         הלוגיסטיקה במפקדות</h1>
+        <img
+            src={`${process.env.PUBLIC_URL}/assets/imgs/quote.png`}
+            className="quote"
+           />
         <div class="speech-container">
             <p class="speech">
         מפקדים יקרים,
@@ -30,6 +34,9 @@ const Info = () => {
         </div>
  
 <div className='greeting-div'>
+    <p className="credits">עזר זה נבנה בשיתוף פעולה בין המלכ"א והמכללה הלאומית לאיתנות ישראלית
+    </p>
+    
 </div>
   {/* <a className="linkCredits" onClick={goToCredits}>
   @קרדיטים

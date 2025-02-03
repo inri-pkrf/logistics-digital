@@ -21,7 +21,7 @@ function Header() {
       
       <button
         className="back-homeNav"
-        onClick={() => navigate('/home')} // ניווט לעמוד הבית
+        onClick={() => navigate('/menu')} // ניווט לעמוד הבית
       >
       </button>
 

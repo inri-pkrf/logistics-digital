@@ -131,6 +131,7 @@
 }
 hr.dotted-line{
     border-top: 8px dotted #ffffff;
+    border-bottom: none;
     position: absolute;
     margin-top: 1vh;
     right: 50%;

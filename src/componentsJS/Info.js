@@ -18,12 +18,13 @@ const Info = () => {
     <div className="homepage-container">
       <h1 className='home-title'>  עזר דיגיטלי בתחום <br></br>
         הלוגיסטיקה במפקדות</h1>
+      
+        <div className="speech-container">
         <img
             src={`${process.env.PUBLIC_URL}/assets/imgs/quote.png`}
             className="quote"
            />
-        <div class="speech-container">
-            <p class="speech">
+            <p className="speech">
         מפקדים יקרים,
 מאז ה-7 באוקטובר, מצויה ישראל תחת מתקפה משמעותית על העורף האזרחי. <br></br>
  איום זה דורש מאיתנו להיערך לאתרי הרס רבים ופגיעה בתשתיות, כתוצאה מנפילת רקטות וטילים. כחלק מלקחי מלחמת "חרבות ברזל", היערכות פיקוד העורף לתרחיש צפוני או לתרחיש רב-זירתי מחייבת אותנו להגביר את המוכנות וההבנה בכל הקשור לסיוע לוגיסטי הנדרש בתמיכה למאמצי החילוץ. 
@@ -31,18 +32,30 @@ const Info = () => {
 בלומדה זו תתמקדו בשלבים השונים של הנג"ח, המעמ"ל, ריכוז הסד"כ, הצטיידות וההיסעים.
 לומדה זו תרכז את המענה השלם באירוע הרס, מרמת מאמצי החילוץ והצלת החיים בשטח, ועד לרמת הפיקוד והשליטה בדרגים השונים, תוך התמקדות במרכיבי הסיוע המנהלתי.
 </p>
-        </div>
- 
+<p className='speech-credits'>אל"ם אלעד בננו
+קל"פ      העורף</p>
+<hr className="dotted-line" />
 <div className='greeting-div'>
-    <p className="credits">עזר זה נבנה בשיתוף פעולה בין המלכ"א והמכללה הלאומית לאיתנות ישראלית
+<img
+            src={`${process.env.PUBLIC_URL}/assets/imgs/logoMalca.png`}
+            className="logo2"
+           />
+<img
+            src={`${process.env.PUBLIC_URL}/assets/imgs/logoCollage.png`}
+            className="logo1"
+           />
+<p className="credits">עזר זה נבנה בשיתוף פעולה בין המלכ"א והמכללה הלאומית לאיתנות ישראלית
     </p>
-    
 </div>
-  {/* <a className="linkCredits" onClick={goToCredits}>
-  @קרדיטים
-</a> */}
 <div className="footer"></div>
     </div>
+    <button onClick={()=>goToMenu()} className='start-button'>התחלה</button>
+        </div>
+  
+ 
+
+
+
   );
 };
 

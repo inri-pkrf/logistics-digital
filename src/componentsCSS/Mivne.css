@@ -43,4 +43,25 @@
         text-align: center;
     
     }
-   
+.explenation{
+    position: absolute;
+    width: 89vw;
+    height: 50vh;
+    background-color: rgb(0 0 0 / 82%);
+    margin-top: 5vh;
+    border-radius: 20%;
+    border: solid 2px white;
+}
+.explanation-txt{
+    font-family: "Heebo";
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 9vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90vw;
+    color: #ffffff;
+    text-align: center;
+
+}

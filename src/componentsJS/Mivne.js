@@ -14,6 +14,9 @@ const Mivne = () => {
   return (
     <div className="Mivne-container">
       <h1 className='title'>מבנה ייעוד ותפקידים במפקדות </h1>
+      <div className='explenation'>
+        <p className='explanation-txt'>בחלק זה בלומדה נלמד על מבנה, ייעוד ותפקידי הלוגיסטיקה במפקדות בשלב הראשון נדרש לבחור מפקדה(מחוז,נפה,גדוד) ולאחר מכן להרחיב את הלמידה על המכלולים והתאים השונים</p>
+      </div>
         </div>
   
  

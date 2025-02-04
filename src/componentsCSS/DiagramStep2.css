@@ -141,12 +141,12 @@
 
 .subText-step2 {
     position: relative;
-    right: -45vw;
+    right: -48vw;
     font-family: 'Heebo', sans-serif;
     font-size: 5vw;
     color: grey;
     text-align: center;
-    top: 66vh;
+    top: 50vh;
     width: 82vw;
     direction: rtl;
 }
@@ -154,29 +154,22 @@
 .stpe2Img {
     position: relative;
     right: 0vw;
-    top: 71vh;
+    top: 51vh;
     height: auto;
     width: 88vw;
 }
 
 .text-img {
     position: relative;
-    right: -16vw;
-    top: 71vh;
+    right: -58vw;
+    top: 52vh;
     font-family: 'Heebo', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
 }
 
- 
-.glass{
-    position: relative;
-    right: -28vw;
-    top: 67vh;
-    height: auto;
-    width: 7vw;
-}
+
 
 
 
@@ -200,8 +193,8 @@
     position: relative;
     width: 100vw;
     font-family: 'Karantina', cursive;
-    color: white;
-    top: 77vh;
+    color: rgb(69, 69, 69);
+    top: 62vh;
     margin-bottom: 31vh;
     height: 130vh;
     RIGHT: -38VW;
@@ -215,7 +208,7 @@
     right: 50%;
     transform: translateX(50%);
     border-left: 2vw solid #595959;
-    height: 119vh;
+    height: 104vh;
     top: 2vh;
 }
 
@@ -225,10 +218,10 @@
 .small-line {
     position: absolute;
     border-left: 2vw solid #595959;
-    height: 6vh;
+    height: 14vh;
     transform: rotate(90deg);
-    left: 43vw;
-    top: 23vh;
+    left: 37vw;
+    top: 29vh;
 }
 
 
@@ -238,47 +231,78 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    width: 72vw;
-    height: 10vh;
-    padding-top: 3vh;
-    padding-bottom: 1vh;
-    text-align: right;
-    font-size: 11.5vw;
-    padding-right: 4vh;
+    width: 42vw;
+    height: 42vw;
+    text-align: center;
+    font-size: 8.5vw;
+    background-color: #ffffff;
+    border: 4px solid #595959;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.first-img {
+    height: 10vh;
+    width: auto;
+    display: block;
+}
 
 
 .second-frame {
-    width: 36vw;
-    height: 14vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    width: 17vh;
+    height: 17vh;
+    padding: 1vh;
     text-align: center;
     position: relative;
     left: 3vw;
-    top: 19vh;
-    padding-right: 2vh;
-    font-size: 8vw;
+    top: 24vh;
+    font-size: 6vw;
+    background-color: white;
+    border: 4px solid #595959;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; /* מסדר את התמונה והטקסט במאוזן */
+    align-items: center; /* ממרכז את כל התוכן במרכז */
+    justify-content: center; /* ממרכז את התמונה והטקסט */
+    overflow: hidden; /* זה יסתיר את התמונה אם היא יוצאת מעבר לגבולות */
 }
 
+.seconed-img {
+    height: 60%; /* מתאם גודל התמונה */
+    width: auto;
+}
+
+.second-frame p {
+    margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
+    font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
+}
 
 
 
 .frame {
     cursor: pointer;
     text-align: center;
-    color: white;
+    color: rgb(81, 81, 81);
     position: relative;
-    width: 69vw;
-    height: 7vh;
+    width: 29vw;
+    height: 22vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin-bottom: 4vh;
-    top: 25vh;
-    left: 15vw;
-    font-size: 11vw;
+    top: 31vh;
+    left: 34vw;
+    font-size: 7vw;
+    background-color: white;
+    border: 4px solid #595959;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; /* מסדר את התמונה והטקסט במאוזן */
+    align-items: center; /* ממרכז את כל התוכן במרכז */
+    justify-content: center; /* ממרכז את התמונה והטקסט */
+    overflow: hidden; /* זה יסתיר את התמונה אם היא יוצאת מעבר לגבולות */
 }
 
 hr.dotted {
@@ -297,5 +321,9 @@ hr.dotted {
 
  .hr2{
     right: 1vw;
-    top: 73vh;
+    top: 59vh;
+ }
+ .third-img{
+    height: 60%; /* מתאם גודל התמונה */
+    width: auto;
  }

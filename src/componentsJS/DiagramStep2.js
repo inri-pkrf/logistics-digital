@@ -64,23 +64,76 @@ function DiagramStep2() {
                         )}
                     </div>
                     ))}
-                                <hr className='dotted hr1' />
+            <hr className='dotted hr1' />
+            <div className='subText-step2'>{data.imgDescription}</div>
             <img
                 src={data.imgSrc}
                 className="stpe2Img"
                 alt="Structure Diagram"
                 onClick={handleImageClick}
             />
+                        <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
+                        <hr className='dotted hr2' />
+            <div className='all-diagram'>
+                <div className="line"></div>
+                <div className="small-line"></div>
+                <div
+                    className='first-frame'
+                >
+                    <img className='first-img' src={data.comandor.src}/>
+                    {data.comandor.name}
+
+                </div>
+                <div
+                    className='second-frame'
+                >
+                    <img className='seconed-img' src={data.subComandor.src}/>
+                    {data.subComandor.name}
+
+                </div>
+                {data.subRoles.slice().reverse().map((role, index) => (
+                <div
+                    key={index}
+                    className='frame'
+                >
+                            <img className='third-img' src={data.srcSolider}/>
+
+        {role.name}
+    </div>
+))}
+
+
+{/* 
+                <div
+                    className='second-frame'
+                    style={{ backgroundColor: secondColor }}
+                >
+                    {selectedData.strings[1]}
+                </div>
+
+
+                {selectedData.strings.slice(2).map((text, index) => (
+                    <div
+                        key={index}
+                        className='frame'
+                        style={{ backgroundColor: restColor }}
+                        onClick={() => {
+                            const targetComponent = selectedOption === 'נפה' ? '/DiagramStep3Nafa' : '/DiagramStep3Mahoz';
+                            navigate(targetComponent, { state: { title: text, selectedOption } });
+                        }}
+                    >
+                        {text}
+                    
+                    </div>
+                ))} */}
+            </div>
+            </div>
+
 
 
 
 </div>
                         
-
-
-
-
-        </div>
     );
 }
 

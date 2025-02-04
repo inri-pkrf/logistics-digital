@@ -10,10 +10,11 @@
   }
   
   .btn-steps-diagram {
-    width: 15vh;
+    width: 19vh;
     height: 4vh;
     margin-right: 1vw;
     margin-left: 0vw;
+    border-radius: 20px;
     padding-top: 1vh;
     text-align: center;
     font-family: 'Heebo', sans-serif;
@@ -35,6 +36,8 @@
     height: 4vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    border-radius: 20px;
+    border: none;
     position: absolute;
     right: 50%;
     transform: translateX(50%);

@@ -29,8 +29,8 @@
 .white-circle2{
     position: absolute;
     width: 180vw;
-    height: 300vh;
-    margin-top: 234vh;
+    height: 260vh;
+    margin-top: 189vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -196,7 +196,7 @@
     color: rgb(69, 69, 69);
     top: 62vh;
     margin-bottom: 31vh;
-    height: 130vh;
+    height: 119vh;
     RIGHT: -38VW;
 }
 

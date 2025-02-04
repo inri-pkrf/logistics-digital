@@ -43,4 +43,37 @@
         text-align: center;
     
     }
-   
+    .title-container-war{
+        background-color: rgb(0 0 0 / 82%);
+        border: white solid 3px;
+        border-right: none;
+        width: 100vw;
+        right: -5vw;
+        position: absolute;
+        margin-top: -64vh;
+        height: 12vh;
+        z-index: -1;
+        border-top-left-radius: 10vh;
+        border-bottom-left-radius: 10vh;
+        
+        
+    }
+    .war-title{
+        font-family: "karantina";
+        font-size: 3em;
+        padding-left: 25vw;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 3vh;
+        width: 90vw;
+        color: #ffffff;
+        text-align: left;
+    
+    }
+    .icon-title-war{
+        position: absolute;
+        height: 10vh;
+        right: 12vw;
+        margin-top: 1vh;
+        width: auto;
+    }

@@ -13,7 +13,18 @@ const Ready = () => {
 //   };
   return (
     <div className="Ready-container">
+         <div className='title-container-ready'>
+         <img className='icon-title-ready' src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}  />
       <h1 className='ready-title'>היערכות לחירום </h1>
+      <div className='explenation-ready'>
+        <p className='explanation-txt-ready'>בחלק זה בלומדה נלמד על היערכות לחירום . מה הציוד ביחידת המחסנים, ומה סבב הבדיקות שיש לעשות
+        </p>
+      </div>
+      </div>
+      <div onClick={()=>navigate("/yamach")} className='go-next'>
+        <p className='next-title'>הבא</p>
+        <img className="next-arrow" src={`${process.env.PUBLIC_URL}/assets/imgs/next.svg`} />
+      </div>
         </div>
   
  

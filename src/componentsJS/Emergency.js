@@ -13,7 +13,10 @@ const Emergency = () => {
 //   };
   return (
     <div className="Emergency-container">
+         <div className='title-container-emergency'>
+         <img className='icon-title-emergency' src={`${process.env.PUBLIC_URL}/assets/icons/emergencyIcon.svg`}  />
       <h1 className='emergency-title'>נוהל גיוס לחירום</h1>
+      </div>
         </div>
   
  

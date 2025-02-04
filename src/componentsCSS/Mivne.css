@@ -80,3 +80,31 @@
     text-align: left;
 
 }
+.icon-title-mivne{
+    position: absolute;
+    height: 10vh;
+    right: 6vw;
+    margin-top: 1vh;
+    width: auto;
+}
+.go-next{
+    position: absolute;
+    left: 2vw;
+    margin-top: 81vh;
+}
+.next-arrow{
+    position: absolute;
+    top:0%;
+    height: 7vh;
+    width: auto;
+}
+.next-title{
+    font-family: "Heebo";
+    color: white;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    position: absolute;
+    left: 13vw;
+}

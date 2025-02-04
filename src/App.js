@@ -11,6 +11,7 @@ import Emergency from './componentsJS/Emergency';
 import War from './componentsJS/War';
 import Diagram from './componentsJS/DiagramStep1';
 import DiagramStep2 from './componentsJS/DiagramStep2';
+import MagnifyPic from './componentsJS/MagnifyPic';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/war" element={<War />} />
                 <Route path="/diagram" element={<Diagram />} />
                 <Route path="/DiagramStep2" element={<DiagramStep2 />} />
+                <Route path="/MagnifyPic" element={<MagnifyPic />} />
             </Routes>
         </div>
     );

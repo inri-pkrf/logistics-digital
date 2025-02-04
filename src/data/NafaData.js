@@ -1,5 +1,7 @@
 const nafa = {
     title:"נפה",
+    pageTitle:`מבנה ייעוד ותפקידי
+ המלכ"א`,
     color: '#1cb4e3',
     desteny:{
         title:`ייעוד המלכ"א בנפה`,
@@ -14,6 +16,10 @@ const nafa = {
 יתאם ויספק את המענה הלוגיסטי לכלל היחידות במרחב הנפה, בהתאם לסדרי עדיפויות שיוגדרו על ידי האג"ם.
 `,
     },
+    imgSrc: `${process.env.PUBLIC_URL}/assets/nafa/nafaFirst.jpg`,
+    imgDescription:`לפניכם עץ מבנה למפקדה בנפה.
+בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -
+`,
     comandor:{
         name:`מפקד מלכ"א`,
         src:`${process.env.PUBLIC_URL}/assests/imgs/NafaComandor.svg`,

@@ -1,12 +1,12 @@
 .all-steps-diagram {
-    position: absolute;
+  position: absolute;
     right: 50%;
     transform: translateX(50%);
     display: flex;
     width: 73vw;
     justify-content: center;
     direction: rtl;
-    margin-top: 16vh;
+    margin-top: 6vh;
   }
   
   .btn-steps-diagram {

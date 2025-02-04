@@ -18,7 +18,16 @@ function StepsBtnDiagram({ currentStep }) {
                     className="step1-diagram"
                     id="step1-diagram"
                     onClick={() => navigate('/diagram')}
-                >
+                    style={{
+                        backgroundColor: selectedOption === 'נפה'
+                          ? '#175a85'
+                          : selectedOption === 'גדוד'
+                          ? '#499f8a'
+                          : selectedOption === 'מחוז'
+                          ? '#ff7e00'
+                          : ''
+                      }}
+                                      >
                     לבחירת מפקדה
                     {currentStep === 1 && (
                         <div

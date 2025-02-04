@@ -46,8 +46,8 @@
     right: 50%;
     font-family: 'Karantina', cursive;
     font-size: 14vw;
-    top: 35vh;
-    width: 61%;
+    top: 24vh;
+    width: 59%;
     text-align: center;
     color: #50565c;
 }
@@ -61,7 +61,7 @@
     background-color: #d9d9d9;
     width: 90vw;
     right: -45vw;
-    margin-bottom: -1vw;
+    margin-bottom: 26vw;
     border-radius: 6vw;
 }
 
@@ -72,7 +72,7 @@
     font-family: 'Karantina', cursive;
     font-size: 8vw;
     text-align: center;
-    margin-top: 7vh;
+    margin-top: -12vh;
     padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
@@ -283,7 +283,7 @@
 
 hr.dotted {
     border: none;
-    border-top: 2px dotted #4e4d4d;
+    border-top: 3px dotted #4e4d4d;
     width: 40vh;
     height: 0;
     padding: 0;
@@ -292,7 +292,7 @@ hr.dotted {
 
  .hr1{
     right: 1vw;
-    top: 62vh;
+    top: 47vh;
  }
 
  .hr2{

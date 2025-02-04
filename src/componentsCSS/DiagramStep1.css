@@ -1,0 +1,122 @@
+.DiagramStep1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-image: url('/public/assets/imgs/Bg2.jpg');
+  overflow-y: scroll; /* Ensure the container is scrollable */
+  overflow-x: hidden;
+}
+.DiagramStep1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.white-circle{
+    position: absolute;
+    width: 100vw; /* רוחב המלבן */
+    height: 90vh; /* גובה המלבן */
+    margin-top: 20vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%; /* מעגל את הפינה השמאלית העליונה */
+    border-top-right-radius: 50% 15%; /* מעגל את הפינה הימנית העליונה */
+    z-index: 999; /* מוודא שהמלבן נמצא מעל לתמונה */
+
+  
+}
+  
+  
+
+
+.title-DiagramStep1 {
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  font-family: 'Karantina', cursive;
+  font-size: 14vw;
+  margin-top: 9vh;
+  width: 100%;
+  text-align: center;
+  color: #50565c;
+}
+
+.subtext-DiagramStep1 {
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  font-family: 'Heebo', sans-serif;
+  font-size: 5vw;
+  color: grey;
+  text-align: center;
+  margin-top: 48vh;
+  width: 82vw;
+  direction: rtl;
+}
+
+.btns-DiagramStep1 {
+  position: absolute;
+  width: 53vw;
+  height: 30vh;
+  font-family: 'Karantina', cursive;
+  font-size: 11vw;
+  color: rgb(49, 49, 49);
+  border-radius: 5vw;
+  text-align: center;
+  padding-top: 2vh;
+}
+.Nafa-chose{
+  position: absolute;
+  width:30vw;
+  height:auto;
+  right:50%;
+  transform: translateX(50%);
+}
+.text-choose{
+  position: absolute;
+  margin-top: 18vh;
+  right:7vw;
+  right:50%;
+  transform: translateX(50%);
+
+
+}
+#btn1-DiagramStep1 {
+  margin-top: 27vh;
+  right: -4vw;
+
+
+}
+
+#btn1-DiagramStep2 {
+  margin-top: 27vh;
+  left: -4vw;
+
+}
+#btn1-DiagramStep3{
+  margin-top: 56vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+.text-gdud{
+  color: #3c5c32;
+}
+.text-mahoz{
+  color: #ff7e00;
+}
+.text-nafa{
+  color: #21467a;
+}

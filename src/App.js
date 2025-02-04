@@ -9,7 +9,8 @@ import Header from './componentsJS/Header';
 import Ready from './componentsJS/Ready';
 import Emergency from './componentsJS/Emergency';
 import War from './componentsJS/War';
-
+import Diagram from './componentsJS/DiagramStep1';
+import DiagramStep2 from './componentsJS/DiagramStep2';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
                 <Route path="/ready" element={<Ready />} />
                 <Route path="/emergency" element={<Emergency />} />
                 <Route path="/war" element={<War />} />
+                <Route path="/diagram" element={<Diagram />} />
+                <Route path="/DiagramStep2" element={<DiagramStep2 />} />
             </Routes>
         </div>
     );

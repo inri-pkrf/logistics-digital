@@ -19,6 +19,14 @@ function Header() {
         alt="logo"
       />
       
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/imgs/home.png`}
+        className="home-icon"
+        alt="logo"
+        onClick={() => navigate('/menu')} 
+      />
+
+      
       <button
         className="back-homeNav"
         onClick={() => navigate('/menu')} // ניווט לעמוד הבית

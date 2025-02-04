@@ -1,74 +1,53 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-
 import '../componentsCSS/Menu.css';
 
 const Menu = () => {
   const navigate = useNavigate();
+  const pages = [
+    { name: "mivne", icon: "mivneIcon.svg", className: "mivne-button" },
+    { name: "ready", icon: "refuaIcon.svg", className: "refua-button" },
+    { name: "emergency", icon: "emergencyIcon.svg", className: "emergency-button" },
+    { name: "war", icon: "warIcon.svg", className: "war-button" }
+  ];
 
-//   const goToCredits = () => {
-//     console.log("Navigating to Credits");
-//     navigate('/Credits'); 
-//   };
+  const [visitedPages, setVisitedPages] = useState(() => {
+    return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
+  }, [visitedPages]);
+
+  const handleNavigation = (page) => {
+    setVisitedPages(prev => ({ ...prev, [page]: true }));
+    navigate(`/${page}`);
+  };
+
   return (
     <div className="Menu-container">
-      <h1 className='home-title'>  עזר דיגיטלי בתחום <br></br>
-        הלוגיסטיקה במפקדות</h1>
-      
-        <div className="buttons-container">
-          <div onClick={()=>(navigate("/mivne"))} className='button-design mivne-button'>
-            <div className="icon-container">
-            <img
-            src={`${process.env.PUBLIC_URL}/assets/icons/mivneIcon.svg`}
-            className="menu-icon"
-       
-          />
+      <h1 className='home-title'>  עזר דיגיטלי בתחום <br></br> הלוגיסטיקה במפקדות</h1>
+      <div className="buttons-container">
+        {pages.map(({ name, icon, className }) => {
+          const isVisited = visitedPages[name];
+          const iconPath = isVisited 
+            ? `${process.env.PUBLIC_URL}/assets/blueIcons/${icon.replace('.svg', 'Blue.svg')}` 
+            : `${process.env.PUBLIC_URL}/assets/icons/${icon}`;
+          
+          return (
+            <div key={name} onClick={() => handleNavigation(name)} className={`button-design ${className}`}>
+              <div className={`icon-container ${isVisited ? 'pressed' : ''}`}>
+                <img src={iconPath} className="menu-icon" alt={name} />
+              </div>
+              <p className={`btn-title ${isVisited ? 'title-pressed' : ''}`}>{name === "mivne" ? "מבנה ייעוד ותפקידים" : 
+                                       name === "ready" ? "היערות לחירום" : 
+                                       name === "emergency" ? "נוהל גיוס לחירום" : 
+                                       "ניהול לחימה"}</p>
             </div>
-            <p className="btn-title">מבנה ייעוד ותפקידים
-            </p>
-          </div>
-          <div onClick={()=>(navigate("/ready"))} className='button-design refua-button'>
-            <div className="icon-container">
-            <img
-            src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}
-            className="menu-icon"
-       
-          />
-            </div>
-            <p className="btn-title">היערות לחירום
-            </p>
-          </div>
-          <div onClick={()=>(navigate("/emergency"))} className='button-design emergency-button'>
-            <div className="icon-container">
-            <img
-            src={`${process.env.PUBLIC_URL}/assets/icons/emergencyIcon.svg`}
-            className="menu-icon"
-       
-          />
-            </div>
-            <p className="btn-title"> נוהל גיוס לחירום
-            </p>
-          </div>
-          <div onClick={()=>(navigate("/war"))} className='button-design war-button'>
-            <div className="icon-container">
-            <img
-            src={`${process.env.PUBLIC_URL}/assets/icons/warIcon.svg`}
-            className="menu-icon"
-       
-          />
-            </div>
-            <p className="btn-title">ניהול לחימה  
-            </p>
-          </div>
-         
+          );
+        })}
+      </div>
     </div>
-        </div>
-  
- 
-
-
-
   );
 };
 

@@ -91,14 +91,14 @@ function DiagramStep2() {
                     {data.subComandor.name}
 
                 </div>
-                {data.subRoles.slice().reverse().map((role, index) => (
+                {data.subRoles.slice().reverse().map((subRole, index) => (
                 <div
                     key={index}
                     className='frame'
                 >
-                            <img className='third-img' src={data.srcSolider}/>
+                            <img className='third-img' src={subRole.srcSolider}/>
 
-        {role.name}
+                {subRole.name}
     </div>
 ))}
 

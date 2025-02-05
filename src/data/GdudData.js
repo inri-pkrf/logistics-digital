@@ -42,7 +42,7 @@ const gdud = {
                     בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -`,
     comandor:{
         name:`מ"פ מפקדה`,
-        src:`${process.env.PUBLIC_URL}/assets/imgs/gdudComandor.svg`,
+        src:`${process.env.PUBLIC_URL}/assets/imgs/GdudComandor.svg`,
         popupTitle:`מ"פ מפקדה`,
         popupText:[
            

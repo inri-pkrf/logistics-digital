@@ -26,7 +26,7 @@ const mahoz = {
 `,
     comandor:{
         name:`מפקד מלכ"א`,
-        src:`${process.env.PUBLIC_URL}/assets/imgs/mahozComandor.svg`,
+        src:`${process.env.PUBLIC_URL}/assets/imgs/MahozComandor.svg`,
         popupTitle:`מפקד מלכ"א`,
         popupText:[
            

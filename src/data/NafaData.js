@@ -202,7 +202,7 @@ const nafa = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/nafa/Mashan.jpg`,
+        src: `${process.env.PUBLIC_URL}/assests/imgs/nafa/nafaMashan.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי תא המאש"ן',

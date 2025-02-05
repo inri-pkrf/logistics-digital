@@ -5,14 +5,15 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import NafaData from '../data/NafaData';
 import GdudData from '../data/GdudData';
 import MahozData from '../data/MahozData';
-
+import PopUp from './PopUp.js';
 
 
 function DiagramStep2() {
      const location = useLocation();
     const navigate = useNavigate();
     const [expandedExplanation, setExpandedExplanation] = useState(null);
-    
+    const [isPopupVisible, setPopupVisible] = useState(false);
+    const [popupContent, setPopupContent] = useState({ title: '', content: '' });
     const selectedOption = location.state?.selectedOption || '';
     const data = 
     selectedOption === 'נפה' ? NafaData :
@@ -27,7 +28,21 @@ function DiagramStep2() {
     const handleImageClick = () => {
         navigate('/MagnifyPic', { state: { imagePath: imgSrc } });
     };
+
+    const handleFirstFrameClick = () => {
+        const title = data.comandor.popupTitle;
+        handleBoxClick(title, data.comandor.popupText);
+    };
     
+      const handleBoxClick = (title, content) => {
+        setPopupContent({ title, content });
+        setPopupVisible(true);
+    };
+    const closePopup = () => {
+        setPopupVisible(false);
+    };
+
+
 
 
     return (
@@ -75,10 +90,18 @@ function DiagramStep2() {
                         <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
                         <hr className='dotted hr2' />
             <div className='all-diagram'>
-                <div className="line"></div>
+            <div className={`line ${
+                selectedOption === "גדוד" ? "line-gdud" :
+                selectedOption === "נפה" ? "line-nafa" :
+                selectedOption === "מחוז" ? "line-mahoz" :
+                ""
+                }`}>
+</div>
                 <div className="small-line"></div>
                 <div
                     className='first-frame'
+                    onClick={handleFirstFrameClick}
+
                 >
                     <img className='first-img' src={data.comandor.src}/>
                     {data.comandor.name}
@@ -131,7 +154,12 @@ function DiagramStep2() {
 
 
 
-
+            <PopUp
+                isVisible={isPopupVisible}
+                onClose={closePopup}
+                title={popupContent.title}
+                content={popupContent.content}
+            /> 
 </div>
                         
     );

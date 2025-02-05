@@ -29,8 +29,8 @@
 .white-circle2{
     position: absolute;
     width: 180vw;
-    height: 260vh;
-    margin-top: 189vh;
+    height: 270vh;
+    margin-top: 194vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -45,7 +45,7 @@
     transform: translateX(50%);
     right: 50%;
     font-family: 'Karantina', cursive;
-    font-size: 14vw;
+    font-size: 12vw;
     top: 24vh;
     width: 59%;
     text-align: center;
@@ -208,8 +208,23 @@
     right: 50%;
     transform: translateX(50%);
     border-left: 2vw solid #595959;
-    height: 104vh;
     top: 2vh;
+}
+.line-nafa {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    top: 2vh;
+    height: 104vh;
+}
+.line-gdud {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    top: 2vh;
+    height: 150vh;
 }
 
 

@@ -7,9 +7,14 @@ function StepsBtnDiagram({ currentStep }) {
     const location = useLocation();
 
     const selectedOption = location.state?.selectedOption || '';
-
-    const step2Text = selectedOption === 'נפה' ? 'מכלול' : 'מרכז';
-    const step3Text = selectedOption === 'נפה' ? 'תא' : 'מכלול';
+    const stepTexts = {
+        'נפה': ['מכלול', 'תא'],
+        'גדוד': ['מחלקה', 'מכלול'],
+        'מחוז': ['מרכז', 'מכלול'],
+      };
+      
+      const [step2Text, step3Text] = stepTexts[selectedOption] || ['מרכז', 'מכלול'];
+      
 
     return (
         <div className="StepsBtnDiagram">

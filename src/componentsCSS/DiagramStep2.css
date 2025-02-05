@@ -29,8 +29,6 @@
 .white-circle2{
     position: absolute;
     width: 180vw;
-    height: 270vh;
-    margin-top: 194vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -226,7 +224,14 @@
     top: 2vh;
     height: 150vh;
 }
-
+.line-mahoz{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    top: 2vh;
+    height: 106vh;
+}
 
 
 
@@ -341,4 +346,34 @@ hr.dotted {
  .third-img{
     height: 60%; /* מתאם גודל התמונה */
     width: auto;
+ }
+ .whiteCircle2-gdud{
+    position: absolute;
+    width: 180vw;
+    height: 289vh;
+    margin-top: 217vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+ }
+ .whiteCircle2-nafa{
+    position: absolute;
+    width: 180vw;
+    height: 270vh;
+    margin-top: 194vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+ }
+ .whiteCircle2-mahoz{
+    position: absolute;
+    width: 180vw;
+    height: 270vh;
+    margin-top: 194vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
  }

@@ -16,10 +16,33 @@
 }
 
 .magnified-image {
-    width: 152vw;
     transform: rotate(90deg);
-    top: 51vw;
-    right: -26vw;
+    z-index: 3;
+    position: fixed;
+}
+.magnified-image-nafa{
+    width: 146vw;
+    transform: rotate(90deg);
+    top: 45vw;
+    right: -23vw;
+    z-index: 3;
+    height: auto;
+    position: fixed;
+}
+.magnified-image-gdud{
+    width: 178vw;
+    transform: rotate(90deg);
+    top: 52vw;
+    right: -34vw;
+    z-index: 3;
+    height: auto;
+    position: fixed;
+}
+.magnified-image-mahoz{
+    width: 146vw;
+    transform: rotate(90deg);
+    top: 45vw;
+    right: -23vw;
     z-index: 3;
     height: auto;
     position: fixed;

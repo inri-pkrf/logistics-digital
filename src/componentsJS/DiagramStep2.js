@@ -26,7 +26,7 @@ function DiagramStep2() {
     };
     
     const handleImageClick = () => {
-        navigate('/MagnifyPic', { state: { imagePath: imgSrc } });
+        navigate('/MagnifyPic', { state: { imagePath: imgSrc, situation: selectedOption } });
     };
 
     const handleFirstFrameClick = () => {
@@ -47,7 +47,12 @@ function DiagramStep2() {
 
     return (
         <div className="DiagramStep2" >
-                     <div className="white-circle2">
+                     <div className={`'whiteCircle2' ${
+                selectedOption === "גדוד" ? "whiteCircle2-gdud" :
+                selectedOption === "נפה" ? "whiteCircle2-nafa" :
+                selectedOption === "מחוז" ? "whiteCircle2-mahoz" :
+                ""
+                }`}>
                      <StepsBtnDiagram currentStep={2} selectedOption />
                      <div className='title-DiagramStep2'>
                           {data.pageTitle}
@@ -141,8 +146,7 @@ function DiagramStep2() {
                         className='frame'
                         style={{ backgroundColor: restColor }}
                         onClick={() => {
-                            const targetComponent = selectedOption === 'נפה' ? '/DiagramStep3Nafa' : '/DiagramStep3Mahoz';
-                            navigate(targetComponent, { state: { title: text, selectedOption } });
+                            navigate(/DiagramStep3, { state: { data:data. } });
                         }}
                     >
                         {text}

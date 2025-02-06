@@ -114,11 +114,17 @@ function DiagramStep2() {
                 </div>
                 <div
                     className='second-frame'
+                    onClick={() => navigate("/DiagramStep3Sub", {
+                        state: { 
+                            subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
+                            selectedOption: selectedOption  // העברת ה-selectedOption
+                        }
+                    })}
                 >
-                    <img className='seconed-img' src={data.subComandor.src}/>
+                    <img className='seconed-img' src={data.subComandor.src} alt="sub-role"/>
                     {data.subComandor.name}
-
                 </div>
+
                 {data.subRoles.slice().reverse().map((subRole, index) => (
                 <div onClick={() => {
                     navigate("/DiagramStep3", {

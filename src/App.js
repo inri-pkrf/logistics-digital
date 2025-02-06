@@ -13,6 +13,7 @@ import Diagram from './componentsJS/DiagramStep1';
 import DiagramStep2 from './componentsJS/DiagramStep2';
 import DiagramStep3 from './componentsJS/DiagramStep3';
 import MagnifyPic from './componentsJS/MagnifyPic';
+import DiagramStep3Sub from './componentsJS/DiagramStep3Sub';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/diagram" element={<Diagram />} />
                 <Route path="/DiagramStep2" element={<DiagramStep2 />} />
                 <Route path="/DiagramStep3" element={<DiagramStep3 />} />
+                <Route path="/DiagramStep3Sub" element={<DiagramStep3Sub />} />
                 <Route path="/MagnifyPic" element={<MagnifyPic />} />
             </Routes>
         </div>

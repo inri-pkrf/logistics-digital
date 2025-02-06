@@ -100,7 +100,7 @@ const gdud = {
 
             }
         ],
-        srcTree: `${process.env.PUBLIC_URL}/assests/gdud/gdudSubCom.jpg`
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudSubCom.jpg`
         //לפרק  DiagramStep3SubCom כי אין פה EXPLANTION
 
 

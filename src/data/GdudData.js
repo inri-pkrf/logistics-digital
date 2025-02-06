@@ -71,10 +71,11 @@ const gdud = {
     subComandor:{
         name:`סמ"פ מפקדה `,
         src:`${process.env.PUBLIC_URL}/assets/gdud/subComandor.svg`,
+        titleExplanation: ` תפקידי סגן מפקד מפקדה  `,
+
         taskNote: [
             <>
-                <b>תפקידי סגן מפקד מפקדה  :</b><br /><br />
-                    חסר מידע    
+                חסר מידע    
             </>
 
         ],

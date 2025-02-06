@@ -41,9 +41,9 @@ const nafa = {
     subComandor:{
         name:`סגן מפקד מלכ"א`,
         src:`${process.env.PUBLIC_URL}/assets/nafa/subComandor.svg`,
+        taskTitle:`תפקידי סגן מפקד מלכ"א  :`,
         taskNote: [
             <>
-                <b>תפקידי סגן מפקד מלכ"א  :</b><br /><br />
                 1. ייעוץ למפקד מכלול האוכלוסייה בתחום ההסברה והדרכת האוכלוסייה.<br /><br />
                 2. בקיאות במאפייני האוכלוסייה במרחב הנפה והכרת הקהילות הייחודיות, השפות והאתגרים בתחום ההסברה כפי שאותרו בשגרה.<br /><br />
                 3. ניתוח דו"חות מש"קי מידע לציבור ביקל"ר.<br /><br />
@@ -87,9 +87,10 @@ const nafa = {
         name: "תא הספקה ובינוי",
         firstRoleName:`קה"ס`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/nafa/solider.svg`,
+        taskTitle:`תפקידי מפקד תא הספקה ובינוי  :`,
+
         taskNote: [
             <>
-                <b>תפקידי מפקד תא הספקה ובינוי:</b><br /><br />
                 חסר מידע
               
             </>
@@ -128,9 +129,10 @@ const nafa = {
         name: "תא אחזקה",
         firstRoleName:`קט"א`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/nafa/solider.svg`,
+        taskTitle:`תפקידי מפקד תא אחזקה:`,
+
         taskNote: [
             <>
-                <b>תפקידי מפקד תא קט"א:</b><br /><br />
                 חסר מידע 
             </>
 
@@ -168,9 +170,10 @@ const nafa = {
         name: `תא משא"ן`,
         firstRoleName:`מפקד תא משא"ן`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/nafa/solider.svg`,
+        taskTitle:`תפקידי מפקד תא משא"ן:`,
+
         taskNote: [
             <>
-                <b>תפקידי מפקד תא משא"ן:</b><br /><br />
                 חסר מידע 
             </>
 

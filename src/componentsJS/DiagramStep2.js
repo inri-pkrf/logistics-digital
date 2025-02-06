@@ -33,6 +33,10 @@ function DiagramStep2() {
         const title = data.comandor.popupTitle;
         handleBoxClick(title, data.comandor.popupText);
     };
+    const handleSeconedFrameClick = () => {
+        const title = data.subComandor.taskTitle;
+        handleBoxClick(title, data.subComandor.taskText);
+    };
     
       const handleBoxClick = (title, content) => {
         setPopupContent({ title, content });
@@ -114,17 +118,23 @@ function DiagramStep2() {
                 </div>
                 <div
                     className='second-frame'
-                    onClick={() => navigate("/DiagramStep3Sub", {
-                        state: { 
-                            subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
-                            selectedOption: selectedOption  // העברת ה-selectedOption
+                    onClick={() => {
+                        if (selectedOption !== "מחוז") {
+                            navigate("/DiagramStep3Sub", {
+                                state: { 
+                                    subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
+                                    selectedOption: selectedOption  // העברת ה-selectedOption
+                                }
+                            });
+                        } else {
+                            handleSeconedFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
                         }
-                    })}
+                    }}
                 >
                     <img className='seconed-img' src={data.subComandor.src} alt="sub-role"/>
                     {data.subComandor.name}
                 </div>
-
+                
                 {data.subRoles.slice().reverse().map((subRole, index) => (
                 <div onClick={() => {
                     navigate("/DiagramStep3", {

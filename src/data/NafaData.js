@@ -73,7 +73,7 @@ const nafa = {
 
             }
         ],
-        srcTree: `${process.env.PUBLIC_URL}/assests/nafa/nafaSubCom.jpg`
+        treeSrc: `${process.env.PUBLIC_URL}/assets/nafa/nafaSubCom.jpg`
         //לפרק  DiagramStep3SubCom כי אין פה EXPLANTION
 
 
@@ -103,7 +103,7 @@ const nafa = {
 
             }
         ],
-        srcTree: `${process.env.PUBLIC_URL}/assests/nafa/nafaBahs.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/nafa/nafaBahs.jpg`,
         explanation: [
             {
                 titleExplanation: "תפקידי תא הספקה ובינוי",
@@ -144,7 +144,7 @@ const nafa = {
 
             }
         ],
-        src: `${process.env.PUBLIC_URL}/assests/nafa/nafaKta.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/nafa/nafaKta.jpg`,
         explanation: [
             {
                 titleExplanation: "תפקידי תא אחזקה",
@@ -202,7 +202,7 @@ const nafa = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/nafa/nafaMashan.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/nafa/nafaMashan.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי תא המאש"ן',

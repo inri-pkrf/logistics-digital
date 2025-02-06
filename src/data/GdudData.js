@@ -114,9 +114,10 @@ const gdud = {
         name: `מחלקת התחזוקה והשירותים`,
         firstRoleName:`קל"ג`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/gdud/solider.svg`,
+        taskTitle:`התפקידי מפקד מחלקת התחזוקה והשירותים`,
+
         taskNote: [
             <>
-                <b> תפקידי מפקד מחלקת התחזוקה והשירותים :</b><br /><br />
                 חסר מידע
               
             </>
@@ -124,23 +125,23 @@ const gdud = {
         roles: [
             {
                 idRole: 1,
-                roleName: <> נגד מטבח</>,                
+                roleName: " נגד מטבח",                
                 src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
 
 
             },
             {
                 idRole: 2,
-                roleName: <> נגד אפסנאות</>,                
+                roleName: " נגד אפסנאות",                
                 src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
             },
             {
                 idRole: 3,
-                roleName: <> נהג רכב קל</>,                
+                roleName: " נהג רכב קל",                
                 src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
             }
         ],
-        srcTree: `${process.env.PUBLIC_URL}/assests/gdud/gdudKalag.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudKalag.jpg`,
         explanation: [
             {
                 titleExplanation: " ייעוד מחלקת התחזוקה והשירותים:",
@@ -173,9 +174,10 @@ const gdud = {
         name: `מחלקת הטנ"א`,
         firstRoleName:`קט"א`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/gdud/solider.svg`,
+        taskTitle:`תפקידי מפקד מחלקת הטנ"א`,
+
         taskNote: [
             <>
-                <b>תפקידי מפקד מחלקת הטנ"א:</b><br /><br />
                 חסר מידע 
             </>
 
@@ -189,7 +191,7 @@ const gdud = {
 
             }
         ],
-        src: `${process.env.PUBLIC_URL}/assests/gdud/gdudKta.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudKta.jpg`,
         explanation: [
             {
                 titleExplanation: `ייעוד מחלקת הטנ"א:`,
@@ -227,9 +229,10 @@ const gdud = {
         name: `מחלקת התקשוב`,
         firstRoleName:`ק' תקשוב`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/gdud/solider.svg`,
+        taskTitle:`תפקידי מפקד מחלקת התקשוב`,
+
         taskNote: [
             <>
-                <b> תפקידי מחלקת</b><br /><br />
                 חסר מידע 
             </>
 
@@ -264,7 +267,7 @@ const gdud = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/gdud/gdudTykshuv.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudTykshuv.jpg`,
         explanation: [
             {
                 titleExplanation:`תפקידי מחלקת התקשוב`,
@@ -301,9 +304,11 @@ const gdud = {
         name: `מחלקת המשא"ן`,
         firstRoleName:`ק' משא"ן`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/gdud/solider.svg`,
+        taskTitle:`   תפקידי מפקד מחלקת המשא"ן`,
+
         taskNote: [
             <>
-                <b> תפקידי מפקד מחלקת המשא"ן</b><br /><br />
+              
                 חסר מידע 
             </>
 
@@ -338,7 +343,7 @@ const gdud = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/gdud/gdudMashan.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudMashan.jpg`,
         explanation: [
             {
                 titleExplanation:`תפקידי מחלקת המאש"ן`,
@@ -376,9 +381,9 @@ const gdud = {
         name: `מחלקת האנו"ח`,
         firstRoleName:`מ"מ האנו"ח`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/gdud/solider.svg`,
+        taskTitle:`תפקידי מ"מ האנו"ח`,
         taskNote: [
             <>
-                <b> תפקידי מ"מ אנו"ח   </b><br /><br />
                 חסר מידע 
             </>
 
@@ -406,24 +411,24 @@ const gdud = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/gdud/gdudAnoch.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudAnoch.jpg`,
         explanation: [
             {
                 titleExplanation:`תפקידי מחלקת האנו"ח`,
                 textExplanation:
                     [
                         <>
-                            <b>בשגרה:</b><br /><br />  
+                            <b>בשגרה:</b><br /> 
                             1. אימון מחלקת אנו"ח ותרגולה והשלמת הכשרות לחסרי ההכשרה. <br/>  
                             2. וידוא עמידת מחלקת האנו"ח בתקני כוח אדם וציוד והשלמת הפערים במידת הצורך. <br/>  
                             3. וידוא כשירות ציוד החירום של המחלקה וארגון הציוד על פי השיבוץ הקרבי בשעת חירום והפק"ל המבצעי למעבר משגרה לחירום. <br/>  
-                            4. הכנת האימונים הגדודיים בתחום האנו"ח. <br/>  
-                            <b>בחירום:</b><br /><br />  
+                            4. הכנת האימונים הגדודיים בתחום האנו"ח. <br/> <br/>
+                            <b>בחירום:</b><br />  
                             1. ביצוע סריקות לאיתור החללים. <br/>  
                             2. איסוף נתונים ותיעוד החללים. <br/>  
                             3. איסוף חללים בזירה ופינויים לתחנת איסוף חללים גדודית. <br/>  
                             4. הפעלת תחנת איסוף חללים גדודית. <br/>  
-                            5. פינוי חללים אזרחיים לתחנת ריכוז חללים של פס"ח. <br/>  
+                            5. פינוי חללים אזרחיים לתחנת ריכוז חללים של פס"ח. <br/>  <br/>
                         </>
 
                     ]
@@ -433,7 +438,7 @@ const gdud = {
                 textExplanation:
                     [
                         <>
-                           מחלקת הנו"ח תבצע איסוף נתונים וחללים מזירת האירוע ופינויים לתחנת ריכוז חללים.
+                           מחלקת הנו"ח תבצע איסוף נתונים וחללים מזירת האירוע ופינויים לתחנת ריכוז חללים.<br/> <br/>
                         </>
                     ]
             }

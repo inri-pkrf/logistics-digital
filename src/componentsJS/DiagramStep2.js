@@ -120,39 +120,22 @@ function DiagramStep2() {
 
                 </div>
                 {data.subRoles.slice().reverse().map((subRole, index) => (
-                <div
-                    key={index}
-                    className='frame'
+                <div onClick={() => {
+                    navigate("/DiagramStep3", {
+                        state: { 
+                            subRoleName: subRole.name,    // העברת שם הסאב-רול
+                            selectedOption: selectedOption // העברת ה-selectedOption
+                        }
+                    });
+                }}
+                key={index}
+                className='frame'
                 >
-                            <img className='third-img' src={subRole.srcSolider}/>
-
-                {subRole.name}
-    </div>
-))}
-
-
-{/* 
-                <div
-                    className='second-frame'
-                    style={{ backgroundColor: secondColor }}
-                >
-                    {selectedData.strings[1]}
+                    <img className='third-img' src={subRole.srcSolider} />
+                    {subRole.name}
                 </div>
+            ))}
 
-
-                {selectedData.strings.slice(2).map((text, index) => (
-                    <div
-                        key={index}
-                        className='frame'
-                        style={{ backgroundColor: restColor }}
-                        onClick={() => {
-                            navigate(/DiagramStep3, { state: { data:data. } });
-                        }}
-                    >
-                        {text}
-                    
-                    </div>
-                ))} */}
             </div>
             </div>
 

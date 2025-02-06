@@ -1,0 +1,250 @@
+.DiagramStep3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+}
+
+.DiagramStep3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+ 
+
+
+.title-DiagramStep3 {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    font-family: 'Karantina', cursive;
+    font-size: 12vw;
+    top: 24vh;
+    width: 59%;
+    text-align: center;
+    color: #50565c;
+}
+
+
+
+
+.explanation-div-DiagramStep3 {
+    position: relative;
+    top: 55vh;
+    background-color: #d9d9d9;
+    width: 90vw;
+    right: -45vw;
+    margin-bottom: 56vw;
+    border-radius: 6vw;
+}
+
+
+
+
+.explanation-title-wrapper-DiagramStep3 {
+    font-family: 'Karantina', cursive;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: -27vh;
+    padding-top: 2vh;
+    color: rgb(58, 57, 57);
+}
+
+
+
+.explanation-text-DiagramStep3 {
+ 
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    direction: rtl;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+    margin-top: -3vh;
+    position: relative;
+    line-height: 5vh;
+}
+
+.arrow-icon{
+    height: 3vh;
+    width: auto;
+    right: 2vw;
+    position: relative;
+    top: -3.42vh;
+    padding-left: -23vw;
+    margin-left: -230px;
+    transform: rotate(180deg);
+}
+
+.arrow-icon.rotated {
+    transform: rotate(90deg);
+}
+
+.arrow-icon1 {
+    height: 105vh;
+    width: auto;
+    position: relative;
+    top: -4.5vh;
+    left: -1vh;
+    height: 3vh;
+    width: auto;
+}
+
+.arrow-icon2 {
+    height: 3vh;
+    width: auto;
+    position: relative;
+    top: -5vh;
+}
+
+
+
+
+ .whiteCircle3{
+    position: absolute;
+    width: 180vw;
+    height: 183vh;
+    margin-top: 107vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+ }
+ .hr1-step3 {
+    right: 1vw;
+    top: 29vh;
+}
+ .hr2-step3 {
+    right: 1vw;
+    top: 3vh;
+}
+/* עיצוב הכפתורים */
+/* עיצוב הכללי של ה-div שמכיל את כל הכפתורים */
+/* עיצוב הכללי של ה-div שמכיל את כל הכפתורים */
+.roles-div-DiagramStep3 {
+    position: relative;
+    padding: 20px;
+    margin-top: 34vh;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%); /* ממקם את כל התוכן במרכז האופקי */
+    display: flex;
+    flex-direction: column; /* מסדר את הכפתורים בעמודה */
+    align-items: center; /* ממרכז את כל הכפתורים במרכז האנכי */
+    justify-content: center; /* ממרכז את כל הכפתורים במרכז האופקי */
+}
+
+/* עיצוב עבור הכפתור הראשון (עיגול גדול) */
+.role1-container-DiagramStep3 {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1vh;
+    margin-bottom: 15px; /* רווח בין הכפתורים */
+    border-radius: 50%;
+    width: 25vh; /* גודל גדול יותר עבור הכפתור הראשון */
+    height: 25vh;
+    text-align: center;
+    font-size: 6vw;
+    border: 4px solid #000000; /* מסגרת אפורה */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ממרכז את התוכן בתוך הדיב */
+    justify-content: center; /* ממרכז את התמונה והטקסט */
+    overflow: hidden;
+    font-family: "Karantina";
+    color: #000000;
+    font-size: 2em;
+}
+
+/* עיצוב עבור התמונה בתוך ה-role הראשון */
+.first-img-step3 {
+    height: 10vh; /* גובה התמונה */
+    width: auto; /* גודל אוטומטי כדי לשמור על היחס */
+    display: block; /* נוודא שהתמונה תהיה בלוק */
+    margin: 0 auto; /* ממקם את התמונה במרכז */
+}
+.seconed-img-step3 {
+    height: 7vh; /* גובה התמונה */
+    width: auto; /* גודל אוטומטי כדי לשמור על היחס */
+    display: block; /* נוודא שהתמונה תהיה בלוק */
+    margin: 0 auto; /* ממקם את התמונה במרכז */
+    margin-top: -2vh; /* מרחק למעלה, תוכל לשחק עם הערך */
+}
+
+/* עיצוב עבור כל שאר הכפתורים (עיגולים קטנים יותר) */
+.role-container-DiagramStep3 {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1vh;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    width: 17vh; /* גודל קטן יותר */
+    height: 17vh;
+    text-align: center;
+    font-size: 1.6em;
+    border: 4px solid #858585; /* מסגרת אפורה */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Karantina";
+    color: #595959;
+    word-wrap: break-word; /* מבצע חיתוך אוטומטי בשורות ארוכות */
+    white-space: normal; /* מאפשר לטקסט לעבור לשורה חדשה */
+}
+
+.stpe3Img {
+    position: relative;
+    right: 0vw;
+    top: 9vh;
+    height: auto;
+    width: 88vw;
+}
+.text3-img {
+    position: relative;
+    right: -58vw;
+    top: 12vh;
+    font-family: 'Heebo', sans-serif;
+    font-size: 3.5vw;
+    color: grey;
+    width: 60vw;
+}
+
+
+.btn-prev{
+    color: #212853;
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 25vh;
+}
+.whiteCircle3Dif{
+    position: absolute;
+    width: 180vw;
+    height: 273vh;
+    margin-top: 197vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+}

@@ -21,7 +21,7 @@ const Ready = () => {
         </p>
       </div>
       </div>
-      <div onClick={()=>navigate("/yamach")} className='go-next'>
+      <div onClick={()=>navigate("/Refua")} className='go-next'>
         <p className='next-title'>הבא</p>
         <img className="next-arrow" src={`${process.env.PUBLIC_URL}/assets/imgs/next.svg`} />
       </div>

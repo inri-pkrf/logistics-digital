@@ -39,10 +39,10 @@
     position: fixed;
 }
 .magnified-image-mahoz{
-    width: 146vw;
+    width: 177vw;
     transform: rotate(90deg);
-    top: 45vw;
-    right: -23vw;
+    top: 46vw;
+    right: -33vw;
     z-index: 3;
     height: auto;
     position: fixed;
@@ -58,7 +58,7 @@
     border-radius: 50%;
     width: 55px;
     height: 40px;
-    font-size: 4em;
+    font-size: 3em;
     cursor: pointer;
     outline: none;
     transform: rotate(90deg);

@@ -32,7 +32,7 @@ const mahoz = {
        ,
     },
     imgSrc: `${process.env.PUBLIC_URL}/assets/mahoz/mahozFirst.jpg`,
-    imgDescription:`לפניכם עץ מבנה למפקדה בנפה.
+    imgDescription:`לפניכם עץ מבנה למפקדה במחוז.
 בהמשך הדף יש לבחור את המכלולים לקבלת פירוט הגדרות ומשימות התפקיד -
 `,
     comandor:{
@@ -111,7 +111,7 @@ const mahoz = {
 
             }
         ],
-        src: `${process.env.PUBLIC_URL}/assests/mahoz/mahozManla.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/mahozManla.jpg`,
         explanation: [
             {
                 titleExplanation: `תפקידי מנל"ח מלכ"א`,
@@ -190,7 +190,7 @@ const mahoz = {
             },
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Mashan.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Mashan.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי תא המאש"ן',
@@ -243,7 +243,7 @@ const mahoz = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Binoi.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Binoi.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי תא בינוי',
@@ -367,7 +367,7 @@ const mahoz = {
             },
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Shitoor.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Shitoor.jpg`,
         explanation: [
             {
                 titleExplanation:` תפקידי מכלול שיטור`,
@@ -434,7 +434,7 @@ const mahoz = {
             }
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Aspaka.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Aspaka.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי מכלול הספקה',

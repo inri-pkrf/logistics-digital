@@ -15,6 +15,7 @@ import DiagramStep3 from './componentsJS/DiagramStep3';
 import MagnifyPic from './componentsJS/MagnifyPic';
 import DiagramStep3Sub from './componentsJS/DiagramStep3Sub';
 import DiagramStep3Mahoz from './componentsJS/DiagramStep3Mahoz';
+import Refua from './componentsJS/Refua';
 function App() {
     return (
         <div className="App">
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/DiagramStep3Sub" element={<DiagramStep3Sub />} />
                 <Route path="/MagnifyPic" element={<MagnifyPic />} />
                 <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
+                <Route path="/Refua" element={<Refua />} />
             </Routes>
         </div>
     );

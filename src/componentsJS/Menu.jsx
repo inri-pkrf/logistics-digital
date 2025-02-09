@@ -40,7 +40,7 @@ const Menu = () => {
                 <img src={iconPath} className="menu-icon" alt={name} />
               </div>
               <p className={`btn-title ${isVisited ? 'title-pressed' : ''}`}>{name === "mivne" ? "מבנה ייעוד ותפקידים" : 
-                                       name === "ready" ? "היערות לחירום" : 
+                                       name === "ready" ? "היערכות לחירום" : 
                                        name === "emergency" ? "נוהל גיוס לחירום" : 
                                        "ניהול לחימה"}</p>
             </div>

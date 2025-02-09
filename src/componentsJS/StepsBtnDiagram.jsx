@@ -9,7 +9,7 @@ function StepsBtnDiagram({ currentStep }) {
     const selectedOption = location.state?.selectedOption || '';
     const stepTexts = {
         'נפה': ['מכלול', 'תא'],
-        'גדוד': ['מחלקה', 'מכלול'],
+        'גדוד': ['פלוגה', 'מחלקה'],
         'מחוז': ['מרכז', 'מכלול'],
       };
       

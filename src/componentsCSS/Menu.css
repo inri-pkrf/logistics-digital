@@ -45,14 +45,14 @@
     }
     .buttons-container {
         position: absolute;
-        margin-top: 30vh;
-        right:50%;
+        margin-top: 37vh;
+        right: 50%;
         transform: translateX(40%);
-        width:100vw;
+        width: 100vw;
         direction: rtl;
         display: flex;
         flex-wrap: wrap;
-        gap: 6vh; /* מוסיף רווח אחיד בין כל הכפתורים */
+        gap: 6vh;
       
       }
       .button-design {
@@ -74,12 +74,13 @@
       }
       
       .emergency-button {
-        align-self: flex-start; /* כפתור Emergency בשורה מתחת בצד ימין */
-      }
+        align-self: flex-start;
+        margin-top: -10vh;
+    }
       
       .war-button {
         align-self: flex-end; /* כפתור War בשורה מתחת בצד שמאל */
-        margin-top: 12vh; /* מעט יותר למטה */
+        margin-top: 1vh; /* מעט יותר למטה */
       }
       
       .icon-container {

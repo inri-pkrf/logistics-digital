@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../componentsCSS/DiagramStep3.css';
-import StepsBtnDiagram from "./StepsBtnDiagram.js";
+import StepsBtnDiagram from "./StepsBtnDiagram.jsx";
 import { useLocation, useNavigate } from 'react-router-dom';
-import NafaData from '../data/NafaData';
-import GdudData from '../data/GdudData';
-import MahozData from '../data/MahozData';
-import PopUp from './PopUp.js';
+import NafaData from '../data/NafaData.js';
+import GdudData from '../data/GdudData.js';
+import MahozData from '../data/MahozData.js';
+import PopUp from './PopUp.jsx';
 
 function DiagramStep3() {
     const location = useLocation();

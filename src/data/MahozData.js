@@ -8,7 +8,7 @@ const mahoz = {
             <>
             1.לתכנן, לתאם ולבקר את הפעלת הסיוע המנהלתי (לוגיסטיקה וכח אדם), כדי להבטיח את רציפות הפעולה וכשירות הכוחות הכפופים להשלמת משימות המחוז.<br/>
 
-2.לשאת באחריות המטה למערך המנהלתי (לוגיסטיקה וכח אדם) במרחה המחוז בזמן מלחמה/חירום.<br/>
+            2.לשאת באחריות המטה למערך המנהלתי (לוגיסטיקה וכח אדם) במרחה המחוז בזמן מלחמה/חירום.<br/>
 
             </>
         ]
@@ -65,6 +65,18 @@ const mahoz = {
 
 
     },
+    subMalca:{
+        name:`נציג מלכ"א בשולחן מרכזי`,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
+        taskTitle:`תפקידי מפקד תא הספקה ובינוי  :`,
+
+        taskNote: [
+            <>
+                חסר מידע
+              
+            </>],
+    },
+
 
 
 
@@ -123,7 +135,7 @@ const mahoz = {
         name: `מכלול משא"ן`,
         firstRoleName:`מפקד מכלול משא"ן`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי נציג מלכ"א בשולחן מרכזי `,
+        titleExplanation:`תפקידי מפקד מכלול משא"ן`,
 
         taskNote: [
             <>
@@ -137,18 +149,14 @@ const mahoz = {
                 idRole: 1,
                 roleName: 'סגן מפקד מכלול משא"ן',
                 src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniRoles:[
-                    {
-                        id:1,
-                        name:`ק' קישור למלכ"א `
-                    }
-                ]    
-
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/subMashan.jpg`,
+                
             },
             {
                 idRole: 2,
-                roleName: 'קצין אנו"ח',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`
+                roleName: 'קצין ת"ש',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/kTash.jpg`,
 
               
                 
@@ -156,12 +164,30 @@ const mahoz = {
             },
             {
                 idRole: 3,
-                roleName: 'קצין פר"ח',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`
-
-                
-
-            }
+                roleName: 'קצין חינוך',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/kXinooch.jpg`,
+            },
+            {
+                idRole: 4,
+                roleName: 'מפקד תא כ"א',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/taKa.jpg`,
+            },
+           
+            {
+                idRole: 5,
+                roleName: 'מפקד תא נפגעים',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/KNifgaim.jpg`,
+            },
+           
+            {
+                idRole: 6,
+                roleName: 'מפקד תא אנו"ח',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/tAnoch.jpg`,
+            },
            
         ],
         src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Mashan.jpg`,
@@ -171,46 +197,265 @@ const mahoz = {
                 textExplanation:
                     [
                         <>
-                            1. ייעוץ למפקד הנפה בנושאי כוח אדם, בהתאם להיערכות סד"כ הנפה והתוכניות המבצעיות.<br/>  <br/>  
-                            2. שליטה בתהליך הזעקת אנשי המילואים באמצעות מרכז הגיוס הפיקודי ופתרון בעיות בגיוס מערך המילואים.<br/>  <br/>  
-                            3. ביצוע הערכת מצב כוח אדם והשפעתה על הערכת המצב הנפתית.<br/>  <br/>  
-                            4. תכנון צורכי הנפה בכוח אדם, ויסות כוח אדם בין יחידות המשנה בהתאם לתוכנית מפקד הנפה ועל פי הנחיות המחוז.<br/>  <br/>  
-                            5. תיאום וארגון הטיפול בנפגעים, לרבות לוויות.<br/>  <br/>  
-                            6. תמיכת המאמץ המבצעי בהיבטי רווחת הפרט, החינוך, הרבנות והמורל.<br/>  <br/>  
-                            7. תיווך בין הלוגיסטיקה למשא"ן מחוז לשם מימוש אספקת תספיקי פרט ורבנות.<br/>  <br/>  
-                            8. ריכוז והכוונת המדיניות לטיפול בנושאי הרבנות ואנו"ח ביחידות הנפה, לרבות תמ"צ טיפול במטופלים על ידי מחלקות האנו"ח ביחידה.<br/> <br/>   
+                            1. ייעוץ למפקד המחוז בנושאי כוח אדם בהתאם להיערכות הסד"כ והתוכניות המבצעיות. <br/>  
+                            2. שליטה בתהליך הזעקת אנשי מילואים דרך מרכז הגיוס הפיקודי ופתרון בעיות בגיוס. <br/>  
+                            3. ביצוע הערכת מצב כוח אדם והשפעתה על הערכת המצב הכללית במחוז. <br/>  
+                            4. תכנון ווויסות כוח אדם בין יחידות המשנה בהתאם להנחיות הפיקוד. <br/>  
+                            5. תיאום וארגון טיפול בנפגעים, כולל סיוע למשפחות וליווי לוויות. <br/>  
+                            6. תמיכה במאמץ הלחימה בהיבטי רווחה, חינוך, רבנות ומורל. <br/>  
+                            7. תיאום בין הגלמ"ר ליחידות המחוז בקבלת תגבורות ואספקת ציוד אישי. <br/>  
+                            8. ריכוז והכוונת מדיניות הטיפול ברבנות ובאנו"ח, כולל פיקוח על מחלקות האנו"ח היחידתיות. <br/>  <br/>
                         </>
 
                     ]
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: `תא בינוי`,
+        firstRoleName:`מפקד תא בינוי`,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
+        titleExplanation:`תפקידי מפקד מכלול משא"ן`,
+
+        taskNote: [
+            <>
+                <b>תפקידי מפקד תא בינוי:</b><br /><br />
+                חסר מידע 
+            </>
+
+        ],
+        roles: [
+            {
+                idRole: 1,
+                roleName: 'סגן מפקד תא בינוי"',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                
             },
             {
-                titleExplanation:'ייעוד תא המאש"ן',
+                idRole: 2,
+                roleName: 'הנדסאי ',
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+              
+                
+
+            }
+           
+        ],
+        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Binoi.jpg`,
+        explanation: [
+            {
+                titleExplanation:'תפקידי תא בינוי',
                 textExplanation:
                     [
                         <>
-                            1. שליטה בכוח אדם מתפקד ונפגע (לרבות טיפול בחללים).<br/>  <br/> 
-                            2. בניית הכוח וארגון הכוח בהתאם למדיניות מפקדת המחוז ולצורכי היחידות.<br/>  <br/> 
-                            3. ריכוז הטיפול בנושאי רווחת הפרט והיחידה ואת משימות הרבנות והאנו"ח בגזרת הנפה.<br/>  <br/> 
+                            1. איסוף נתוני תמונת מצב בתחום הבינוי, ובכלל זה - מיקומי היחידות, מלאים, אמצעי בינוי ופגיעה במחנות. <br/>  
+                            2. ריכוז דרישות היחידות הכפופות בתחום הבינוי והתשתיות. <br/>  
+                            3. ריכוז הפערים בתחום הבינוי וגיבושם לכדי דרישה מחוזית, בתיאום עם המלכ"א. <br/>  
+                            4. תכנון אופן הפעלת גופי הבינוי במחוז לפי סדר עדיפות, בתיאום עם המלכ"א. <br/>  
+                            5. בקרה על הפצת נספח בינוי בפקודה הלוגיסטית המחוזית ולגופים שהוקצו על ידי המלכ"א בתחום הבינוי ועל קבלתה. <br/>  
                         </>
+
+                    ]
+            }
+        ]
+    },
+    {
+        id: 4,
+        name:`מכלול טנ"א `,
+        firstRoleName:`מפקד מכלול טנ"א  `,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
+        titleExplanation:`תפקידי מפקד מכלול טנ"א`,
+
+        taskNote: [
+            <>
+                <b>תפקידי מפקד מכלול טנ"א:</b><br /><br />
+                חסר מידע 
+            </>
+
+        ],
+        roles: [
+            {
+                idRole: 1,
+                roleName:`סגן מפקד מכלול טנ"א`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                
+            },
+            {
+                idRole: 2,
+                roleName: `ק' קישור לאגד אחזקה `,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+            {
+                idRole: 3,
+                roleName:`ק' חלפים ונתונים `,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+            {
+                idRole: 4,
+                roleName: `ק' אחזקה`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+           
+        ],
+        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Tna.jpg`,
+        explanation: [
+            {
+                titleExplanation:` תפקידי מכלול טנ"א `,
+                textExplanation:
+                    [
+                        <>
+                            1. גיבוש תמונת המצב האחזקתית, כחלק מתמונת המצב הלוגיסטית הכוללת. <br/>  
+                            2. איסוף נתוני תמונת המצב האחזקתית ביחידות המחוז וניתוח משמעויות המשפיעות על הערכת המצב המחוזית. <br/>  
+                            3. גיבוש תכנית אחזקה מחוזית במסגרת תהליך התכנון המחוזי. <br/>  
+                            4. תעדוף הקצאת משאבים (ציוד, אמצעים וחלפים) בהתאם להערכת המצב. <br/>  
+                            5. ריכוז הדיווחים בתחום האחזקה מהיחידות הכפופות, ניתוח המשמעויות המשפיעות על הערכת המצב המחוזית. <br/>  
+                            6. גיבוש דרישה מחוזית מהמפקדה הכללית בתחום האחזקה להמשך הלחימה. <br/>  
+                            7. הצגת הדרישה המחוזית בציר המקצועי למלכ"א. <br/>  
+                            8. התאמת התכנית המחוזית בתחום האחזקה לאור הקצאת המשאבים הפיקודית ותמונת המצב המחוזית, הפצתה וביצוע התיאומים הנדרשים למימושה. <br/>  
+                            9. תיאום הספקת חלפים בדחיפה ובמשיכה ע"ב הפלטא"מ המחוזי. <br/>  
+                            10. תיאום הפעלת היחידות המחוזיות לתיאום צל"ם על פי סדר העדיפויות המחוזי שקבע מרכז המבצעים המחוזי. <br/>  
+                            11. תיאום פעולות כוחות האחזקה הפיקודיים המוקצים למחוז. <br/>  <br/>
+                        </>
+
+                    ]
+            }
+        ]
+    },
+    {
+        id: 5,
+        name:`מכלול שיטור `,
+        firstRoleName:`מפקד מכלול שיטור  `,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
+        titleExplanation:`   תפקידי מפקד מכלול שיטור`,
+
+        taskNote: [
+            <>
+                <b>תפקידי מפקד מכלול שיטור:</b><br /><br />
+                חסר מידע 
+            </>
+
+        ],
+        roles: [
+            {
+                idRole: 1,
+                roleName:`ס' מפקד מכלול שיטור`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                
+            },
+            {
+                idRole: 2,
+                roleName: `ק' קישור למתנ"פ`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+            {
+                idRole: 3,
+                roleName:`קמב"צ שיטור`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+            {
+                idRole: 4,
+                roleName: `מש"ק מ"צ `,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+
+            },
+           
+        ],
+        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Shitoor.jpg`,
+        explanation: [
+            {
+                titleExplanation:` תפקידי מכלול שיטור`,
+                textExplanation:
+                    [
+                        <>
+                            1. דיווח, פיקוח, ויסות ושליטה בהיסע במרחב המחוזי. <br/>  
+                            2. שליטה בתמונת מצב צירים בגזרת המחוז. <br/>  
+                            3. מימוש תכנית ההיסעים הפיקודית בגזרת המחוז. <br/>  
+                            4. מתן מענה שיטורי במרכזי הגיוס ובמרכזים הלוגיסטיים שבמרחב המחוז. <br/>  
+                            5. גיבוש תמונת מצב שיטורית במרחב המחוז עבור אגד השיטור ומלכ"א פיקוד. <br/>  
+                            6. גיבוש תמונת מצב היסעים שבמרחב המחוז עבור מלכ"א פיקוד ועבור מתנ"ל. <br/>  
+                            7. סיוע למבצעים מחוז בתכנון הקצאת כוחות שיטור למשימות שיטור עורפיות. <br/> <br/> 
+                        </>
+
                     ]
             }
         ]
     },
     {
         id: 6,
-        name:`נציג מלכ"א בשולחן מרכזי`,
-        firstRoleName:`נציג מלכ"א בשולחן מרכזי`,
+        name: `מכלול הספקה`,
+        firstRoleName:`מפקד מכלול הספקה`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי נציג מלכ"א בשולחן מרכזי `,
+        titleExplanation:`תפקידי מפקד מכלול הספקה`,
 
         taskNote: [
             <>
-                חסר מידע
-              
+                <b>תפקידי מפקד מכלול הספקה:</b><br /><br />
+                חסר מידע 
             </>
-        ],
-    },
 
+        ],
+        roles: [
+            {
+                idRole: 1,
+                roleName: `ס' מ' מכלול הספקה`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                
+            },
+            {
+                idRole: 2,
+                roleName: `נגד נתונים`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+            },
+            {
+                idRole: 3,
+                roleName: `מפקד תא דלק ומזון`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/kDelek.jpg`,
+            },
+            {
+                idRole: 4,
+                roleName: `מפקד תא הובלה וניוד`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/KOvala.jpg`,
+            },
+           
+            {
+                idRole: 5,
+                roleName: `מפקד תא צל"ם ותחמושת`,
+                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/KTzelem.jpg`,
+            }
+           
+        ],
+        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Aspaka.jpg`,
+        explanation: [
+            {
+                titleExplanation:'תפקידי מכלול הספקה',
+                textExplanation:
+                    [
+                        <>
+                            1. ניתוח נתוני תמונת המצב הלוגיסטית והפקת המשמעויות בתחום ההספקה, בהתאם לפקודת המבצע המחוזית. <br/>  
+                            2. ריכוז נתונים, דרישות ודיווחים בתחום ההספקה בזירת המבצעים המחוזית ותרגומם לכדי דרישה מחוזית. <br/>  
+                            3. בקרה אחר מיצוי המשאבים המוקצים ליחידות המחוז בתחום ההספקה, מיפוי צרכי מערכים והצגתם במסגרת עבודת המטה במפקדת המחוז. <br/>  
+                            4. תכנון, תיאום ומימוש תכנית ההספקה המחוזית בהתאם לפקודת המבצע המחוזית. <br/>  
+                            5. הקצאת מלאים ליחידות המחוז על פי תעדוף מחוזי באמצעות הגלמ"ר. <br/>  
+                            6. בקרה על שרשרת התספוקת מרמת המחוז ועד לרמת הגדוד. <br/>  
+                            7. בקרה על התכניות של היחידות הכפופות בתחום ההספקה ועל רמות המלאי ביחידות המחוז - בטן, דרג, גלמ"ר, מצבורים מחוזיים ועתודות. <br/>  
+                            8. קבלת פקודה יומית ממלכ"א פיקוד, ניתוחה ובניית פקודה יומית עבור היחידות הכפופות. <br/>  
+                        </>
+
+                    ]
+            }
+        ]
+    },
+    
     
 
     

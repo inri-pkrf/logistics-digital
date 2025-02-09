@@ -44,7 +44,7 @@ const Info = () => {
             src={`${process.env.PUBLIC_URL}/assets/imgs/logoCollage.png`}
             className="logo1"
            />
-<p className="credits">עזר זה נבנה בשיתוף פעולה בין המלכ"א והמכללה הלאומית לאיתנות ישראלית
+<p className="credits">עזר זה נבנה בשיתוף פעולה בין מחלקת הלוגיסטיקה והמכללה הלאומית לאיתנות ישראלית
     </p>
 </div>
 <div className="footer"></div>

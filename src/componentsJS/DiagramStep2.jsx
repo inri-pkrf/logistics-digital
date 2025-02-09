@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../componentsCSS/DiagramStep2.css';
-import StepsBtnDiagram from "./StepsBtnDiagram.js";
+import StepsBtnDiagram from "./StepsBtnDiagram.jsx";
 import { useLocation, useNavigate } from 'react-router-dom';
-import NafaData from '../data/NafaData';
-import GdudData from '../data/GdudData';
-import MahozData from '../data/MahozData';
-import PopUp from './PopUp.js';
+import NafaData from '../data/NafaData.js';
+import GdudData from '../data/GdudData.js';
+import MahozData from '../data/MahozData.js';
+import PopUp from './PopUp.jsx';
 
 
 function DiagramStep2() {
@@ -34,6 +34,10 @@ function DiagramStep2() {
         handleBoxClick(title, data.comandor.popupText);
     };
     const handleSeconedFrameClick = () => {
+        const title = data.subComandor.taskTitle;
+        handleBoxClick(title, data.subComandor.taskText);
+    };
+    const handleThirdFrameClick = () => {
         const title = data.subComandor.taskTitle;
         handleBoxClick(title, data.subComandor.taskText);
     };
@@ -134,20 +138,47 @@ function DiagramStep2() {
                     <img className='seconed-img' src={data.subComandor.src} alt="sub-role"/>
                     {data.subComandor.name}
                 </div>
-                
+                {selectedOption === 'מחוז' && (
+                    <div>
+                        <div className="small-line2"></div>
+                        <div
+                        className='third-frame'
+                        onClick={() => {
+                        handleThirdFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
+                        
+                    }}
+                > <img className='third-img' src={data.subMalca.srcSolider} alt="sub-role"/>
+                    {data.subMalca.name}
+                    </div>
+                    </div>
+                )}
+
+
+
+
                 {data.subRoles.slice().reverse().map((subRole, index) => (
-                <div onClick={() => {
-                    navigate("/DiagramStep3", {
-                        state: { 
-                            subRoleName: subRole.name,    // העברת שם הסאב-רול
-                            selectedOption: selectedOption // העברת ה-selectedOption
+                <div 
+                    onClick={() => {
+                        if (selectedOption === "מחוז") {
+                            navigate("/DiagramStep3Mahoz", {
+                                state: { 
+                                    subRoleName: subRole.name,    
+                                    selectedOption: selectedOption 
+                                }
+                            });
+                        } else {
+                            navigate("/DiagramStep3", {
+                                state: { 
+                                    subRoleName: subRole.name,    
+                                    selectedOption: selectedOption 
+                                }
+                            });
                         }
-                    });
-                }}
-                key={index}
-                className='frame'
+                    }}
+                    key={index}
+                    className='frame'
                 >
-                    <img className='third-img' src={subRole.srcSolider} />
+                    <img className='third-img' src={subRole.srcSolider} alt={subRole.name} />
                     {subRole.name}
                 </div>
             ))}

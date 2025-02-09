@@ -6,13 +6,15 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    display: flex
+;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    background-image: url('/public/assets/imgs/Bg2.jpg');
-    overflow-y: scroll; /* Ensure the container is scrollable */
+    background-image: url("/public/assets/imgs/Bg2.jpg");
+    overflow-y: scroll;
     overflow-x: hidden;
+    direction: rtl;
 }
 
 .DiagramStep2::before {
@@ -58,7 +60,7 @@
     top: 55vh;
     background-color: #d9d9d9;
     width: 90vw;
-    right: -45vw;
+    right: 45vw;
     margin-bottom: 26vw;
     border-radius: 6vw;
 }
@@ -195,7 +197,7 @@
     top: 62vh;
     margin-bottom: 31vh;
     height: 119vh;
-    RIGHT: -38VW;
+    RIGHT: 40VW;
 }
 
 
@@ -230,7 +232,7 @@
     transform: translateX(50%);
     border-left: 2vw solid #595959;
     top: 2vh;
-    height: 106vh;
+    height: 184vh;
 }
 
 
@@ -242,6 +244,14 @@
     transform: rotate(90deg);
     left: 37vw;
     top: 29vh;
+}
+.small-line2{
+    position: absolute;
+    border-left: 2vw solid #595959;
+    height: 14vh;
+    transform: rotate(90deg);
+    left: 61vw;
+    top: 47vh;
 }
 
 
@@ -277,19 +287,19 @@
     padding: 1vh;
     text-align: center;
     position: relative;
-    left: 3vw;
+    left: -63vw;
     top: 24vh;
     font-size: 6vw;
     background-color: white;
     border: 4px solid #595959;
     border-radius: 50%;
-    display: flex;
-    flex-direction: column; /* מסדר את התמונה והטקסט במאוזן */
-    align-items: center; /* ממרכז את כל התוכן במרכז */
-    justify-content: center; /* ממרכז את התמונה והטקסט */
-    overflow: hidden; /* זה יסתיר את התמונה אם היא יוצאת מעבר לגבולות */
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-
 .seconed-img {
     height: 60%; /* מתאם גודל התמונה */
     width: auto;
@@ -299,6 +309,41 @@
     margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
     font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
 }
+
+
+.third-frame {
+    width: 17vh;
+    height: 17vh;
+    padding: 1vh;
+    text-align: center;
+    position: relative;
+    left: -6vw;
+    top: 23vh;
+    font-size: 6vw;
+    background-color: white;
+    border: 4px solid #595959;
+    border-radius: 50%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.third-img {
+    height: 60%; /* מתאם גודל התמונה */
+    width: auto;
+}
+
+.third-frame p {
+    margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
+    font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
+}
+
+
+
+
 
 
 
@@ -313,16 +358,16 @@
     padding-bottom: 2vh;
     margin-bottom: 4vh;
     top: 31vh;
-    left: 34vw;
+    left: -35vw;
     font-size: 7vw;
     background-color: white;
     border: 4px solid #595959;
     border-radius: 50%;
     display: flex;
-    flex-direction: column; /* מסדר את התמונה והטקסט במאוזן */
-    align-items: center; /* ממרכז את כל התוכן במרכז */
-    justify-content: center; /* ממרכז את התמונה והטקסט */
-    overflow: hidden; /* זה יסתיר את התמונה אם היא יוצאת מעבר לגבולות */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 hr.dotted {
@@ -370,8 +415,8 @@ hr.dotted {
  .whiteCircle2-mahoz{
     position: absolute;
     width: 180vw;
-    height: 270vh;
-    margin-top: 194vh;
+    height: 316vh;
+    margin-top: 242vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;

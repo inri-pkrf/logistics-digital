@@ -28,8 +28,8 @@
   .white-circle-ExcelMinala{
     position: absolute;
     width: 100vw;
-    height: 108vh;
-    margin-top: 33vh;
+    height: 178vh;
+    margin-top: 102vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -55,17 +55,18 @@
 
   .navigation-btn-Excel {
     position: relative;
-    bottom: -74vh;
+    bottom: -24vh;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: flex
+;
     justify-content: center;
     width: 90%;
     max-width: 600px;
     direction: rtl;
-    gap: 45px; /* הגבלת המרווח בין הכפתורים */
+    gap: 45px;
     font-family: 'Heebo', sans-serif;
-    margin-bottom: 20px; /* מונע מהכפתורים להיות צמודים מדי לתחתית */
+    margin-bottom: 20px;
 }
 
 .nextExcel, .prevExcel {
@@ -103,4 +104,45 @@
 .excel2Img{
   width: 80vw;
   height: auto;
+}
+
+.buttons-containerExcel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.excel-btn {
+  width: calc(33.33% - 10px); /* שלושה כפתורים בשורה עם מרווח */
+  padding: 10px 15px;
+  font-size: 1em;
+  font-family: "Heebo";
+  text-align: center;
+  background-color: rgb(133, 176, 225);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.excel-btn:hover {
+  background-color: #0056b3;
+}
+
+.excel-Titles{
+  font-family: 'Karantina';
+  direction: rtl;
+  text-align: right;
+  color: rgb(89, 89, 89);
+  padding-right: 8vw;
+  font-size: 2em;
+}
+.excel-explanations{
+  font-family: "HEEBO";
+  font-size: 1em;
+  width: 90vw;
+  text-align: right;
 }

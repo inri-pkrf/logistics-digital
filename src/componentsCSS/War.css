@@ -110,12 +110,3 @@
         border: solid 3px #70cfed;
 
     }
-    .Wartext-img{
-        position: relative;
-        right: -19vw;
-        top: 3vh;
-        font-family: 'Heebo', sans-serif;
-        font-size: 3.5vw;
-        color: grey;
-        width: 60vw;
-    }

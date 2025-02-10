@@ -55,7 +55,7 @@
 
   .navigation-btn-Excel {
     position: relative;
-    bottom: -24vh;
+    bottom: -17vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex
@@ -143,10 +143,22 @@
   color: rgb(89, 89, 89);
   padding-right: 8vw;
   font-size: 2em;
+  padding-top: 3vh;
 }
 .excel-explanations{
   font-family: "HEEBO";
-  font-size: 1em;
-  width: 90vw;
-  text-align: right;
+    font-size: 1em;
+    width: 90vw;
+    position: relative;
+    text-align: center;
+    left: 5%;
+}
+.Wartext-img{
+  position: relative;
+  right: -19vw;
+  top: 3vh;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3.5vw;
+  color: grey;
+  width: 60vw;
 }

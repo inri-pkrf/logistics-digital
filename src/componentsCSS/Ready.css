@@ -34,7 +34,7 @@
         background-color: rgb(0 0 0 / 82%);
         border: white solid 3px;
         border-right: none;
-        width: 100vw;
+        width: 95vw;
         right: -5vw;
         position: absolute;
         margin-top: -64vh;
@@ -87,22 +87,24 @@
     }
     .explenation-ready{
         position: absolute;
-        width: 89vw;
+        width: 80vw;
         height: 34vh;
         background-color: rgb(0 0 0 / 82%);
         margin-top: 20vh;
-        border-radius: 10%;
+        right:50%;
+        transform: translateX(50%);
+        border-radius: 20%;
         border: solid 2px white;
     }
     .explanation-txt-ready{
         font-family: "Heebo";
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 400;
         margin-top: 9vh;
         position: absolute;
         right: 50%;
         transform: translateX(50%);
-        width: 90vw;
+        width: 70vw;
         color: #ffffff;
         text-align: center;
     

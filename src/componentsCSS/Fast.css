@@ -53,20 +53,19 @@
 
 
 
-
   .navigation-btn-Ref {
     position: relative;
-    bottom: -73vh;
+    bottom: -74vh;
     left: 50%;
     transform: translateX(-50%);
-    display: flex
-;
+    display: flex;
     justify-content: center;
     width: 90%;
     max-width: 600px;
     direction: rtl;
-    gap: 159px;
+    gap: 45px; /* הגבלת המרווח בין הכפתורים */
     font-family: 'Heebo', sans-serif;
+    margin-bottom: 20px; /* מונע מהכפתורים להיות צמודים מדי לתחתית */
 }
 
 .nextRef, .prevRef {
@@ -92,11 +91,12 @@
 }
 
 .arrow {
-  width: auto;
-  height: 5vh;
-  margin: 0 3vw;
+    width: auto;
+    height: 4vh;
+    margin: 0 1vw;
 }
 
 .leftRef {
     transform: rotate(180deg);
 }
+

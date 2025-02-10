@@ -20,6 +20,8 @@ function MagnifyPic() {
             situation === "גדוד" ? "magnified-image-gdud" :
             situation === "נפה" ? "magnified-image-nafa" :
             situation === "מחוז" ? "magnified-image-mahoz" :
+            situation === "הערכת-מצב" ? "magnified-image-validation" :
+
             ""
             }`} />
         </div>

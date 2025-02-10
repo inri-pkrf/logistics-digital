@@ -77,3 +77,45 @@
         margin-top: 1vh;
         width: auto;
     }
+
+    .war-btn{
+        background-color: #050506;
+        border: solid 3px white;
+        position: absolute;
+        border-radius: 50px;
+        width: 89vw;
+        font-family: "Heebo";
+        color: white;
+        font-size: 1.5em;
+        right: 54%;
+        transform: translateX(50%);
+        height: 9vh;
+    }
+    .btnWar-first{
+        position: absolute;
+        margin-top: 21vh;
+    }
+    .btnWar-seconed{
+        position: absolute;
+        margin-top: 38vh;
+    }
+    .btnWar-third{
+        position: absolute;
+        margin-top: 55vh;
+    }
+
+
+    .war-clicked{
+        color:#70cfed;
+        border: solid 3px #70cfed;
+
+    }
+    .Wartext-img{
+        position: relative;
+        right: -19vw;
+        top: 3vh;
+        font-family: 'Heebo', sans-serif;
+        font-size: 3.5vw;
+        color: grey;
+        width: 60vw;
+    }

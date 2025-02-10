@@ -47,6 +47,15 @@
     height: auto;
     position: fixed;
 }
+.magnified-image-validation{
+    width: 177vw;
+    transform: rotate(90deg);
+    top: 46vw;
+    right: -33vw;
+    z-index: 3;
+    height: auto;
+    position: fixed;
+}
 
 .close-btn{
     position: absolute;

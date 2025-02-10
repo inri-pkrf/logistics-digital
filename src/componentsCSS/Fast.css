@@ -1,0 +1,102 @@
+.Fast{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+  .Fast::before {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .white-circle-Fast{
+    position: absolute;
+    width: 100vw;
+    height: 108vh;
+    margin-top: 33vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+
+  }
+    
+  .titleFast{
+    font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 3em;
+  }
+
+  .fllow{
+    position: absolute;
+    width: 90vw;
+    transform: translateX(50%);
+    right: 50%;
+    height: auto;
+  }
+
+
+
+
+  .navigation-btn-Ref {
+    position: relative;
+    bottom: -73vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex
+;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    direction: rtl;
+    gap: 159px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.nextRef, .prevRef {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* כפתור חזור - חץ מימין, טקסט משמאל */
+.prevRef {
+    flex-direction: row-reverse;
+}
+
+/* כפתור קדימה - חץ משמאל, טקסט מימין */
+.nextRef {
+    flex-direction: row;
+}
+
+.arrow {
+  width: auto;
+  height: 5vh;
+  margin: 0 3vw;
+}
+
+.leftRef {
+    transform: rotate(180deg);
+}

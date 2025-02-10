@@ -78,3 +78,29 @@
         margin-top: 1vh;
         width: auto;
     }
+    .emer-btn{
+        background-color: #050506;
+        border: solid 3px white;
+        position: absolute;
+        border-radius: 50px;
+        width: 89vw;
+        font-family: "Heebo";
+        color: white;
+        font-size: 1.5em;
+        right: 54%;
+        transform: translateX(50%);
+        height: 9vh;
+    }
+    .firstBtn{
+        position: absolute;
+        margin-top: 27vh;
+    }
+    .seconedBtn{
+        position: absolute;
+        margin-top: 47vh;
+    }
+    .btn-clicked{
+        color:#70cfed;
+        border: solid 3px #70cfed;
+
+    }

@@ -13,7 +13,7 @@ function Rounds() {
         `גדוד חי"ר קל`
     ];
     const handleNavigation = (unit) => {
-        navigate('/RoundTALIONS', { state: { unitName: unit } });
+        navigate('/BATTALIONS', { state: { unitName: unit } });
     };
 
     return (

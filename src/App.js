@@ -18,6 +18,8 @@ import DiagramStep3Mahoz from './componentsJS/DiagramStep3Mahoz';
 import Refua from './componentsJS/Refua';
 import Fast from './componentsJS/Fast';
 import ExcelMinala from './componentsJS/ExcelMinala';
+import Rounds from './componentsJS/Rounds';
+import Battalions from './componentsJS/Battalions';
 function App() {
     return (
         <div className="App">
@@ -39,6 +41,8 @@ function App() {
                 <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
                 <Route path="/Refua" element={<Refua />} />
                 <Route path="/fast" element={<Fast />} />
+                <Route path="/rounds" element={<Rounds />} />
+                <Route path="/BATTALIONS" element={<Battalions />} />
                 <Route path="/excelExplenation" element={<ExcelMinala />} />
             </Routes>
         </div>

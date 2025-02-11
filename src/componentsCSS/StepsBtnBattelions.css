@@ -1,0 +1,57 @@
+.all-steps-Battelions {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  direction: rtl;
+  margin-top: -1vh;
+  }
+  
+  .btn-steps-Battelions {
+    width: 85%;
+    height: 9vh;
+    margin-right: 1vw;
+    margin-left: 0vw;
+    border-radius: 20px;
+    padding-top: 1vh;
+    text-align: center;
+    font-family: 'Karantina', sans-serif;
+    color: white;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 3.5em;
+    background-color: rgb(212 232 255);
+    margin-top: 9vh;
+  }
+
+  .step1-Battelions{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    background-color: #175a85;
+    width: 59vw;
+    height: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 20px;
+    font-size: 1.2em;
+    border: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .arrow-down-Battelions {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #d9d9d9;
+    position: relative;
+    top: 0vh;
+    right: 10vw;
+  }

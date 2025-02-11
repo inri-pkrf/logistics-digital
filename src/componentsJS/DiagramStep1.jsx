@@ -1,14 +1,12 @@
 import React from 'react';
 import '../componentsCSS/DiagramStep1.css';
 import { useNavigate } from 'react-router-dom';
-// import StepsBtnDiagram from "./StepsBtnDiagram";
 
 function DiagramStep1() {
     const navigate = useNavigate();
 
     return (
         <div className="DiagramStep1" >
-            {/* <StepsBtnDiagram /> */}
             <div className='white-circle'>
 
             <div className='title-DiagramStep1'>בחר/י במפקדה הרצוייה</div>

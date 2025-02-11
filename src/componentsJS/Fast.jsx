@@ -10,20 +10,20 @@ function Fast() {
         <div className="Fast" >
             {/* <StepsBtnDiagram /> */}
             <div className='white-circle-Fast'>
-            <h1 class="titleFast">עקרונות הגיוס המהיר</h1>  
+            <h1 className="titleFast">עקרונות הגיוס המהיר</h1>  
 
             <img className='fllow' src={`${process.env.PUBLIC_URL}/assets/imgs/fllow.jpg`} />
 
 
-                <div className='navigation-btn-Ref'>
-                    <div onClick={()=>navigate("/emergency")} className='prevRef'>
+                <div className='navigation-btn-Fast'>
+                    <div onClick={()=>navigate("/emergency")} className='prevFast'>
                         <p> לבחירת נושא</p>
-                    <img className="arrow leftRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrow leftFast" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
                           </div>
-                    <div onClick={()=>navigate("/round")} className='nextRef'>
+                    <div onClick={()=>navigate("/round")} className='nextFast'>
                     <p>לנושא הבא</p>
 
-                    <img className="arrow rightRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrow rightFast" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 
                     </div>
 

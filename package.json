@@ -5,10 +5,12 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "framer-motion": "^12.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
+    "react-swipeable": "^7.0.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {

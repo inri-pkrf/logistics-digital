@@ -1,0 +1,87 @@
+.slide-container {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72vh;
+        overflow: hidden;
+        margin-top: 6vh;
+        position: relative;
+}
+
+.cardSlide {
+    width: 62%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ADD8E6;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cardSlide-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: "Karantina";
+    color: #333;
+  }
+  
+  .card-time {
+    font-size: 1.2em;
+    color: #666;
+    direction: rtl;
+    margin-top: -3vh;
+  }
+  
+ 
+  .cardSlide-text{
+    font-family: "Heebo";
+    font-size: 1.2em;
+    text-align: right;
+    direction: rtl;
+  }
+  
+
+  .cardSlide-index {
+    font-family: "Heebo";
+    text-align: left;
+    font-size: 2em;
+    margin-top: 1vh; /* הוספתי מרווח קטן למעלה כדי לקרב את המונה לכותרת */
+    margin-bottom: 0; /* אם יש מרווח גדול מדי למטה, זה יפחית אותו */
+  }
+  .card-color-0 {
+    background-color: #A8D8FF; /* תכלת רך */
+  }
+  
+  .card-color-1 {
+    background-color: #FFB6B9; /* ורוד פסטל */
+  }
+  
+  .card-color-2 {
+    background-color: #FFF5BA; /* לימון פסטל */
+  }
+  
+  .card-color-3 {
+    background-color: #B5E8E0; /* ירוק מנטה */
+  }
+  
+  .card-color-4 {
+    background-color: #D1A6D3; /* סגול רך */
+  }
+  
+  .card-color-5 {
+    background-color: #FFD1B3; /* פסטל אפרסק */
+  }
+  
+  .card-color-6 {
+    background-color: #B3CDE0; /* כחול פסטל */
+  }
+  
+  .card-color-7 {
+    background-color: #F9E2A7; /* צהוב רך */
+  }
+  

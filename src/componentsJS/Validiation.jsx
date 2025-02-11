@@ -1,14 +1,14 @@
 import React from 'react';
 import '../componentsCSS/Validiation.css';
 import { useNavigate } from 'react-router-dom';
-// import StepsBtnDiagram from "./StepsBtnDiagram";
+import validations from '../data/Validation';
+import SlideCards from "./SlideCards";
 
 function Validiation() {
     const navigate = useNavigate();
 
     return (
         <div className="Validiation" >
-            {/* <StepsBtnDiagram /> */}
             <div className='white-circle-Validiation'>
                 <h1 className="titleVal">הערכת מצב</h1>
                 <video className="video-val" controls autoPlay playsInline>
@@ -22,6 +22,21 @@ function Validiation() {
                 />
                 Your browser does not support the video tag.
             </video>
+            <div className="Val-first">
+            <h1 className="sub-titleVal">{validations?.[0]?.name}</h1>
+            <p className='explanationVal'>יש להחליק שמאל על גבי הכרטיסיה על מנת לעבור למשתתף הבא בהערכת מצב ולהחליק ימינה על מנת לחזור</p>
+            <SlideCards people={validations?.[0]?.people} />
+
+            </div>
+            <div className="Val-seconed">
+            <h1 className="sub-titleVal">{validations?.[1]?.name}</h1>
+            <p className='explanationVal'>יש להחליק שמאל על גבי הכרטיסיה על מנת לעבור למשתתף הבא בהערכת מצב ולהחליק ימינה על מנת לחזור</p>
+            <SlideCards people={validations?.[1]?.people} />
+
+            </div>
+
+
+
                 {/* <div className='navigation-btn'>
                     <div className='prev'>
                         <p>למסך הבית</p>

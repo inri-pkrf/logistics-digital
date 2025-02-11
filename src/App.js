@@ -20,6 +20,7 @@ import Fast from './componentsJS/Fast';
 import ExcelMinala from './componentsJS/ExcelMinala';
 import Rounds from './componentsJS/Rounds';
 import Battalions from './componentsJS/Battalions';
+import Validiation from './componentsJS/Validiation';
 function App() {
     return (
         <div className="App">
@@ -43,6 +44,7 @@ function App() {
                 <Route path="/fast" element={<Fast />} />
                 <Route path="/rounds" element={<Rounds />} />
                 <Route path="/BATTALIONS" element={<Battalions />} />
+                <Route path="/validation" element={<Validiation />} />
                 <Route path="/excelExplenation" element={<ExcelMinala />} />
             </Routes>
         </div>

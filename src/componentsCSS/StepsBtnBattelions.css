@@ -3,10 +3,11 @@
   right: 50%;
   transform: translateX(50%);
   display: flex;
-  width: 80vw;
+  width: 90vw;
   justify-content: center;
   direction: rtl;
   margin-top: -1vh;
+  z-index: 10000;
   }
   
   .btn-steps-Battelions {
@@ -22,9 +23,14 @@
     transition: background-color 0.3s;
     font-weight: bold;
     font-size: 3.5em;
-    background-color: rgb(212 232 255);
+    background-color:rgb(171 216 249);    ;
     margin-top: 9vh;
+    border: solid white 3px;
   }
+  .btn-steps-Battelions.selected {
+    background-color: rgb(136 186 223);  /* צבע הכפתור שנבחר */
+    color: white; /* צבע הטקסט */
+}
 
   .step1-Battelions{
     text-align: center;
@@ -32,13 +38,13 @@
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
-    background-color: #175a85;
+    background-color: #4e89af;
     width: 59vw;
     height: 4vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     border: none;
     position: absolute;
     right: 50%;

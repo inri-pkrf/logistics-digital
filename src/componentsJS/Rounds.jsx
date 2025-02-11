@@ -13,7 +13,7 @@ function Rounds() {
         `גדוד חי"ר קל`
     ];
     const handleNavigation = (unit) => {
-        navigate('/BATTALIONS', { state: { unitName: unit } });
+        navigate('/RoundTALIONS', { state: { unitName: unit } });
     };
 
     return (
@@ -33,19 +33,19 @@ function Rounds() {
                         </button>
                     ))}
                 </div>
-                {/* <div className='navigation-btn'>
-                    <div className='prev'>
-                        <p>למסך הבית</p>
-                    <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                <div className='navigation-btn-Round'>
+                    <div onClick={()=>navigate("/emergency")} className='prevRound'>
+                        <p> לבחירת נושא</p>
+                    <img className="arrow leftRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
                           </div>
-                    <div className='next'>
+                    <div onClick={()=>navigate("/war")} className='nextRound'>
                     <p>לנושא הבא</p>
 
-                    <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrow rightRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 
                     </div>
 
-                </div> */}
+                </div>
 
             </div>
 

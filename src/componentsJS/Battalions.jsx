@@ -8,7 +8,12 @@ function Battalions() {
     const navigate = useNavigate();
     const location = useLocation();
     const unitName = location.state?.unitName || "";
-
+   const buttonTexts = [
+        '1',
+        '2-3',
+        '4',
+        '5-9'
+    ];
     // כאן אנחנו לא עושים return מראש, אלא שומרים את השלב באחסון
     const unit = units.find(unit => unit.name === unitName);
 
@@ -39,8 +44,22 @@ function Battalions() {
                     onStepChange={handleStepChange} // מעבירים את הפונקציה לשינוי שלב
                 />
                 {/* מציגים את התוכן של השלב הנבחר בתוך div */}
-                <div className="step-content">
-                    {unit.steps[currentStep - 1]} {/* התוכן עבור הצעד הנבחר */}
+                <div className="card-content">
+                <h1 className="card-title">{`סבבי העמסה מספר ${buttonTexts[currentStep - 1]}`}</h1>
+                <p className='text-batel'> {unit.steps[currentStep - 1]} </p>{/* התוכן עבור הצעד הנבחר */}
+                </div>
+                <div className='navigation-btn-Bat'>
+                    <div onClick={()=>navigate("/emergency")} className='prevBat'>
+                        <p> לבחירת נושא</p>
+                    <img className="arrow leftBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                          </div>
+                    <div onClick={()=>navigate("/war")} className='nextBat'>
+                    <p>לנושא הבא</p>
+
+                    <img className="arrow rightBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+
+                    </div>
+
                 </div>
             </div>
         </div>

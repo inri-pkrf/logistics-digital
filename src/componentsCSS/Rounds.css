@@ -52,31 +52,9 @@
     width:80vw;
     height: auto;
   }
-  .arrow{
-    position: relative;
-    height: 7vh;
-    width:auto;
-  }
-  .navigation-btn{
-    width:90vw;
-    margin-bottom: 4vh;
-    position: relative;
-  }
-  .prev{
-    position: relative;
-    width: 20vw;
-    right: -80vw;
-  }
-  .next{
-    position: relative;
-    width: 20vw;
-    margin-top: -14%;
-    right: 1vw;
-  }
 
-  .left{
-    transform: rotate(180deg);
-  }
+
+ 
   .units-buttons {
     display: flex;
     margin-top: 7vh;
@@ -112,4 +90,54 @@
   background-color: #2c3675;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+
+
+.navigation-btn-Round {
+  position: relative;
+  bottom: -7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex
+;
+  justify-content: center;
+  width: 95%;
+  max-width: 607px;
+  direction: rtl;
+  gap: 103px;
+  font-family: 'Heebo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.nextRound, .prevRound {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(89, 89, 89);
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* כפתור חזור - חץ מימין, טקסט משמאל */
+.prevRound {
+  flex-direction: row-reverse;
+}
+
+/* כפתור קדימה - חץ משמאל, טקסט מימין */
+.nextRound {
+  flex-direction: row;
+}
+
+.arrow {
+  width: auto;
+  height: 4vh;
+  margin: 0 1vw;
+}
+
+.leftRound {
+  transform: rotate(180deg);
 }

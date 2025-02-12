@@ -24,6 +24,12 @@ const SlideCards = ({ people }) => {
 
   return (
     <div className="slide-container" {...handlers}>
+        <img 
+            src={`${process.env.PUBLIC_URL}/assets/media/swipe-left.gif`} 
+            alt="White Logo" 
+            className='gif-val'
+
+          />
       <AnimatePresence mode="wait">
         <motion.div
           key={people[index].id}

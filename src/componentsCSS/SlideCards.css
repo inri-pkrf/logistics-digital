@@ -2,23 +2,23 @@
     display: flex;
         justify-content: center;
         align-items: center;
-        height: 72vh;
+        height: 90vh;
         overflow: hidden;
-        margin-top: 6vh;
+        margin-top: 2vh;
         position: relative;
 }
 
 .cardSlide {
-    width: 62%;
+  width: 51%;
     max-width: 400px;
+    margin-top: 11vh;
     padding: 20px;
     background: #ADD8E6;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -84,4 +84,9 @@
   .card-color-7 {
     background-color: #F9E2A7; /* צהוב רך */
   }
-  
+  .gif-val{
+    position: absolute;
+    height:11vh;
+    width: auto;
+    top:3%;
+  }

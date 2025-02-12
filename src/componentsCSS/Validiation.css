@@ -27,9 +27,9 @@
   
   .white-circle-Validiation{
     position: absolute;
-    width: 126vw;
-    height: 249vh;
-    margin-top: 173vh;
+    width: 153vw;
+    height: 360vh;
+    margin-top: 291vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -46,9 +46,9 @@
     font-family: 'KARANTINA';
     color: rgb(89, 89, 89);
     font-size: 2.5em;
-        direction: rtl;
+    direction: rtl;
     text-align: right;
-    padding-right: 20vw;
+    padding-right: 34vw;
   }
   .container-btn{
     position: relative;
@@ -88,6 +88,20 @@
     font-family: "Heebo";
     width: 90vw;
     padding-right: 5vw;
-    padding-left: 18vw;
+    padding-left: 31vw;
     font-size: 1.1em;
   }
+  .orders-val{
+    text-align: right;
+    width: 90vw;
+    padding-left: 30vw;
+    direction: rtl;
+    font-family: "Heebo";
+    font-size: 1.1em;
+    margin-top: 5vh;
+
+
+  }
+ 
+  
+ 

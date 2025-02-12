@@ -36,12 +36,12 @@ function Rounds() {
                 <div className='navigation-btn-Round'>
                     <div onClick={()=>navigate("/emergency")} className='prevRound'>
                         <p> לבחירת נושא</p>
-                    <img className="arrow leftRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrowRound leftRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
                           </div>
                     <div onClick={()=>navigate("/war")} className='nextRound'>
                     <p>לנושא הבא</p>
 
-                    <img className="arrow rightRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrowRound  rightRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 
                     </div>
 

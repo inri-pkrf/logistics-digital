@@ -64,7 +64,7 @@ function DiagramStep3() {
                         </div>
                         <img
                         src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
-                        className={`arrow-icon ${expandedExplanation === index ? 'rotated' : ''} ${index === 0 ? 'arrow-icon1' : ''} ${index === 1 ? 'arrow-icon2' : ''}`}
+                        className={`arrow-icon-diagram3 ${expandedExplanation === index ? 'rotated' : ''} ${index === 0 ? 'arrow-icon1-diagram3' : ''} ${index === 1 ? 'arrow-icon2-diagram3' : ''}`}
                         alt="Arrow"
                     />
 

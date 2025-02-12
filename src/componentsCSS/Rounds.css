@@ -66,6 +66,7 @@
   direction: rtl;
   text-align: center;
   width: 56vw;
+  height: 8vh;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -96,16 +97,15 @@
 
 .navigation-btn-Round {
   position: relative;
-  bottom: -7vh;
+  bottom: -1vh;
   left: 50%;
   transform: translateX(-50%);
-  display: flex
-;
+  display: flex;
   justify-content: center;
   width: 95%;
   max-width: 607px;
   direction: rtl;
-  gap: 103px;
+  gap: 131px;
   font-family: 'Heebo', sans-serif;
   margin-bottom: 20px;
 }
@@ -132,7 +132,7 @@
   flex-direction: row;
 }
 
-.arrow {
+.arrowRound  {
   width: auto;
   height: 4vh;
   margin: 0 1vw;

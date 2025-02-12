@@ -23,7 +23,7 @@ function Fast() {
                     <div onClick={()=>navigate("/rounds")} className='nextFast'>
                     <p>לנושא הבא</p>
 
-                    <img className="arrow rightFast" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrow-fast rightFast" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 
                     </div>
 

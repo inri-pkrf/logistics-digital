@@ -81,7 +81,7 @@
     line-height: 5vh;
 }
 
-.arrow-icon{
+.arrow-icon-diagram3{
     height: 3vh;
     width: auto;
     right: 2vw;
@@ -92,11 +92,11 @@
     transform: rotate(180deg);
 }
 
-.arrow-icon.rotated {
+.arrow-icon-diagram3.rotated {
     transform: rotate(90deg);
 }
 
-.arrow-icon1 {
+.arrow-icon1-diagram3 {
     height: 105vh;
     width: auto;
     position: relative;
@@ -106,7 +106,7 @@
     width: auto;
 }
 
-.arrow-icon2 {
+.arrow-icon2-diagram3 {
     height: 3vh;
     width: auto;
     position: relative;

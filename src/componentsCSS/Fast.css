@@ -63,9 +63,9 @@
     width: 90%;
     max-width: 600px;
     direction: rtl;
-    gap: 45px; /* הגבלת המרווח בין הכפתורים */
+    gap: 118px;
     font-family: 'Heebo', sans-serif;
-    margin-bottom: 20px; /* מונע מהכפתורים להיות צמודים מדי לתחתית */
+    margin-bottom: 20px;
 }
 
 .nextFast, .prevFast {
@@ -90,7 +90,7 @@
     flex-direction: row;
 }
 
-.arrow {
+.arrow-fast {
     width: auto;
     height: 4vh;
     margin: 0 1vw;

@@ -64,10 +64,10 @@
         margin-top: 1vh;
         width: auto;
     }
-    .go-next{
+    .go-next-ready{
         position: absolute;
         left: 2vw;
-        margin-top: 81vh;
+        margin-top: 60vh;
     }
     .next-arrow{
         position: absolute;
@@ -100,7 +100,7 @@
         font-family: "Heebo";
         font-size: 1.5em;
         font-weight: 400;
-        margin-top: 9vh;
+        margin-top: 6vh;
         position: absolute;
         right: 50%;
         transform: translateX(50%);

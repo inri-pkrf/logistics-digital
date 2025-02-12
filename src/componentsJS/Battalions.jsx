@@ -51,12 +51,12 @@ function Battalions() {
                 <div className='navigation-btn-Bat'>
                     <div onClick={()=>navigate("/emergency")} className='prevBat'>
                         <p> לבחירת נושא</p>
-                    <img className="arrow leftBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrowBat leftBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
                           </div>
                     <div onClick={()=>navigate("/war")} className='nextBat'>
                     <p>לנושא הבא</p>
 
-                    <img className="arrow rightBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
+                    <img className="arrowBat rightBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 
                     </div>
 

@@ -90,9 +90,9 @@
     flex-direction: row;
 }
 
-.arrow {
+.arrowBat {
     width: auto;
-    height: 4vh;
+    height: 5vh;
     margin: 0 1vw;
 }
 

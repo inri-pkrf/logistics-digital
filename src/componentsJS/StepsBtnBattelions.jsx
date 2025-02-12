@@ -19,9 +19,15 @@ function StepsBtnBattelions({ numSteps, currentStep, onStepChange }) {
             onStepChange(step); // עדכון השלב הנוכחי ב-parent
         }
     };
+    const handleFirstButton = () => {
+        onStepChange(1); // מאפסים את השלב ל-1
+        navigate("/rounds"); // ניווט חזרה
+    };
+    
 
     return (
         <div className="StepsBtnBattelions">
+            <p className='order'> לחצו על מספר הסבב על מנת לראות הסבר עליו</p>
             <div className="all-steps-Battelions">
                 {/* הצגת כפתורים בהתאם למספר השלבים */}
                 {Array.from({ length: numSteps }).map((_, index) => (
@@ -38,7 +44,7 @@ function StepsBtnBattelions({ numSteps, currentStep, onStepChange }) {
                 <div
                     className="step1-Battelions"
                     id="step4-Battelions"
-                    onClick={() => navigate("/rounds")}
+                    onClick={() => handleFirstButton()}
                 >
                     חזרה לבחירת גדוד
                 </div>

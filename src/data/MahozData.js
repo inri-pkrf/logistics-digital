@@ -88,7 +88,7 @@ const mahoz = {
         name: `מנל"ח מלכ"א`,
         firstRoleName:`  מפקד מנל"ח מלכ"א`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי מפקד מנל"ח מלכ"א   `,
+        taskTitle:`תפקידי מפקד מנל"ח מלכ"א   `,
         taskNote: [
             <>
                 חסר מידע 
@@ -135,7 +135,7 @@ const mahoz = {
         name: `מכלול משא"ן`,
         firstRoleName:`מפקד מכלול משא"ן`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי מפקד מכלול משא"ן`,
+        taskTitle:`תפקידי מפקד מכלול משא"ן`,
 
         taskNote: [
             <>
@@ -216,7 +216,7 @@ const mahoz = {
         name: `תא בינוי`,
         firstRoleName:`מפקד תא בינוי`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי מפקד מכלול משא"ן`,
+        taskTitle:`תפקידי מפקד מכלול משא"ן`,
 
         taskNote: [
             <>
@@ -266,7 +266,7 @@ const mahoz = {
         name:`מכלול טנ"א `,
         firstRoleName:`מפקד מכלול טנ"א  `,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי מפקד מכלול טנ"א`,
+        taskTitle:`תפקידי מפקד מכלול טנ"א`,
 
         taskNote: [
             <>
@@ -331,7 +331,7 @@ const mahoz = {
         name:`מכלול שיטור `,
         firstRoleName:`מפקד מכלול שיטור  `,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`   תפקידי מפקד מכלול שיטור`,
+        taskTitle:`   תפקידי מפקד מכלול שיטור`,
 
         taskNote: [
             <>
@@ -392,7 +392,7 @@ const mahoz = {
         name: `מכלול הספקה`,
         firstRoleName:`מפקד מכלול הספקה`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        titleExplanation:`תפקידי מפקד מכלול הספקה`,
+        taskTitle:`תפקידי מפקד מכלול הספקה`,
 
         taskNote: [
             <>

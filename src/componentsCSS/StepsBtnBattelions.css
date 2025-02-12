@@ -2,11 +2,12 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  display: flex;
+  display: flex
+;
   width: 90vw;
   justify-content: center;
   direction: rtl;
-  margin-top: -1vh;
+  margin-top: 4vh;
   z-index: 10000;
   }
   
@@ -16,15 +17,15 @@
     margin-right: 1vw;
     margin-left: 0vw;
     border-radius: 20px;
-    padding-top: 1vh;
+    padding-top: -1vh;
     text-align: center;
     font-family: 'Karantina', sans-serif;
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
     font-size: 3.5em;
-    background-color:rgb(171 216 249);    ;
-    margin-top: 9vh;
+    background-color: rgb(171 216 249);
+    margin-top: 6vh;
     border: solid white 3px;
   }
   .btn-steps-Battelions.selected {
@@ -48,6 +49,7 @@
     border: none;
     position: absolute;
     right: 50%;
+    margin-top: -7vh;
     transform: translateX(50%);
   }
 
@@ -60,4 +62,13 @@
     position: relative;
     top: 0vh;
     right: 10vw;
+  }
+  .order{
+    position: absolute;
+    margin-top: 5vh;
+    font-family: "Heebo";
+    right: 50%;
+    width: 90vw;
+    font-size: 1.1em;
+    transform: translateX(50%);
   }

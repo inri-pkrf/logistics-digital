@@ -72,7 +72,7 @@
 }
 .title{
     font-family: "karantina";
-    font-size: 2.5em;
+    font-size: 2.2em;
     padding-left: 3vw;
     font-weight: 400;
     position: absolute;
@@ -92,7 +92,7 @@
 .go-next{
     position: absolute;
     left: 2vw;
-    margin-top: 81vh;
+    margin-top: 61vh;
 }
 .next-arrow{
     position: absolute;

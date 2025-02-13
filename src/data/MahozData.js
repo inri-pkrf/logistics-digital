@@ -1,6 +1,7 @@
 const mahoz = {
     title:"מחוז",
-    pageTitle:`תפקידי בלה בלה`,
+    pageTitle:`מבנה ייעוד ותפקידי
+ המלכ"א`,
     color:'#ff7e00',
     desteny:{
         title:`ייעוד המלכ"א במחוז:`,

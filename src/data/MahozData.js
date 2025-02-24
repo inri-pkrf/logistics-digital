@@ -303,7 +303,7 @@ const mahoz = {
             },
            
         ],
-        src: `${process.env.PUBLIC_URL}/assests/imgs/mahoz/Tna.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Tna.jpg`,
         explanation: [
             {
                 titleExplanation:` תפקידי מכלול טנ"א `,

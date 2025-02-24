@@ -10,8 +10,23 @@ function DiagramStep1() {
             <div className='white-circle'>
 
             <div className='title-DiagramStep1'>בחר/י במפקדה הרצוייה</div>
-
-            <div className='btns-DiagramStep1' id='btn1-DiagramStep1' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'נפה' } })}>
+            <div className='btns-DiagramStep1' id='btn1-DiagramStep1' >
+            <img
+        src={`${process.env.PUBLIC_URL}/assets/imgs/PikudComandor.svg`}
+        className="Nafa-chose"
+        alt="logo"
+      />
+      <p className="text-choose text-pikud">פיקוד</p>
+            </div>
+            <div className='btns-DiagramStep1' id='btn2-DiagramStep1' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'מחוז' } })}>
+            <img
+        src={`${process.env.PUBLIC_URL}/assets/imgs/MahozComandor.svg`}
+        className="Nafa-chose"
+        alt="logo"
+      />
+      <p className="text-choose text-mahoz">מחוז</p>
+            </div>
+            <div className='btns-DiagramStep1' id='btn3-DiagramStep1' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'נפה' } })}>
             <img
         src={`${process.env.PUBLIC_URL}/assets/imgs/NafaComandor.svg`}
         className="Nafa-chose"
@@ -20,7 +35,7 @@ function DiagramStep1() {
       <p className="text-choose text-nafa">נפה</p>
       
             </div>
-            <div className='btns-DiagramStep1' id='btn1-DiagramStep2' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'גדוד' } })}>
+            <div className='btns-DiagramStep1' id='btn4-DiagramStep1' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'גדוד' } })}>
             <img
         src={`${process.env.PUBLIC_URL}/assets/imgs/GdudComandor.svg`}
         className="Nafa-chose"
@@ -28,14 +43,7 @@ function DiagramStep1() {
       />
       <p className="text-choose text-gdud">גדוד</p>
             </div>
-            <div className='btns-DiagramStep1' id='btn1-DiagramStep3' onClick={() => navigate('/DiagramStep2', { state: { selectedOption: 'מחוז' } })}>
-            <img
-        src={`${process.env.PUBLIC_URL}/assets/imgs/MahozComandor.svg`}
-        className="Nafa-chose"
-        alt="logo"
-      />
-      <p className="text-choose text-mahoz">מחוז</p>
-            </div>
+           
             </div>
 
       

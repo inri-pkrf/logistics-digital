@@ -2,7 +2,7 @@ const mahoz = {
     title:"מחוז",
     pageTitle:`מבנה ייעוד ותפקידי
  המלכ"א`,
-    color:'#ff7e00',
+    color:'#1cb5e5',
     desteny:{
         title:`ייעוד המלכ"א במחוז:`,
         text:[

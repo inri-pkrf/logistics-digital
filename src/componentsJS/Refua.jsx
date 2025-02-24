@@ -20,7 +20,7 @@ function Refua() {
           />
             <p>יש ללחוץ על המחסנים על מנת ללמוד </p>
 
-                <h1  className="sub-titleRef">סבב בדיקות</h1>
+                <h1  className="sub-titleRef">שגרת אחזקה </h1>
                 <p>הסבר הסבר הסבר הסבר </p>
                 {/* <div className='navigation-btn'>
                     <div className='prev'>

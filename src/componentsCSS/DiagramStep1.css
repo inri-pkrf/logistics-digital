@@ -95,27 +95,37 @@
 }
 #btn1-DiagramStep1 {
   margin-top: 27vh;
-  right: -4vw;
+  position: absolute;
+  right: 26%;
+  transform: translateX(50%);
 
 
 }
 
-#btn1-DiagramStep2 {
+#btn2-DiagramStep1 {
   margin-top: 27vh;
-  left: -4vw;
+  left: -2vw;
 
 }
-#btn1-DiagramStep3{
+#btn3-DiagramStep1{
   margin-top: 56vh;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+  position: absolute;
+  right: 26%;
+  transform: translateX(50%);
+}
+#btn4-DiagramStep1{
+  margin-top: 56vh;
+  position: absolute;
+  left: -2vw;
 }
 .text-gdud{
   color: #3c5c32;
 }
-.text-mahoz{
+.text-pikud{
   color: #ff7e00;
+}
+.text-mahoz{
+  color: #1cb5e5;
 }
 .text-nafa{
   color: #21467a;

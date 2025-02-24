@@ -15,7 +15,6 @@ function DiagramStep3Mahoz() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [popupContent, setPopupContent] = useState({ title: '', content: '' });
     const data =  MahozData;
-    console.log(`דאטה${MahozData}`, `תפקיד${subRoleName}`,`סיטואציה${selectedOption}`);
 
 
 

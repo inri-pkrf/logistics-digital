@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../componentsCSS/MagnifyPic.css';
 
@@ -7,23 +7,46 @@ function MagnifyPic() {
     const navigate = useNavigate();
     const { imagePath, situation } = location.state || {}; // במקרה שאין state, נגדיר ערך ריק
 
+    const [isLandscape, setIsLandscape] = useState(false);
+
+    useEffect(() => {
+        function checkOrientation() {
+            if (window.innerWidth > window.innerHeight) {
+                setIsLandscape(true);
+            } else {
+                setIsLandscape(false);
+            }
+        }
+
+        checkOrientation(); // בדיקה ראשונית
+        window.addEventListener("resize", checkOrientation);
+
+        return () => {
+            window.removeEventListener("resize", checkOrientation);
+        };
+    }, []);
+
     if (!imagePath) {
         return <div>Error: No image provided for magnification</div>;
     }
 
+    // קביעת ה-class המתאים לפי כיוון המסך
+    const imageClass = isLandscape 
+        ? (situation === "נפה" ? "magnified-image-nafa-landscape" :
+            situation === "גדוד" ? "magnified-image-gdud-landscape" :
+            situation === "מחוז" ? "magnified-image-mahoz-landscape" :
+            situation === "הערכת-מצב" ? "magnified-image-validation-landscape" : "")
+        : (situation === "נפה" ? "magnified-image-nafa-portrait" :
+            situation === "גדוד" ? "magnified-image-gdud-portrait" :
+            situation === "מחוז" ? "magnified-image-mahoz-portrait" :
+            situation === "הערכת-מצב" ? "magnified-image-validation-portrait" : "");
+
     return (
-        <div className="MagnifyPic" >
+        <div className="MagnifyPic">
             <button className="close-btn" onClick={() => navigate(-1)}>
                 x
             </button>
-            <img src={imagePath} alt="Magnified" className={`magnified-image ${
-            situation === "גדוד" ? "magnified-image-gdud" :
-            situation === "נפה" ? "magnified-image-nafa" :
-            situation === "מחוז" ? "magnified-image-mahoz" :
-            situation === "הערכת-מצב" ? "magnified-image-validation" :
-
-            ""
-            }`} />
+            <img src={imagePath} alt="Magnified" className={imageClass} />
         </div>
     );
 }

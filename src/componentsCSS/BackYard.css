@@ -1,0 +1,31 @@
+.BackYard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    background-color: rgb(0, 0, 0);
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+  }
+
+  .Yard-back-portrait {
+    height: 55vh;
+    position: fixed;
+    top: 28vh;
+    width: auto;
+    transform: rotate(90deg);
+}
+
+.Yard-back-landscape {
+    width: 116vw;
+    position: fixed;
+    top: 7vh;
+    height: auto;
+}

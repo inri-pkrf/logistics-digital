@@ -8,58 +8,101 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10000;}
+    z-index: 10000;
+    transform: none; /* אם יש שינויים במידות עם transform - נוודא שאין */
+}
 
 .magnifyPic-content {
     position: relative;
     text-align: center;
 }
 
-.magnified-image {
-    transform: rotate(90deg);
-    z-index: 3;
-    position: fixed;
+/* סיבוב התמונה כאשר המכשיר במצב אופקי */
+@media screen and (orientation: landscape) {
+    .magnified-image-nafa-landscape {
+        width: 86vw;
+        top: 1vw;
+        right: 9vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
+
+    .magnified-image-gdud-landscape {
+        width: 100vw;
+        top: 9vw;
+        right: 0vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    
+    }
+
+    .magnified-image-mahoz-landscape {
+        width: 100vw;
+        top: 8vw;
+        right: 0vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
+
+    .magnified-image-validation-landscape {
+        width: 97vw;
+        top: 7vw;
+        right: 1vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
 }
-.magnified-image-nafa{
-    width: 146vw;
+
+/* סיבוב התמונה כאשר המכשיר במצב אנכי */
+@media screen and (orientation: portrait) {
+    .magnified-image-nafa-portrait {
+        width: 146vw;
     transform: rotate(90deg);
     top: 45vw;
     right: -23vw;
     z-index: 3;
     height: auto;
     position: fixed;
-}
-.magnified-image-gdud{
-    width: 178vw;
-    transform: rotate(90deg);
-    top: 52vw;
-    right: -34vw;
-    z-index: 3;
-    height: auto;
-    position: fixed;
-}
-.magnified-image-mahoz{
-    width: 177vw;
-    transform: rotate(90deg);
-    top: 46vw;
-    right: -33vw;
-    z-index: 3;
-    height: auto;
-    position: fixed;
-}
-.magnified-image-validation{
-    width: 177vw;
-    transform: rotate(90deg);
-    top: 46vw;
-    right: -33vw;
-    z-index: 3;
-    height: auto;
-    position: fixed;
+    }
+
+    .magnified-image-gdud-portrait {
+        width: 178vw;
+        transform: rotate(90deg);
+        top: 52vw;
+        right: -34vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
+
+    .magnified-image-mahoz-portrait {
+        width: 177vw;
+        transform: rotate(90deg);
+        top: 46vw;
+        right: -33vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
+
+    .magnified-image-validation-portrait {
+        width: 177vw;
+        transform: rotate(90deg);
+        top: 46vw;
+        right: -33vw;
+        z-index: 3;
+        height: auto;
+        position: fixed;
+    }
 }
 
-.close-btn{
+.close-btn {
     position: absolute;
-    top: 19px;
+    top: 7px;
     right: -10px;
     background-color: transparent;
     color: white;

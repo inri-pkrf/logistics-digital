@@ -19,3 +19,13 @@
   z-index: 100;
 
 }
+
+.landscape-block{
+  position:absolute;
+  top:20vh;
+  right:50%;
+  transform: translateX(50%);
+  width:100vw;
+  font-size: 1.4em;
+  color:red;
+}

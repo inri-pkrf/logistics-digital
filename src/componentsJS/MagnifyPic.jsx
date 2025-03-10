@@ -41,14 +41,17 @@ function MagnifyPic() {
             situation === "מחוז" ? "magnified-image-mahoz-portrait" :
             situation === "הערכת-מצב" ? "magnified-image-validation-portrait" : "");
 
+    // קביעת ה-class לכפתור close
+    const closeBtnClass = situation === "נפה" ? "close-btn-nafa" : isLandscape ? "close-btn-landscape" : "close-btn-portrait";
+
     return (
         <div className="MagnifyPic">
-            <button className="close-btn" onClick={() => navigate(-1)}>
+            <button className={`close-btn ${closeBtnClass}`} onClick={() => navigate(-1)}>
                 x
             </button>
             <img src={imagePath} alt="Magnified" className={imageClass} />
         </div>
     );
-}
+}  
 
 export default MagnifyPic;

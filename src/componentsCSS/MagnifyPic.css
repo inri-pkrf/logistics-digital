@@ -20,9 +20,9 @@
 /* סיבוב התמונה כאשר המכשיר במצב אופקי */
 @media screen and (orientation: landscape) {
     .magnified-image-nafa-landscape {
-        width: 86vw;
+        width: 65vw;
         top: 1vw;
-        right: 9vw;
+        right: 19vw;
         z-index: 3;
         height: auto;
         position: fixed;
@@ -30,7 +30,7 @@
 
     .magnified-image-gdud-landscape {
         width: 100vw;
-        top: 9vw;
+        top: 1vw;
         right: 0vw;
         z-index: 3;
         height: auto;
@@ -39,9 +39,9 @@
     }
 
     .magnified-image-mahoz-landscape {
-        width: 100vw;
-        top: 8vw;
-        right: 0vw;
+        width: 92vw;
+        top: 0vw;
+        right: 4vw;
         z-index: 3;
         height: auto;
         position: fixed;
@@ -55,6 +55,9 @@
         height: auto;
         position: fixed;
     }
+    .close-btn-landscape{
+    color:black
+    } 
 }
 
 /* סיבוב התמונה כאשר המכשיר במצב אנכי */
@@ -70,20 +73,20 @@
     }
 
     .magnified-image-gdud-portrait {
-        width: 178vw;
+        width: 194vw;
         transform: rotate(90deg);
-        top: 52vw;
-        right: -34vw;
+        top: 68vw;
+        right: -44vw;
         z-index: 3;
         height: auto;
         position: fixed;
     }
 
     .magnified-image-mahoz-portrait {
-        width: 177vw;
+        width: 174vw;
         transform: rotate(90deg);
-        top: 46vw;
-        right: -33vw;
+        top: 62vw;
+        right: -35vw;
         z-index: 3;
         height: auto;
         position: fixed;
@@ -98,14 +101,16 @@
         height: auto;
         position: fixed;
     }
+    .close-btn-portrait{
+        color:white;
+        } 
 }
 
 .close-btn {
     position: absolute;
     top: 7px;
-    right: -10px;
+    right: 20px;
     background-color: transparent;
-    color: white;
     border: none;
     border-radius: 50%;
     width: 55px;
@@ -115,4 +120,8 @@
     outline: none;
     transform: rotate(90deg);
     font-weight: bolder;
+    z-index: 10000;
+}
+.close-btn-nafa {
+    color: white;
 }

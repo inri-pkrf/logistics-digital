@@ -56,7 +56,14 @@ function App() {
             {/* אם הדף הנוכחי לא נמצא ברשימה של דפים יוצאי דופן, תציג את ההודעה */}
             {isLandscape && !isRestrictedPage ? (
                 <div className="landscape-block">
-                    <h2>אנא סובבו את המכשיר חזרה למצב אנכי</h2>
+                    <h2 className='worning'>אנא סובבו את המכשיר חזרה למצב אנכי</h2>
+                    <p className='sorry'>אנחנו עדיין מפתחים את התמיכה במצב אופקי תודה על ההבנה
+                    </p>
+                    <img 
+                        src={`${process.env.PUBLIC_URL}/assets/imgs/whiteLogo.svg`} 
+                        alt="White Logo" 
+                        className="logo-white-app" 
+                    />
                 </div>
             ) : (
                 <Routes>

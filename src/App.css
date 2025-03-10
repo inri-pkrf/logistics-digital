@@ -22,10 +22,43 @@
 
 .landscape-block{
   position:absolute;
-  top:20vh;
+  top:0vh;
   right:50%;
   transform: translateX(50%);
   width:100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-image: url('/public/assets/imgs/backgroundland.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1.4em;
-  color:red;
+
+}
+.landscape-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background: rgba(0, 0, 0, 0.557);
+  z-index: -1;
+}
+
+.worning{
+  font-family: "Karantina";
+  color: white;
+  font-size: 2.6em;
+}
+.sorry{
+  color: white;
+  font-family: "Heebo";
+  font-size: 1.2em;
+}
+.logo-white-app{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width:40vw;
+  height: auto;
 }

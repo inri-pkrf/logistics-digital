@@ -46,7 +46,7 @@ const Ready = () => {
           className={`ready-btn btnready-third ${visitedPages["people"] ? "ready-clicked" : ""}`} 
           onClick={() => handleNavigation("people")}
         >
-          הערכת מצב
+          ניהול כוח אדם
         </button>
       </div>
     

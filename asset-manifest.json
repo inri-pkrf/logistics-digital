@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/logistics-digital/static/css/main.b4baf31e.css",
-    "main.js": "/logistics-digital/static/js/main.bdaf73f6.js",
+    "main.css": "/logistics-digital/static/css/main.163b43ad.css",
+    "main.js": "/logistics-digital/static/js/main.0c90449d.js",
     "static/js/488.f0036717.chunk.js": "/logistics-digital/static/js/488.f0036717.chunk.js",
     "static/media/Bg2.png": "/logistics-digital/static/media/Bg2.3de7c00957cc70ab562c.png",
     "static/media/Bg3.png": "/logistics-digital/static/media/Bg3.71f3c8830284827e7ef6.png",
@@ -9,12 +9,12 @@
     "static/media/Bg1.png": "/logistics-digital/static/media/Bg1.ac9f9c75b406e10ae608.png",
     "static/media/backgroundland.jpg": "/logistics-digital/static/media/backgroundland.f888e33db16dffe21aa1.jpg",
     "index.html": "/logistics-digital/index.html",
-    "main.b4baf31e.css.map": "/logistics-digital/static/css/main.b4baf31e.css.map",
-    "main.bdaf73f6.js.map": "/logistics-digital/static/js/main.bdaf73f6.js.map",
+    "main.163b43ad.css.map": "/logistics-digital/static/css/main.163b43ad.css.map",
+    "main.0c90449d.js.map": "/logistics-digital/static/js/main.0c90449d.js.map",
     "488.f0036717.chunk.js.map": "/logistics-digital/static/js/488.f0036717.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4baf31e.css",
-    "static/js/main.bdaf73f6.js"
+    "static/css/main.163b43ad.css",
+    "static/js/main.0c90449d.js"
   ]
 }

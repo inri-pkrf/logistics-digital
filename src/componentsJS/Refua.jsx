@@ -10,7 +10,7 @@ function Refua() {
         <div className="Refua" >
             {/* <StepsBtnDiagram /> */}
             <div className='white-circle-Refua'>
-                <h1 className="titleRef">היערכות לחירום  </h1>
+                <h1 className="titleRef"> אמצעים  </h1>
                 <h1 className="sub-titleRef">ציוד בימ"ח </h1>
                 <p>הסבר על הימ"ח</p>
                 <img
@@ -22,19 +22,16 @@ function Refua() {
 
                 <h1  className="sub-titleRef">שגרת אחזקה </h1>
                 <p>הסבר הסבר הסבר הסבר </p>
-                {/* <div className='navigation-btn'>
-                    <div className='prev'>
-                        <p>למסך הבית</p>
-                    <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-                          </div>
-                    <div className='next'>
-                    <p>לנושא הבא</p>
-
-                    <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-
+                <div className='navigation-btn-Ref'>
+                    <div onClick={() => navigate("/Ready")} className='prevRef'>
+                        <p>לבחירת נושא</p>
+                        <img className="arrow leftRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
                     </div>
-
-                </div> */}
+                    <div onClick={() => navigate("/training")} className='nextRef'>
+                        <p>לנושא הבא</p>
+                        <img className="arrow rightRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
+                    </div>
+                </div>
 
             </div>
 

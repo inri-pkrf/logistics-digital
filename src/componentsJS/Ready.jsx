@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'; 
 
@@ -7,24 +7,49 @@ import '../componentsCSS/Ready.css';
 const Ready = () => {
   const navigate = useNavigate();
 
-//   const goToCredits = () => {
-//     console.log("Navigating to Credits");
-//     navigate('/Credits'); 
-//   };
+  const [visitedPages, setVisitedPages] = useState(() => {
+    return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
+  });
+
+  // עדכון הסטייט לאחר ניווט
+  useEffect(() => {
+    // אם יש עדכון ב-visitedPages, נשמור אותו ב-sessionStorage
+    sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
+  }, [visitedPages]);
+
+  // עדכון הסטייט של עמוד שביקרנו בו
+  const handleNavigation = (page) => {
+    setVisitedPages(prev => ({ ...prev, [page]: true }));
+    navigate(`/${page}`);
+  };
   return (
     <div className="Ready-container">
          <div className='title-container-ready'>
          <img className='icon-title-ready' src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}  />
       <h1 className='ready-title'>היערכות לחירום </h1>
-      <div className='explenation-ready'>
-        <p className='explanation-txt-ready'>בחלק זה בלומדה נלמד על היערכות לחירום . מה הציוד ביחידת המחסנים, ומה סבב הבדיקות שיש לעשות
-        </p>
+     
+      <button 
+          className={`ready-btn btnready-first ${visitedPages["Refua"] ? "ready-clicked" : ""}`} 
+          onClick={() => handleNavigation("Refua")}
+        >
+        אמצעים
+        </button>
+
+        <button 
+          className={`ready-btn btnready-seconed ${visitedPages["trainig"] ? "ready-clicked" : ""}`} 
+          onClick={() => handleNavigation("training")}
+        >
+          אימונים
+        </button>
+
+        <button 
+          className={`ready-btn btnready-third ${visitedPages["people"] ? "ready-clicked" : ""}`} 
+          onClick={() => handleNavigation("people")}
+        >
+          הערכת מצב
+        </button>
       </div>
-      </div>
-      <div onClick={()=>navigate("/Refua")} className='go-next-ready'>
-        <p className='next-title'>הבא</p>
-        <img className="next-arrow" src={`${process.env.PUBLIC_URL}/assets/imgs/next.svg`} />
-      </div>
+    
         </div>
   
  

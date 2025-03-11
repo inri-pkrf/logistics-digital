@@ -28,8 +28,8 @@
   .white-circle-Refua{
     position: absolute;
     width: 100vw;
-    height: 102vh;
-    margin-top: 26vh;
+    height: 120vh;
+    margin-top: 46vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -54,28 +54,56 @@
     width:80vw;
     height: auto;
   }
-  .arrow{
-    position: relative;
-    height: 7vh;
-    width:auto;
-  }
-  .navigation-btn{
-    width:90vw;
-    margin-bottom: 4vh;
-    position: relative;
-  }
-  .prev{
-    position: relative;
-    width: 20vw;
-    right: -80vw;
-  }
-  .next{
-    position: relative;
-    width: 20vw;
-    margin-top: -14%;
-    right: 1vw;
-  }
 
-  .left{
+  .navigation-btn-Ref {
+    position: relative;
+    bottom: -12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex
+;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    direction: rtl;
+    gap: 137px;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 20px;
+}
+
+.nextRef, .prevRef {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* כפתור חזור - חץ מימין, טקסט משמאל */
+.prevRef {
+    flex-direction: row-reverse;
+}
+
+/* כפתור קדימה - חץ משמאל, טקסט מימין */
+.nextRef {
+    flex-direction: row;
+}
+
+.arrow {
+    width: auto;
+    height: 4vh;
+    margin: 0 1vw;
+}
+
+.leftRef {
     transform: rotate(180deg);
-  }
+}
+
+.Ref2Img{
+  width: 80vw;
+  height: auto;
+}

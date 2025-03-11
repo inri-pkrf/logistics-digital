@@ -85,48 +85,35 @@
         position: absolute;
         left: 13vw;
     }
-    .explenation-ready{
+    .ready-btn{
+        background-color: #050506;
+        border: solid 3px white;
         position: absolute;
-        width: 80vw;
-        height: 34vh;
-        background-color: rgb(0 0 0 / 82%);
-        margin-top: 20vh;
-        right:50%;
-        transform: translateX(50%);
-        border-radius: 20%;
-        border: solid 2px white;
-    }
-    .explanation-txt-ready{
-        font-family: "Heebo";
-        font-size: 1.5em;
-        font-weight: 400;
-        margin-top: 6vh;
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        width: 70vw;
-        color: #ffffff;
-        text-align: center;
-    
-    }
-    .go-next{
-        position: absolute;
-        left: 2vw;
-        margin-top: 81vh;
-    }
-    .next-arrow{
-        position: absolute;
-        top:0%;
-        height: 7vh;
-        width: auto;
-    }
-    .next-title{
+        border-radius: 50px;
+        width: 89vw;
         font-family: "Heebo";
         color: white;
-        margin-top: 2vh;
-        font-weight: bold;
-        font-size: 1.2em;
-        text-align: center;
+        font-size: 1.5em;
+        right: 54%;
+        transform: translateX(50%);
+        height: 9vh;
+    }
+    .btnready-first{
         position: absolute;
-        left: 13vw;
+        margin-top: 21vh;
+    }
+    .btnready-seconed{
+        position: absolute;
+        margin-top: 38vh;
+    }
+    .btnready-third{
+        position: absolute;
+        margin-top: 55vh;
+    }
+
+
+    .ready-clicked{
+        color:#70cfed;
+        border: solid 3px #70cfed;
+
     }

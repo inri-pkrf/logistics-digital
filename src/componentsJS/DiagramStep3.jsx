@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import NafaData from '../data/NafaData.js';
 import GdudData from '../data/GdudData.js';
 import MahozData from '../data/MahozData.js';
+import PikudData from '../data/PikudData.js';
 import PopUp from './PopUp.jsx';
 
 function DiagramStep3() {
@@ -18,7 +19,8 @@ function DiagramStep3() {
     const data = 
     selectedOption === 'נפה' ? NafaData :
     selectedOption === 'גדוד' ? GdudData :
-    selectedOption === 'מחוז' ? MahozData : null;
+    selectedOption === 'מחוז' ? MahozData :
+    selectedOption === 'פיקוד' ? PikudData : null;
     const handleImageClick = () => {
         navigate('/MagnifyPic', { state: { imagePath: subRole.treeSrc, situation: selectedOption } });
     };
@@ -38,11 +40,14 @@ function DiagramStep3() {
         const title = subRole.taskTitle;
         handleBoxClick(title,subRole.taskNote);
     };
-        
+    const handleFrameClick = (role) => {
+        handleBoxClick(role.popTitle, role.popNote);
+    };
     const handleBoxClick = (title, content) => {
         setPopupContent({ title, content });
         setPopupVisible(true);
     };
+   
     const closePopup = () => {
         setPopupVisible(false);
     };
@@ -90,14 +95,17 @@ function DiagramStep3() {
                 </div>
 
                 {subRole.roles.map(role => (
-                    <div key={role.idRole} className="role-container-DiagramStep3">
-                        <div className="role-DiagramStep3">
-                        <img className='seconed-img-step3' src={role.src}/>
-
-                            {role.roleName} 
-                        </div>
+                <div 
+                    key={role.idRole} 
+                    className="role-container-DiagramStep3"
+                    onClick={() => handleFrameClick(role)} // מעביר את ה-role שנלחץ
+                >
+                    <div className="role-DiagramStep3">
+                        <img className='seconed-img-step3' src={role.src} />
+                        {role.roleName} 
                     </div>
-                ))}
+                </div>
+            ))}
             </div>
             <hr className='dotted hr2-step3' />
             <img

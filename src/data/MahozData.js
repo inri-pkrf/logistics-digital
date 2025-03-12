@@ -217,7 +217,7 @@ const mahoz = {
         name: `תא בינוי`,
         firstRoleName:`מפקד תא בינוי`,
         srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
-        taskTitle:`תפקידי מפקד תא בינוי"`,
+        taskTitle:` מפקד תא בינוי`,
 
         taskNote: [
             <>

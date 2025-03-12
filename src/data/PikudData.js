@@ -56,22 +56,6 @@ const pikud = {
         ]
 
     },
-    subComandor:{
-        name:`סגן מפקד מלכ"א`,
-        src:`${process.env.PUBLIC_URL}/assets/pikud/subComandor.svg`,
-        taskTitle:`תפקידי סגן מפקד מלכ"א`,
-
-        taskNote: [
-            <>
-        
-             חסר מידע
-            </>
-
-        ]
-     
-
-
-    },
     subRoles:[
     
 
@@ -91,34 +75,75 @@ const pikud = {
             {
                 idRole: 1,
                 roleName: `ק' אג"ם לוגיסיטקה`,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
-
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:` ק' אג"ם לוגיסטיקה `,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 2,
                 roleName: `תא במאים`,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`תא במאים`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 3,
                 roleName: `תא מבצעים`,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`תא מבצעים`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 4,
                 roleName: `תא קישור באט"ל`,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`תא קישור באט"ל`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 5,
                 roleName: `תא דיווח והפצה`,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`תא דיווח והפצה`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 6,
                 roleName: `תא קישור במצפ"פ `,
-                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`תא קישור במצפ"פ `,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
 
         ],
@@ -178,27 +203,62 @@ const pikud = {
                 idRole: 1,
                 roleName: 'סגן מפקד מכלול תכנון',
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:'סגן מפקד מכלול תכנון',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
                 
             },
             {
                 idRole: 2,
                 roleName: 'תא ימ"חים וכשירויות',
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:'תא ימ"חים וכשירויות',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 3,
                 roleName: 'נציג במכלול התכנון הפיקודי',
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:'נציג במכלול התכנון הפיקודי',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 4,
                 roleName: 'תא תכנון',
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:'תא תכנון',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 5,
                 roleName: `ק' קישור למכ"ס`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ק' קישור למכ"ס`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
            
         ],
@@ -258,24 +318,51 @@ const pikud = {
         roles: [
             {
                 idRole: 1,
-                roleName: 'סגן מפקד מכלול הספקה"',
+                roleName: 'סגן מפקד מכלול הספקה',
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
-                
+                popTitle: 'סגן מפקד מכלול הספקה',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 2,
                 roleName: `ק' תכנון`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ק' תכנון`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 3,
-                roleName: `תא דלק ומזון' `,
+                roleName: `תא דלק ומזון `,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא דלק ומזון `,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 4,
                 roleName: `תא ניוד והובלה`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא ניוד והובלה`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             }
            
         ],
@@ -340,42 +427,102 @@ const pikud = {
                 idRole: 1,
                 roleName:`סגן מפקד מכלול טנ"א`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `סגן מפקד מכלול טנ"א`,
+                popNote: [
+                    <>
+                        <b>תפקידי סגן מפקד מכלול טנ"א:</b><br /><br />
+
+                        חסר מידע 
+                    </>
+        
+                ],
                 
             },
             {
                 idRole: 2,
                 roleName: `מטל"פ`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `מטל"פ`,
+                popNote: [
+                    <>
+                       <b>תפקידי מטל"פ:</b><br /><br />
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 3,
                 roleName:`תא יר"ם, יצ"ם וארגוני חירום`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא יר"ם, יצ"ם וארגוני חירום`,
+                popNote: [
+                    <>
+                      <b>תפקידים:</b><br /><br />
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 4,
                 roleName: `תא אחזקה וחלפים`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא אחזקה וחלפים`,
+                popNote: [
+                    <>
+                        <b>תפקידי תא אחזקה וחלפים:</b><br /><br />
+
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 5,
                 roleName: `ק' אג"ם`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ק' אג"ם`,
+                popNote: [
+                    <>
+                    <b>תפקידי קצין אג"ם:</b><br /><br />
+
+                    חסר מידע 
+                </>
+        
+                ],
 
             },
             {
                 idRole: 6,
                 roleName: `ק' תכנון`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ק' תכנון`,
+                popNote: [
+                    <>
+                    <b>תפקידי קצין תכנון:</b><br /><br />
+
+                    חסר מידע 
+                </>
+        
+                ],
 
             },
             {
                 idRole: 7,
                 roleName: `ק' קישור למלכ"א`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ק' קישור למלכ"א`,
+                popNote: [
+                    <>
+                    <b>תפקידי קצין קישור למלכ"א</b><br /><br />
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
            
@@ -414,28 +561,63 @@ const pikud = {
                 idRole: 1,
                 roleName: `ס' מ' מכלול בינוי`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ס' מ' מכלול בינוי`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
                 
             },
             {
                 idRole: 2,
                 roleName: `מרחב בינוי 564`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`מרחב בינוי 564`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 3,
                 roleName: `נציג קמפוס`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle:`נציג קמפוס`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 4,
                 roleName: `נציגים במלכ"א ובאג"ת`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `נציגים במלכ"א ובאג"ת`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
            
             {
                 idRole: 5,
                 roleName: `תא הפעלה וביצוע`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא הפעלה וביצוע`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             }
            
         ],
@@ -482,37 +664,78 @@ const pikud = {
                 idRole: 1,
                 roleName:`ס' מפקד מכלול משו"ת`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `ס' מפקד מכלול משו"ת`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
                 
             },
             {
                 idRole: 2,
                 roleName: ` תא קישור לנת"י`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: ` תא קישור לנת"י`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 3,
                 roleName:`תא תנועות`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא תנועות`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 4,
                 roleName:`תא קישור למתנ"ל`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא קישור למתנ"ל`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 4,
                 roleName:`תא מבצעים`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `תא מבצעים`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
             {
                 idRole: 5,
-                roleName:`גדוד שיטור 794
-`,
+                roleName:`גדוד שיטור 794`,
                 src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                popTitle: `גדוד שיטור 794`,
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
 
             },
            
@@ -536,7 +759,7 @@ const pikud = {
         id: 7,
         name: `מכלול משא"ן`,
         firstRoleName:`מפקד מכלול משא"ן`,
-        srcSolider:`${process.env.PUBLIC_URL}/assets/mahoz/solider.svg`,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/pikud/solider.svg`,
         taskTitle:`תפקידי מפקד מכלול משא"ן`,
 
         taskNote: [
@@ -550,63 +773,173 @@ const pikud = {
             {
                 idRole: 1,
                 roleName: 'סגן מפקד מכלול משא"ן',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/subMashan.jpg`,
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/subMashan.jpg`,
+                popTitle:'סגן מפקד מכלול משא"ן',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
                 
             },
             {
                 idRole: 2,
-                roleName: 'קצין ת"ש',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/kTash.jpg`,
-
+                roleName: 'מנל"ח',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/kTash.jpg`,
+                popTitle: 'מנל"ח',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
               
                 
 
             },
             {
                 idRole: 3,
-                roleName: 'קצין חינוך',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/kXinooch.jpg`,
+                roleName: 'תא כ"א',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/kXinooch.jpg`,
+                popTitle:'תא כ"א',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
             {
                 idRole: 4,
-                roleName: 'מפקד תא כ"א',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/taKa.jpg`,
+                roleName: 'תא רבנות',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/taKa.jpg`,
+                popTitle:'תא רבנות',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
            
             {
                 idRole: 5,
-                roleName: 'מפקד תא נפגעים',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/KNifgaim.jpg`,
+                roleName: 'תא פר"ח',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/KNifgaim.jpg`,
+                popTitle: 'תא פר"ח',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
            
             {
                 idRole: 6,
-                roleName: 'מפקד תא אנו"ח',
-                src:`${process.env.PUBLIC_URL}/assets/mahoz/subSolider.svg`,
-                miniTree:`${process.env.PUBLIC_URL}/assets/mahoz/tAnoch.jpg`,
+                roleName: 'תא נפגעים',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/tAnoch.jpg`,
+                popTitle: 'תא נפגעים',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
+            },
+            {
+                idRole: 6,
+                roleName: 'תא גיוס',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/tAnoch.jpg`,
+                popTitle:'תא גיוס',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
             },
            
         ],
-        treeSrc: `${process.env.PUBLIC_URL}/assets/mahoz/Mashan.jpg`,
+        treeSrc: `${process.env.PUBLIC_URL}/assets/pikud/Mashan.jpg`,
         explanation: [
             {
                 titleExplanation:'תפקידי תא המאש"ן',
                 textExplanation:
                     [
                         <>
-                            1. ייעוץ למפקד המחוז בנושאי כוח אדם בהתאם להיערכות הסד"כ והתוכניות המבצעיות. <br/>  
-                            2. שליטה בתהליך הזעקת אנשי מילואים דרך מרכז הגיוס הפיקודי ופתרון בעיות בגיוס. <br/>  
-                            3. ביצוע הערכת מצב כוח אדם והשפעתה על הערכת המצב הכללית במחוז. <br/>  
-                            4. תכנון ווויסות כוח אדם בין יחידות המשנה בהתאם להנחיות הפיקוד. <br/>  
-                            5. תיאום וארגון טיפול בנפגעים, כולל סיוע למשפחות וליווי לוויות. <br/>  
-                            6. תמיכה במאמץ הלחימה בהיבטי רווחה, חינוך, רבנות ומורל. <br/>  
-                            7. תיאום בין הגלמ"ר ליחידות המחוז בקבלת תגבורות ואספקת ציוד אישי. <br/>  
-                            8. ריכוז והכוונת מדיניות הטיפול ברבנות ובאנו"ח, כולל פיקוח על מחלקות האנו"ח היחידתיות. <br/>  <br/>
+                         חסר מידע
+                        </>
+
+                    ]
+            }
+        ]
+    },
+    
+    {
+        id: 8,
+        name: 'מכלול משולבים',
+        firstRoleName:`מפקד מכלול משולבים`,
+        srcSolider:`${process.env.PUBLIC_URL}/assets/pikud/solider.svg`,
+        taskTitle:`תפקידי מפקד מכלול משולבים`,
+
+        taskNote: [
+            <>
+                <b>תפקידי מפקד מכלול משולבים</b><br /><br />
+                חסר מידע 
+            </>
+
+        ],
+        roles: [
+            {
+                idRole: 1,
+                roleName: 'סגן מפקד מכלול משולבים',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/subMashan.jpg`,
+                popTitle:  'סגן מפקד מכלול משולבים',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
+                
+            },
+            {
+                idRole: 2,
+                roleName: 'תפקיד 2',
+                src:`${process.env.PUBLIC_URL}/assets/pikud/subSolider.svg`,
+                miniTree:`${process.env.PUBLIC_URL}/assets/pikud/kTash.jpg`,
+                popTitle: 'תפקיד 2',
+                popNote: [
+                    <>
+                        חסר מידע 
+                    </>
+        
+                ],
+
+              
+                
+
+            },
+           
+        ],
+        treeSrc: `${process.env.PUBLIC_URL}/assets/pikud/Meshulavim.jpg`,
+        explanation: [
+            {
+                titleExplanation:'תפקידי מכלול משולבים',
+                textExplanation:
+                    [
+                        <>
+                         חסר מידע
                         </>
 
                     ]

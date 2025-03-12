@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import NafaData from '../data/NafaData.js';
 import GdudData from '../data/GdudData.js';
 import MahozData from '../data/MahozData.js';
+import PikudData from '../data/PikudData.js';
 import PopUp from './PopUp.jsx';
 
 
@@ -18,7 +19,8 @@ function DiagramStep2() {
     const data = 
     selectedOption === 'נפה' ? NafaData :
     selectedOption === 'גדוד' ? GdudData :
-    selectedOption === 'מחוז' ? MahozData : null;
+    selectedOption === 'מחוז' ? MahozData :
+    selectedOption === 'פיקוד' ? PikudData : null;
     const imgSrc=data.imgSrc;
 
     const handleToggleExplanation = (index) => {
@@ -59,6 +61,7 @@ function DiagramStep2() {
                 selectedOption === "גדוד" ? "whiteCircle2-gdud" :
                 selectedOption === "נפה" ? "whiteCircle2-nafa" :
                 selectedOption === "מחוז" ? "whiteCircle2-mahoz" :
+                 selectedOption === "פיקוד" ? "whiteCircle2-pikud":
                 ""
                 }`}>
                      <StepsBtnDiagram currentStep={2} selectedOption />
@@ -107,10 +110,11 @@ function DiagramStep2() {
                 selectedOption === "גדוד" ? "line-gdud" :
                 selectedOption === "נפה" ? "line-nafa" :
                 selectedOption === "מחוז" ? "line-mahoz" :
+                selectedOption === "פיקוד" ? "line-pikud" :
                 ""
                 }`}>
-</div>
-                <div className="small-line"></div>
+            </div>
+                {selectedOption !== "פיקוד" && <div className="small-line"></div>}      
                 <div
                     className='first-frame'
                     onClick={handleFirstFrameClick}
@@ -120,24 +124,23 @@ function DiagramStep2() {
                     {data.comandor.name}
 
                 </div>
-                <div
-                    className='second-frame'
-                    onClick={() => {
-                        if (selectedOption !== "מחוז") {
-                            navigate("/DiagramStep3Sub", {
-                                state: { 
-                                    subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
-                                    selectedOption: selectedOption  // העברת ה-selectedOption
-                                }
-                            });
-                        } else {
-                            handleSeconedFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
-                        }
-                    }}
-                >
-                    <img className='seconed-img' src={data.subComandor.src} alt="sub-role"/>
-                    {data.subComandor.name}
-                </div>
+                {selectedOption !== "פיקוד" && (
+                    <div
+                        className='second-frame'
+                        onClick={() => {
+                            if (selectedOption !== "מחוז") {
+                                navigate("/DiagramStep3Sub", {
+                                    state: { 
+                                        subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
+                                        selectedOption: selectedOption  // העברת ה-selectedOption
+                                    }
+                                });
+                            } else {
+                                handleSeconedFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
+                            }
+                        }}
+                    />
+                )}
                 {selectedOption === 'מחוז' && (
                     <div>
                         <div className="small-line2"></div>

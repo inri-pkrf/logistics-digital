@@ -194,20 +194,21 @@
     padding: 1vh;
     margin-bottom: 15px;
     border-radius: 50%;
-    width: 17vh; /* גודל קטן יותר */
+    width: 17vh;
     height: 17vh;
     text-align: center;
     font-size: 1.6em;
-    border: 4px solid #858585; /* מסגרת אפורה */
-    display: flex;
+    border: 4px solid #050506;
+    display: flex
+;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     font-family: "Karantina";
-    color: #595959;
-    word-wrap: break-word; /* מבצע חיתוך אוטומטי בשורות ארוכות */
-    white-space: normal; /* מאפשר לטקסט לעבור לשורה חדשה */
+    color: #050506;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .stpe3Img {

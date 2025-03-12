@@ -234,6 +234,14 @@
     top: 2vh;
     height: 184vh;
 }
+.line-pikud{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 2vw solid #595959;
+    top: 2vh;
+    height: 184vh;
+}
 
 
 
@@ -411,6 +419,16 @@ hr.dotted {
     z-index: 999;
  }
  .whiteCircle2-mahoz{
+    position: absolute;
+    width: 180vw;
+    height: 338vh;
+    margin-top: 265vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+ }
+ .whiteCircle2-pikud{
     position: absolute;
     width: 180vw;
     height: 338vh;

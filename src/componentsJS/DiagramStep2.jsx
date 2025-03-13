@@ -128,6 +128,7 @@ function DiagramStep2() {
                     <div
                         className='second-frame'
                         onClick={() => {
+                        
                             if (selectedOption !== "מחוז") {
                                 navigate("/DiagramStep3Sub", {
                                     state: { 
@@ -139,7 +140,13 @@ function DiagramStep2() {
                                 handleSeconedFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
                             }
                         }}
-                    />
+                 
+
+
+                    >
+                            <img className='seconed-img' src={data.subComandor.src}/>
+                            {data.subComandor.name}
+                        </div>
                 )}
                 {selectedOption === 'מחוז' && (
                     <div>

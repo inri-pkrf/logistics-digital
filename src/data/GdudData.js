@@ -83,7 +83,8 @@ const gdud = {
             {
                 idRole: 1,
                 roleName: <> נגד לוגיסטיקה</>,
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`,
+             
 
 
             },
@@ -127,19 +128,43 @@ const gdud = {
             {
                 idRole: 1,
                 roleName: " נגד מטבח",                
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`,
+                taskTitle:`תפקידי נגד מטבח`,
+
+                taskNote: [
+                    <>
+                        קיים תוכן צריך להוסיף
+                      
+                    </>
+                    ]
 
 
             },
             {
                 idRole: 2,
                 roleName: " נגד אפסנאות",                
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`,
+                taskTitle:`תפקידי נגד אפסנאות`,
+
+                taskNote: [
+                    <>
+                        קיים תוכן צריך להוסיף
+                      
+                    </>
+                    ]
             },
             {
                 idRole: 3,
                 roleName: " נהג רכב קל",                
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`,
+                taskTitle:`תפקידי נהג רכב קל `,
+
+                taskNote: [
+                    <>
+                        קיים תוכן צריך להוסיף
+                      
+                    </>
+                    ]
             }
         ],
         treeSrc: `${process.env.PUBLIC_URL}/assets/gdud/gdudKalag.jpg`,
@@ -187,7 +212,15 @@ const gdud = {
             {
                 idRole: 1,
                 roleName: `ע' קט"א`,
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`, 
+                taskTitle:`תפקידי ע' קט"א `,
+
+                taskNote: [
+                    <>
+                        קיים תוכן צריך להוסיף
+                      
+                    </>
+                    ]
 
 
             }
@@ -241,8 +274,16 @@ const gdud = {
         roles: [
             {
                 idRole: 1,
-                roleName:`מפעיל תקשוב מבצע`,
-                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`
+                roleName:`ימפעיל תקשוב מבצע`,
+                src:`${process.env.PUBLIC_URL}/assets/gdud/subSolider.svg`,
+                taskTitle:`תפקידי מפעיל תקשוב מבצעי `,
+
+                taskNote: [
+                    <>
+                        קיים תוכן צריך להוסיף
+                      
+                    </>
+                    ]
            
 
             },

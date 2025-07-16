@@ -39,10 +39,12 @@ function DiagramStep2() {
         const title = data.subComandor.taskTitle;
         handleBoxClick(title, data.subComandor.taskText);
     };
-    const handleThirdFrameClick = () => {
-        const title = data.subComandor.taskTitle;
-        handleBoxClick(title, data.subComandor.taskText);
-    };
+  const handleThirdFrameClick = () => {
+    const title = data.subMalca.taskTitle;
+ 
+    handleBoxClick(title, data.subMalca.taskNote);
+};
+
     
       const handleBoxClick = (title, content) => {
         setPopupContent({ title, content });
@@ -78,7 +80,7 @@ function DiagramStep2() {
                         onClick={() => handleToggleExplanation(index)}
                         >
                         <div className="explanation-title-DiagramStep2">
-                            {data[key].title} {/* ניגשים למידע מתוך data */}
+                            {data[key].title} 
                         </div>
                         <img
                             src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
@@ -124,37 +126,38 @@ function DiagramStep2() {
                     {data.comandor.name}
 
                 </div>
-                {selectedOption !== "פיקוד" && (
-                    <div
-                        className='second-frame'
-                        onClick={() => {
-                        
-                            if (selectedOption !== "מחוז") {
-                                navigate("/DiagramStep3Sub", {
-                                    state: { 
-                                        subRoleName: data.subComandor.name,  // העברת שם הסאב-רול
-                                        selectedOption: selectedOption  // העברת ה-selectedOption
-                                    }
-                                });
-                            } else {
-                                handleSeconedFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
-                            }
-                        }}
-                 
+          {selectedOption !== "פיקוד" && (
+            <div
+                className='second-frame'
+                onClick={() => {
+                    if(selectedOption !== "מחוז" ){
+                            handleSeconedFrameClick();
+                    }
+                    // if (selectedOption === "גדוד") {
+                    //     navigate("/DiagramStep3Sub", {
+                    //         state: {
+                    //             subRoleName: data.subComandor.name,
+                    //             selectedOption: selectedOption
+                    //         }
+                    //     });
+                    // } else {
+                    //     handleSeconedFrameClick();
+                    // }
+                }}
+            >
+                <img className='seconed-img' src={data.subComandor.src} />
+                {data.subComandor.name}
+            </div>
+        )}
 
 
-                    >
-                            <img className='seconed-img' src={data.subComandor.src}/>
-                            {data.subComandor.name}
-                        </div>
-                )}
                 {selectedOption === 'מחוז' && (
                     <div>
                         <div className="small-line2"></div>
                         <div
                         className='third-frame'
                         onClick={() => {
-                        handleThirdFrameClick();  // קריאה לפונקציה במקרה של "מחוז"
+                        handleThirdFrameClick(); 
                         
                     }}
                 > <img className='third-img' src={data.subMalca.srcSolider} alt="sub-role"/>

@@ -98,7 +98,7 @@ function DiagramStep3() {
                 <div 
                     key={role.idRole} 
                     className="role-container-DiagramStep3"
-                    onClick={() => handleFrameClick(role)} // מעביר את ה-role שנלחץ
+                    // onClick={() => handleFrameClick(role)} // מעביר את ה-role שנלחץ
                 >
                     <div className="role-DiagramStep3">
                         <img className='seconed-img-step3' src={role.src} />

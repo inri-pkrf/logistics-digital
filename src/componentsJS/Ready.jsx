@@ -27,27 +27,30 @@ const Ready = () => {
          <div className='title-container-ready'>
          <img className='icon-title-ready' src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}  />
       <h1 className='ready-title'>היערכות לחירום </h1>
-     
-      <button 
-          className={`ready-btn btnready-first ${visitedPages["Refua"] ? "ready-clicked" : ""}`} 
-          onClick={() => handleNavigation("Refua")}
-        >
-        אמצעים
-        </button>
+     <div className="venn-container">
+  <button 
+    className={`venn-circle circle-a ${visitedPages["Refua"] ? "ready-clicked" : ""}`} 
+    onClick={() => handleNavigation("Refua")}
+  >
+    <p>אמצעים</p>
+  </button>
 
-        <button 
-          className={`ready-btn btnready-seconed ${visitedPages["trainig"] ? "ready-clicked" : ""}`} 
-          onClick={() => handleNavigation("training")}
-        >
-          אימונים
-        </button>
+  <button 
+    className={`venn-circle circle-b ${visitedPages["training"] ? "ready-clicked" : ""}`} 
+    onClick={() => handleNavigation("training")}
+  >
+    <p>אימונים</p>
+  </button>
 
-        <button 
-          className={`ready-btn btnready-third ${visitedPages["people"] ? "ready-clicked" : ""}`} 
-          onClick={() => handleNavigation("people")}
-        >
-          ניהול כוח אדם
-        </button>
+  <button 
+    className={`venn-circle circle-c ${visitedPages["people"] ? "ready-clicked" : ""}`} 
+    onClick={() => handleNavigation("people")}
+  >
+    <p> ניהול כוח אדם
+ </p>
+  </button>
+</div>
+
       </div>
     
         </div>

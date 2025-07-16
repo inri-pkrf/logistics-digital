@@ -16,6 +16,7 @@ import MagnifyPic from './componentsJS/MagnifyPic';
 import DiagramStep3Sub from './componentsJS/DiagramStep3Sub';
 import DiagramStep3Mahoz from './componentsJS/DiagramStep3Mahoz';
 import Refua from './componentsJS/Refua';
+import Training from './componentsJS/Training';
 import Fast from './componentsJS/Fast';
 import ExcelMinala from './componentsJS/ExcelMinala';
 import Rounds from './componentsJS/Rounds';
@@ -81,6 +82,7 @@ function App() {
                     <Route path="/MagnifyPic" element={<MagnifyPic />} />
                     <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
                     <Route path="/Refua" element={<Refua />} />
+                    <Route path="/training" element={<Training />} />
                     <Route path="/fast" element={<Fast />} />
                     <Route path="/rounds" element={<Rounds />} />
                     <Route path="/BATTALIONS" element={<Battalions />} />

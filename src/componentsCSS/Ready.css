@@ -85,7 +85,7 @@
         position: absolute;
         left: 13vw;
     }
-    .ready-btn{
+    /* .ready-btn{
         background-color: #050506;
         border: solid 3px white;
         position: absolute;
@@ -116,4 +116,64 @@
         color:#70cfed;
         border: solid 3px #70cfed;
 
-    }
+    } */
+    .venn-container {
+    position: relative;
+    width: 70vw;
+    height: 70vw;
+    right: 10%;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.venn-circle {
+position: absolute;
+    width: 50vw;
+    height: 50vw;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+    font-family: "Heebo";
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+/* מיקום העיגולים */
+.circle-a {
+  top: 0;
+  left: 25%;
+      background-color: rgba(24, 24, 24, 0.863);
+
+}
+
+.circle-b {
+    top: 43%;
+    left: -5%;
+        background-color: rgba(23, 136, 201, 0.815);
+
+}
+
+.circle-c {
+top: 43%;
+  left: 55%;
+      background-color: rgba(9, 102, 102, 0.863);
+
+}
+
+.venn-circle:hover {
+  background-color: rgba(112, 207, 237, 0.2);
+  cursor: pointer;
+}
+
+.ready-clicked {
+  color: #70cfed;
+  border: 3px solid #70cfed;
+}

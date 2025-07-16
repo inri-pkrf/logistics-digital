@@ -76,7 +76,8 @@ function DiagramStep3Mahoz() {
             ))}
                 <hr className='dotted hr1-step3' />
                         <div className="roles-div-DiagramStep3Mahoz">
-                <div  onClick={handleFirstFrameClick}  key="first-role" className="role1-container-DiagramStep3Mahoz">
+                {/* <div  onClick={handleFirstFrameClick}  key="first-role" className="role1-container-DiagramStep3Mahoz"> */}
+                <div  key="first-role" className="role1-container-DiagramStep3Mahoz">
                     <div className="role-DiagramStep3Mahoz">
                     <img className='first-img-step3' src={subRole.srcSolider}/>
 

@@ -94,27 +94,27 @@
 
 }
 #btn1-DiagramStep1 {
-  margin-top: 27vh;
-  position: absolute;
-  right: 26%;
-  transform: translateX(50%);
+ margin-top: 20vh;
+    position: absolute;
+    right: 26%;
+    transform: translateX(50%);
 
 
 }
 
 #btn2-DiagramStep1 {
-  margin-top: 27vh;
+  margin-top: 20vh;
   left: -2vw;
 
 }
 #btn3-DiagramStep1{
-  margin-top: 56vh;
+  margin-top: 49vh;
   position: absolute;
   right: 26%;
   transform: translateX(50%);
 }
 #btn4-DiagramStep1{
-  margin-top: 56vh;
+  margin-top: 49vh;
   position: absolute;
   left: -2vw;
 }

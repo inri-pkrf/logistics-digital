@@ -419,10 +419,10 @@ hr.dotted {
     z-index: 999;
  }
  .whiteCircle2-mahoz{
-    position: absolute;
+       position: absolute;
     width: 180vw;
-    height: 338vh;
-    margin-top: 265vh;
+    height: 357vh;
+    margin-top: 285vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;

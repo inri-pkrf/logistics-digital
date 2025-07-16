@@ -169,7 +169,7 @@ function DiagramStep2() {
 
 
 
-                {data.subRoles.slice().reverse().map((subRole, index) => (
+                {data.subRoles.slice().map((subRole, index) => (
                 <div 
                     onClick={() => {
                         if (selectedOption === "מחוז") {

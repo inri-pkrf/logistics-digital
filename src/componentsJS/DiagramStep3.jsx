@@ -30,11 +30,15 @@ function DiagramStep3() {
     const handleToggleExplanation = (index) => {
         setExpandedExplanation(expandedExplanation === index ? null : index);
     };
-    const circleClass = (
-        subRole.firstRoleName === 'מפקד תא משא"ן' && selectedOption === 'נפה'
-    ) || selectedOption === 'גדוד' 
-    ? 'whiteCircle3Dif' 
+   const circleClass = selectedOption === 'פיקוד'
+    ? 'whiteCircle3-pikud'
+    : (
+        (subRole.firstRoleName === 'מפקד תא משא"ן' && selectedOption === 'נפה') ||
+        selectedOption === 'גדוד'
+    )
+    ? 'whiteCircle3Dif'
     : 'whiteCircle3';
+
     
     const handleFirstFrameClick = () => {
         const title = subRole.taskTitle;

@@ -113,7 +113,16 @@
     top: -5vh;
 }
 
-
+.whiteCircle3-pikud{
+ position: absolute;
+    width: 180vw;
+    height: 289vh;
+    margin-top: 217vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+}
 
 
  .whiteCircle3{

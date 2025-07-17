@@ -42,7 +42,7 @@
     font-size: 3em;
   }
   .explainRound{
-    font-family: "Heebo";
+    font-family: "Assistant";
     font-size: 1.2em;
     color: rgb(89, 89, 89);
   }
@@ -70,7 +70,7 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  font-family: "Heebo";
+  font-family: "Assistant";
   font-size: 1.2em;
   color: white;
   position: relative;
@@ -106,11 +106,11 @@
   max-width: 607px;
   direction: rtl;
   gap: 131px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Assistant', sans-serif;
   margin-bottom: 20px;
 }
 
-.nextRound, .prevRound {
+ .Rounds .nextRound, .prevRound {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -123,12 +123,12 @@
 }
 
 /* כפתור חזור - חץ מימין, טקסט משמאל */
-.prevRound {
+ .Rounds .prevRound {
   flex-direction: row-reverse;
 }
 
 /* כפתור קדימה - חץ משמאל, טקסט מימין */
-.nextRound {
+.Rounds .nextRound {
   flex-direction: row;
 }
 

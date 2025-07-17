@@ -55,37 +55,18 @@
     width:80vw;
     height: auto;
   }
-  .arrow{
-    position: relative;
-    height: 7vh;
-    width:auto;
-  }
-  .navigation-btn{
-    width:90vw;
-    margin-bottom: 4vh;
-    position: relative;
-  }
-  .prev{
-    position: relative;
-    width: 20vw;
-    right: -80vw;
-  }
-  .next{
-    position: relative;
-    width: 20vw;
-    margin-top: -14%;
-    right: 1vw;
-  }
+ 
 
-  .left{
-    transform: rotate(180deg);
-  }
+
+  
+ 
+  
   .video-val{
     width:90vw;
     height: auto;
   }
   .explanationVal{
-    font-family: "Heebo";
+    font-family: "Assistant";
     width: 90vw;
     padding-right: 5vw;
     padding-left: 31vw;
@@ -96,7 +77,7 @@
     width: 90vw;
     padding-left: 30vw;
     direction: rtl;
-    font-family: "Heebo";
+    font-family: "Assistant";
     font-size: 1.1em;
     margin-top: 5vh;
 

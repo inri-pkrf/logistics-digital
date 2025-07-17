@@ -64,7 +64,7 @@
     max-width: 607px;
     direction: rtl;
     gap: 103px;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -114,14 +114,14 @@
   z-index: 0;
 }
 .card-title{
-  font-family: "Heebo";
+  font-family: "Assistant";
   color: #ffffff;
   FONT-SIZE: 1.7EM;
   font-weight: bolder;
   margin-top: 6vh;
 }
 .text-batel{
-  font-family: "Heebo";
+  font-family: "Assistant";
     width: 80vw;
     padding-right: 5vw;
     padding-left: 5vw;

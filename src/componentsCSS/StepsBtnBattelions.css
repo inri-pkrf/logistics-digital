@@ -35,7 +35,7 @@
 
   .step1-Battelions{
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -66,7 +66,7 @@
   .order{
     position: absolute;
     margin-top: 5vh;
-    font-family: "Heebo";
+    font-family: "Assistant";
     right: 50%;
     width: 90vw;
     font-size: 1.1em;

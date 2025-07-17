@@ -55,11 +55,11 @@ function Validiation() {
 
                 {/* <div className='navigation-btn'>
                     <div className='prev'>
-                        <p>למסך הבית</p>
+                        <p> הקודם</p>
                     <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
                           </div>
                     <div className='next'>
-                    <p>לנושא הבא</p>
+                    <p> הבא</p>
 
                     <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
 

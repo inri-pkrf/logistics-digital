@@ -17,7 +17,7 @@
     border-radius: 20px;
     padding-top: 1vh;
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -27,7 +27,7 @@
 
   .step1-diagram{
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;

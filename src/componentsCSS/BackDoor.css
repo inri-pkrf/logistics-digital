@@ -55,36 +55,36 @@
     height: auto;
     margin-top: 10vh;
   }
-  .arrow{
+  .BackDoor .arrow{
     position: relative;
     height: 7vh;
     width:auto;
   }
-  .navigation-btn{
+  .BackDoor .navigation-btn{
     width:90vw;
     margin-bottom: 4vh;
     position: relative;
   }
-  .prev{
+  .BackDoor .prev{
     position: relative;
     width: 20vw;
     right: -80vw;
   }
-  .next{
+  .BackDoor .next{
     position: relative;
     width: 20vw;
     margin-top: -14%;
     right: 1vw;
   }
 
-  .left{
+  .BackDoor .left{
     transform: rotate(180deg);
   }
 
   .plain-text{
     text-align: right;
     padding-right: 5vw;
-    font-family: "Heebo";
+    font-family: "Assistant";
     color: rgb(89, 89, 89);
     direction: rtl;
     font-size: 1.2em;
@@ -118,7 +118,7 @@
 
 .explanation-text-Back {
 
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Assistant', sans-serif;
   font-size: 4vw;
   color: rgb(0, 0, 0);
   direction: rtl;

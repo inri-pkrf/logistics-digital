@@ -55,24 +55,23 @@
     height: auto;
   }
 
-  .navigation-btn-Ref {
-    position: relative;
-    bottom: -12vh;
+  .Refua .navigation-btn{
+   position: relative;
+    bottom: -9vh;
     left: 50%;
     transform: translateX(-50%);
-    display: flex
-;
+    display: flex;
     justify-content: center;
     width: 90%;
-    max-width: 600px;
     direction: rtl;
-    gap: 137px;
-    font-family: 'Heebo', sans-serif;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }
 
-.nextRef, .prevRef {
+.Refua.next .prev {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: transparent;
     color: rgb(89, 89, 89);
@@ -83,25 +82,28 @@
     font-weight: bold;
 }
 
-/* כפתור חזור - חץ מימין, טקסט משמאל */
-.prevRef {
-    flex-direction: row-reverse;
-}
 
-/* כפתור קדימה - חץ משמאל, טקסט מימין */
-.nextRef {
-    flex-direction: row;
-}
-
-.arrow {
+.Refua .arrow {
     width: auto;
-    height: 4vh;
+    height: 5vh;
     margin: 0 1vw;
 }
 
-.leftRef {
+
+.Refua .left{
     transform: rotate(180deg);
+
 }
+
+
+.Refua .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
+}
+
 
 .Ref2Img{
   width: 80vw;

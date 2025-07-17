@@ -25,6 +25,8 @@
     width: 100%;
     height: 145%;
     background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);    /* טשטוש */
+    -webkit-backdrop-filter: blur(1px); /* תמיכה בספארי */
     z-index: -1;
 }
 
@@ -64,19 +66,19 @@
         margin-top: 1vh;
         width: auto;
     }
-    .go-next-ready{
+    .Ready-container .go-next-ready{
         position: absolute;
         left: 2vw;
         margin-top: 60vh;
     }
-    .next-arrow{
+    .Ready-container .next-arrow{
         position: absolute;
         top:0%;
         height: 7vh;
         width: auto;
     }
-    .next-title{
-        font-family: "Heebo";
+    .Ready-container .next-title{
+        font-family: "Assistant";
         color: white;
         margin-top: 2vh;
         font-weight: bold;
@@ -91,7 +93,7 @@
         position: absolute;
         border-radius: 50px;
         width: 89vw;
-        font-family: "Heebo";
+        font-family: "Assistant";
         color: white;
         font-size: 1.5em;
         right: 54%;
@@ -136,7 +138,7 @@ position: absolute;
     max-height: 250px;
     border-radius: 50%;
     border: 3px solid white;
-    font-family: "Heebo";
+    font-family: "Assistant";
     color: white;
     font-size: 1.2em;
     text-align: center;

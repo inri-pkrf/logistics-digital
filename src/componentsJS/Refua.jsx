@@ -22,14 +22,14 @@ function Refua() {
 
                 <h1  className="sub-titleRef">שגרת אחזקה </h1>
                 <p>הסבר הסבר הסבר הסבר </p>
-                <div className='navigation-btn-Ref'>
-                    <div onClick={() => navigate("/Ready")} className='prevRef'>
-                        <p>לבחירת נושא</p>
-                        <img className="arrow leftRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
+                <div className='navigation-btn'>
+                    <div onClick={() => navigate("/Ready")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-                    <div onClick={() => navigate("/training")} className='nextRef'>
-                        <p>לנושא הבא</p>
-                        <img className="arrow rightRef" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
+                    <div onClick={() => navigate("/training")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
                 </div>
 

@@ -43,7 +43,7 @@
   
  
   .cardSlide-text{
-    font-family: "Heebo";
+    font-family: "Assistant";
     font-size: 1.4em;
     text-align: right;
     direction: rtl;
@@ -54,7 +54,7 @@
   
 
   .cardSlide-index {
-    font-family: "Heebo";
+    font-family: "Assistant";
     text-align: left;
     font-size: 2em;
     margin-top: 1vh; /* הוספתי מרווח קטן למעלה כדי לקרב את המונה לכותרת */

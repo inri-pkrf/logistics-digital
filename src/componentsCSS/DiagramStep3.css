@@ -69,7 +69,7 @@
 
 .explanation-text-DiagramStep3 {
  
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 4vw;
     color: rgb(0, 0, 0);
     direction: rtl;
@@ -231,7 +231,7 @@
     position: relative;
     right: -58vw;
     top: 12vh;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     font-size: 3.5vw;
     color: grey;
     width: 60vw;
@@ -243,7 +243,7 @@
     font-size: 5vw;
     text-align: center;
     text-decoration: underline;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     margin-bottom: 5vh;
     position: relative;
     top: 25vh;

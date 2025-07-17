@@ -65,7 +65,7 @@
     max-width: 600px;
     direction: rtl;
     gap: 137px;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -122,7 +122,7 @@
   width: calc(33.33% - 10px); /* שלושה כפתורים בשורה עם מרווח */
   padding: 10px 15px;
   font-size: 1em;
-  font-family: "Heebo";
+  font-family: "Assistant";
   text-align: center;
   background-color: rgb(133, 176, 225);
   color: white;
@@ -146,7 +146,7 @@
   padding-top: 3vh;
 }
 .excel-explanations{
-  font-family: "HEEBO";
+  font-family: "Assistant";
   font-size: 1em;
   width: 90vw;
   position: relative;
@@ -157,7 +157,7 @@
   position: relative;
   right: -19vw;
   top: 3vh;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Assistant', sans-serif;
   font-size: 3.5vw;
   color: grey;
   width: 60vw;

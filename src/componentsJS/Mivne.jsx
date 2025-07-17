@@ -23,7 +23,7 @@ const Mivne = () => {
       </div>
       <div onClick={()=>navigate("/diagram")} className='go-next'>
         <p className='next-title'>הבא</p>
-        <img className="next-arrow" src={`${process.env.PUBLIC_URL}/assets/imgs/next.svg`} />
+        <img className="next-arrow" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrow.png`} />
       </div>
         </div>
   

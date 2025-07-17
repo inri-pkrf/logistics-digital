@@ -43,21 +43,87 @@
   }
     
   .sub-titleRef{
+font-family: 'KARANTINA';
+    color: rgb(89, 89, 89);
+    font-size: 9.5vmin;
+    text-align: right;
+    position: relative;
+    right: 11vw;
+  }
+  .btn-container{
+    border: 3px solid #595959;
+    width: 40vw;
+    position: relative;
+    right: -54vw;
+    border-radius: 30px;
+    height: 36vh;
+  }
+  .container-btn-blue{
+    position: absolute;
+    width: 38vw;
+    right: 50%;
+    top: 3vh;
+    transform: translateX(50%);
+    height: auto;
+  }
+  .container-text{
+     position: absolute;
+    text-align: center;
+    right: -54vw;
+    width: 40vw;
+    font-weight: bolder;
+    top: 20vh;
+    right: 50%;
+    color: #595959;
+    transform: translateX(50%);
+    font-size: 5vmin;
+    font-family: 'Assistant', sans-serif;
+  }
+  .sub-titleRef-R{
     font-family: 'KARANTINA';
     color: rgb(89, 89, 89);
-    font-size: 3em;
+    font-size: 9.5vmin;
     text-align: right;
     padding-right: 7vw;
-  }
-  .container-btn{
+    left: -52vw;
+    top: -49.5vh;
     position: relative;
-    width:80vw;
+  }
+  .btn-Routine{
+    border: 3px solid #595959;
+    width: 41vw;
+    position: relative;
+    left: 4vw;
+    top: -49.5vh;
+    border-radius: 30px;
+    height: 36.5vh;
+  }
+  .Routine-btn{
+    position: absolute;
+    width: 28vw;   
+    right: 50%;
+    top: 3vh;
+    transform: translateX(50%);
     height: auto;
+  }
+  .Routine-text{
+    font-family: 'Assistant', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: -54vw;
+    width: 40vw;
+    font-weight: bolder;
+    top: 16vh;
+    right: 50%;
+    color: #595959;
+    transform: translateX(50%);
+    font-size: 5.5vmin;
+    font-family: 'Assistant', sans-serif;
   }
 
   .Refua .navigation-btn{
-   position: relative;
-    bottom: -9vh;
+       position: relative;
+    bottom: 12vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

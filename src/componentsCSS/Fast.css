@@ -53,8 +53,8 @@
 
 
 
-  .navigation-btn-Fast {
-    position: relative;
+  .Fast .navigation-btn {
+position: relative;
     bottom: -74vh;
     left: 50%;
     transform: translateX(-50%);
@@ -63,12 +63,12 @@
     width: 90%;
     max-width: 600px;
     direction: rtl;
-    gap: 118px;
+    gap: 240px;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }
 
-.nextFast, .prevFast {
+.Fast .next .prev {
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -80,23 +80,5 @@
     font-weight: bold;
 }
 
-/* כפתור חזור - חץ מימין, טקסט משמאל */
-.prevFast {
-    flex-direction: row-reverse;
-}
 
-/* כפתור קדימה - חץ משמאל, טקסט מימין */
-.nextFast {
-    flex-direction: row;
-}
-
-.arrow-fast {
-    width: auto;
-    height: 4vh;
-    margin: 0 1vw;
-}
-
-.leftFast {
-    transform: rotate(180deg);
-}
 

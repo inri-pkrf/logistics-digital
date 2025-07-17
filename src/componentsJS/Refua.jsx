@@ -12,16 +12,28 @@ function Refua() {
             <div className='white-circle-Refua'>
                 <h1 className="titleRef"> אמצעים  </h1>
                 <h1 className="sub-titleRef">ציוד בימ"ח </h1>
-                <p>הסבר על הימ"ח</p>
+                <div className='btn-container'>
                 <img
-            src={`${process.env.PUBLIC_URL}/assets/imgs/Container.jpg`}
-            className="container-btn"
+            src={`${process.env.PUBLIC_URL}/assets/imgs/container.png`}
+            className="container-btn-blue"
             onClick={()=>navigate("/Yamach")}
           />
-            <p>יש ללחוץ על המחסנים על מנת ללמוד </p>
+            <p className='container-text'>לחצו על מנת ללמוד על ציוד בימ"ח </p>
+            </div>
+           
+                <h1  className="sub-titleRef-R">שגרת אחזקה </h1>
+            <div className='btn-Routine'>
+                <img
+            src={`${process.env.PUBLIC_URL}/assets/imgs/optimizing.png`}
+            className="Routine-btn"
+            onClick={()=>navigate("/Yamach")}
+          />
+            <p className='Routine-text'> לחצו על מנת ללמוד על שגרת אחזקה  </p>
+        </div>
 
-                <h1  className="sub-titleRef">שגרת אחזקה </h1>
-                <p>הסבר הסבר הסבר הסבר </p>
+
+
+
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/Ready")} className='prev'>
                         <p className='text-lable'> הקודם</p>

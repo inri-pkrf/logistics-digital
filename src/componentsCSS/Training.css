@@ -95,11 +95,6 @@
     flex-direction: row;
 }
 
-.arrow {
-    width: auto;
-    height: 4vh;
-    margin: 0 1vw;
-}
 
 .leftTra {
     transform: rotate(180deg);

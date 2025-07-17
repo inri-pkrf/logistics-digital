@@ -33,18 +33,15 @@ function Rounds() {
                         </button>
                     ))}
                 </div>
-                <div className='navigation-btn-Round'>
-                    <div onClick={()=>navigate("/emergency")} className='prevRound'>
-                        <p> לבחירת נושא</p>
-                    <img className="arrowRound leftRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-                          </div>
-                    <div onClick={()=>navigate("/war")} className='nextRound'>
-                    <p>לנושא הבא</p>
-
-                    <img className="arrowRound  rightRound" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-
+                <div className='navigation-btn'>
+                    <div onClick={() => navigate("/emergency")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-
+                    <div onClick={() => navigate("/war")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
                 </div>
 
             </div>

@@ -83,63 +83,28 @@
 
 .unit-button.right {
   align-self: flex-end;
-  background-color: #2c3675;
-  border-top-left-radius: 50px;
+background: linear-gradient(90deg, #7c294d, #041155);  
+border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
 .unit-button.left {
   align-self: flex-start;
-  background-color: #2c3675;
+background: linear-gradient(90deg, #7c294d, #041155);  
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
 
-
-
-.navigation-btn-Round {
-  position: relative;
-  bottom: -1vh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  max-width: 607px;
-  direction: rtl;
-  gap: 131px;
-  font-family: 'Assistant', sans-serif;
-  margin-bottom: 20px;
-}
-
- .Rounds .nextRound, .prevRound {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  color: rgb(89, 89, 89);
-  padding: 10px 15px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-/* כפתור חזור - חץ מימין, טקסט משמאל */
- .Rounds .prevRound {
-  flex-direction: row-reverse;
-}
-
-/* כפתור קדימה - חץ משמאל, טקסט מימין */
-.Rounds .nextRound {
-  flex-direction: row;
-}
-
-.arrowRound  {
-  width: auto;
-  height: 4vh;
-  margin: 0 1vw;
-}
-
-.leftRound {
-  transform: rotate(180deg);
+.Rounds .navigation-btn{
+   position: relative;
+    bottom: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 20px;
 }

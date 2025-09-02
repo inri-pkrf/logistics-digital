@@ -54,7 +54,6 @@ function App() {
         <div className="App">
             <Header className="header-fixed" />
 
-            {/* אם הדף הנוכחי לא נמצא ברשימה של דפים יוצאי דופן, תציג את ההודעה */}
             {isLandscape && !isRestrictedPage ? (
                 <div className="landscape-block">
                     <h2 className='worning'>אנא סובבו את המכשיר חזרה למצב אנכי</h2>

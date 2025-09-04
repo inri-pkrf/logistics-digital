@@ -44,13 +44,13 @@ function ExcelMinala() {
                 ג. שימוש במערכת באופן שוטף בשגרה, בחירום ובאימונים הן בסדיר והן במסגרות מילואים.
                 ד. הצגת הנתונים בהערכות מצב ומופעים שוטפים.
                 </p>
-                <img
+                {/* <img
                     src={imgSrc}
                     className="excel2Img"
                     alt="excel Diagram"
                     onClick={handleImageClick}
                 />
-                <div className='Wartext-img'>אפשר להגדיל את התמונה בלחיצה</div>
+                <div className='Wartext-img'>אפשר להגדיל את התמונה בלחיצה</div> */}
 
                 <h1 className="excel-Titles">עזר המנהלה טבלת האקסל:</h1>
                 <p className="excel-explanations">

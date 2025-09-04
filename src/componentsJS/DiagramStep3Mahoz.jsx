@@ -96,14 +96,14 @@ function DiagramStep3Mahoz() {
                     </div>
                 ))}
             </div>
-            <hr className='dotted hr2-step3' />
+            {/* <hr className='dotted hr2-step3' />
             <img
                 src={subRole.treeSrc}
                 className="stpe3Img"
                 alt="Structure Diagram"
                 onClick={handleImageClick}
             />
-                 <div className='text3-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
+                 <div className='text3-img'>אפשר להגדיל את עץ המבנה בלחיצה</div> */}
                  <div
                 className='btn-prev'
                 onClick={() => {

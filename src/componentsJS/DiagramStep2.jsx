@@ -98,7 +98,7 @@ function DiagramStep2() {
                     </div>
                     ))}
             <hr className='dotted hr1' />
-            <div className='subText-step2'>{data.imgDescription}</div>
+            {/* <div className='subText-step2'>{data.imgDescription}</div>
             <img
                 src={data.imgSrc}
                 className="stpe2Img"
@@ -106,7 +106,7 @@ function DiagramStep2() {
                 onClick={handleImageClick}
             />
                         <div className='text-img'>אפשר להגדיל את עץ המבנה בלחיצה</div>
-                        <hr className='dotted hr2' />
+                        <hr className='dotted hr2' /> */}
             <div className='all-diagram'>
             <div className={`line ${
                 selectedOption === "גדוד" ? "line-gdud" :

@@ -54,7 +54,7 @@ const Intro = () => {
   };
 
   const goToHome = () => {
-    navigate('/home'); 
+    navigate('/info'); 
   };
 
   return (

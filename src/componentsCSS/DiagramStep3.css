@@ -46,28 +46,27 @@
 
 
 .explanation-div-DiagramStep3 {
-    position: relative;
-    top: 55vh;
+ position: relative;
+    top: 23vh;
     background-color: #d9d9d9;
     width: 90vw;
     right: -45vw;
-    margin-bottom: 56vw;
+    margin-bottom: 9vw;
     border-radius: 6vw;
+    direction: rtl;
 }
 
 
 
 
-.explanation-title-wrapper-DiagramStep3 {
+.explanation-title-DiagramStep3 {
     font-family: 'Karantina', cursive;
     font-size: 8vw;
     text-align: center;
-    margin-top: -27vh;
+    margin-top: 2vh;
     padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
-
-
 
 .explanation-text-DiagramStep3 {
  
@@ -78,15 +77,34 @@
     padding-right: 4vh;
     padding-left: 4vh;
     text-align: right;
-    margin-top: -3vh;
+    top: 2vh;
     position: relative;
     line-height: 5vh;
+    padding-bottom: 2vh;
 }
+
+.explanation-text-scroll3{
+  max-height: 40vh;
+    min-height: 6vh;
+    overflow-y: auto;
+    text-align: right;
+     padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+}
+.small-text-drop3{
+    font-size: 4vmin;
+    direction: ltr;
+    font-weight: 600;
+    color: #4e4d4d;
+    padding-bottom: 1vh;
+}
+
 
 .arrow-icon-diagram3{
     height: 3vh;
     width: auto;
-    right: 2vw;
+    right: 4vw;
     position: relative;
     top: -3.42vh;
     padding-left: -23vw;
@@ -99,10 +117,10 @@
 }
 
 .arrow-icon1-diagram3 {
-    height: 105vh;
+height: 105vh;
     width: auto;
     position: relative;
-    top: -4.5vh;
+    top: -3.5vh;
     left: -1vh;
     height: 3vh;
     width: auto;
@@ -112,7 +130,7 @@
     height: 3vh;
     width: auto;
     position: relative;
-    top: -5vh;
+    top: -4vh;
 }
 
 .whiteCircle3-pikud{
@@ -145,60 +163,61 @@
     right: 1vw;
     top: 3vh;
 }
-/* עיצוב הכפתורים */
-/* עיצוב הכללי של ה-div שמכיל את כל הכפתורים */
-/* עיצוב הכללי של ה-div שמכיל את כל הכפתורים */
+
 .roles-div-DiagramStep3 {
     position: relative;
     padding: 20px;
     margin-top: 34vh;
     width: 100vw;
     left: 50%;
-    transform: translateX(-50%); /* ממקם את כל התוכן במרכז האופקי */
+    transform: translateX(-50%); 
     display: flex;
-    flex-direction: column; /* מסדר את הכפתורים בעמודה */
-    align-items: center; /* ממרכז את כל הכפתורים במרכז האנכי */
-    justify-content: center; /* ממרכז את כל הכפתורים במרכז האופקי */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-/* עיצוב עבור הכפתור הראשון (עיגול גדול) */
 .role1-container-DiagramStep3 {
     position: relative;
     background-color: #ffffff;
     padding: 1vh;
-    margin-bottom: 15px; /* רווח בין הכפתורים */
+    margin-bottom: 15px; 
     border-radius: 50%;
-    width: 25vh; /* גודל גדול יותר עבור הכפתור הראשון */
+    width: 25vh;
     height: 25vh;
     text-align: center;
     font-size: 6vw;
-    border: 4px solid #000000; /* מסגרת אפורה */
+    border: 4px solid #000000;
     display: flex;
     flex-direction: column;
-    align-items: center; /* ממרכז את התוכן בתוך הדיב */
-    justify-content: center; /* ממרכז את התמונה והטקסט */
+    align-items: center; 
+    justify-content: center;
     overflow: hidden;
     font-family: "Karantina";
     color: #000000;
     font-size: 2em;
 }
+.inactive-role {
+    border: 4px solid #636363;
+        color:  #636363;
 
-/* עיצוב עבור התמונה בתוך ה-role הראשון */
+
+}
+
 .first-img-step3 {
-    height: 10vh; /* גובה התמונה */
-    width: auto; /* גודל אוטומטי כדי לשמור על היחס */
-    display: block; /* נוודא שהתמונה תהיה בלוק */
-    margin: 0 auto; /* ממקם את התמונה במרכז */
+    height: 10vh; 
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 .seconed-img-step3 {
-    height: 7vh; /* גובה התמונה */
-    width: auto; /* גודל אוטומטי כדי לשמור על היחס */
-    display: block; /* נוודא שהתמונה תהיה בלוק */
-    margin: 0 auto; /* ממקם את התמונה במרכז */
-    margin-top: -2vh; /* מרחק למעלה, תוכל לשחק עם הערך */
+    height: 7vh;
+    width: auto; 
+    display: block; 
+    margin: 0 auto;
+    margin-top: -2vh; 
 }
 
-/* עיצוב עבור כל שאר הכפתורים (עיגולים קטנים יותר) */
 .role-container-DiagramStep3 {
   position: relative;
     background-color: #ffffff;
@@ -210,8 +229,7 @@
     text-align: center;
     font-size: 1.6em;
     border: 4px solid #636363;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

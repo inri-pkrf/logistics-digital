@@ -58,13 +58,14 @@
 
 
 .explanation-div-DiagramStep2 {
-    position: relative;
-    top: 55vh;
+ position: relative;
+    top: 43vh;
     background-color: #d9d9d9;
     width: 90vw;
     right: 45vw;
-    margin-bottom: 26vw;
+    margin-bottom: 9vw;
     border-radius: 6vw;
+    direction: rtl;
 }
 
 
@@ -74,17 +75,10 @@
     font-family: 'Karantina', cursive;
     font-size: 8vw;
     text-align: center;
-    margin-top: -12vh;
+    margin-top: 2vh;
     padding-top: 2vh;
     color: rgb(58, 57, 57);
 }
-
-
-
-
-
-
-
 
 .explanation-text-DiagramStep2 {
  
@@ -101,7 +95,24 @@
     padding-bottom: 2vh;
 }
 
-.arrow-icon1 {
+.explanation-text-scroll{
+  max-height: 40vh;
+    min-height: 6vh;
+    overflow-y: auto;
+    text-align: right;
+     padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+}
+.small-text-drop{
+    font-size: 4vmin;
+    direction: ltr;
+    font-weight: 600;
+    color: #4e4d4d;
+    padding-bottom: 1vh;
+}
+
+.DiagramStep2 .arrow-icon1 {
     height: 3vh;
     width: auto;
     right: 2vw;
@@ -192,11 +203,11 @@
 
 
 .all-diagram {
-    position: relative;
+  position: relative;
     width: 100vw;
     font-family: 'Karantina', cursive;
     color: rgb(69, 69, 69);
-    top: 62vh;
+    top: 49vh;
     margin-bottom: 31vh;
     height: 119vh;
     RIGHT: 40VW;
@@ -234,7 +245,7 @@
     transform: translateX(50%);
     border-left: 2vw solid #595959;
     top: 2vh;
-    height: 184vh;
+    height: 201vh;
 }
 .line-pikud{
     position: absolute;

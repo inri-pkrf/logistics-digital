@@ -74,28 +74,36 @@ function DiagramStep2() {
                           </div>
                        
                         {['desteny', 'tasks'].map((key, index) => (
-                    <div key={index} className="explanation-div-DiagramStep2">
-                        <div
+                  <div key={index} className="explanation-div-DiagramStep2">
+                    <div
                         className="explanation-title-wrapper-DiagramStep2"
                         onClick={() => handleToggleExplanation(index)}
-                        >
+                    >
                         <div className="explanation-title-DiagramStep2">
-                            {data[key].title} 
+                        {data[key].title} 
                         </div>
                         <img
-                            src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
-                            className={`arrow-icon1 ${expandedExplanation === index ? 'rotated' : ''}`}
-                            alt="Arrow"
+                        src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
+                        className={`arrow-icon1 ${expandedExplanation === index ? 'rotated' : ''}`}
+                        alt="Arrow"
                         />
-                        </div>
-                        {expandedExplanation === index && (
-                        <div className="explanation-text-DiagramStep2">
+                    </div>
+
+                    {expandedExplanation === index && (
+                        <div className="explanation-text-container">
+                        <div className="explanation-text-scroll">
                             {Array.isArray(data[key].text)
                             ? data[key].text.map((text, idx) => <div key={idx}>{text}</div>)
-                            : data[key].text}
+                            : data[key].text
+                            }
                         </div>
-                        )}
+                        <p className='small-text-drop'>על מנת לקרוא את כל המלל יש לגלול למטה *</p>
+
+                        </div>
+                        
+                    )}
                     </div>
+
                     ))}
             <hr className='dotted hr1' />
             {/* <div className='subText-step2'>{data.imgDescription}</div>

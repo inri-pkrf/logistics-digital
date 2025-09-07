@@ -15,13 +15,15 @@
     overflow-x: hidden;
   }
   .Fast::before {
-    content: "";
+   content: "";
     position: absolute;
-    top: 49px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 94%;
-    background: rgba(0, 0, 0, 0.5);
+    height: 110%;
+    background: rgba(0, 0, 0, 0.651);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(1px);
     z-index: -1;
   }
   

@@ -63,33 +63,47 @@ function DiagramStep3() {
                 <StepsBtnDiagram currentStep={3} selectedOption={selectedOption} />
                 
                 {subRole.explanation.map((explanation, index) => (
-                <div key={index} className="explanation-div-DiagramStep3">
-                    <div
-                        className="explanation-title-wrapper-DiagramStep3"
-                        onClick={() => handleToggleExplanation(index)}
-                    >
-                        <div className="explanation-title-DiagramStep3">
-                            {explanation.titleExplanation}
-                        </div>
-                        <img
-                        src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
-                        className={`arrow-icon-diagram3 ${expandedExplanation === index ? 'rotated' : ''} ${index === 0 ? 'arrow-icon1-diagram3' : ''} ${index === 1 ? 'arrow-icon2-diagram3' : ''}`}
-                        alt="Arrow"
-                    />
-
+               <div key={index} className="explanation-div-DiagramStep3">
+                <div
+                    className="explanation-title-wrapper-DiagramStep3"
+                    onClick={() => handleToggleExplanation(index)}
+                >
+                    <div className="explanation-title-DiagramStep3">
+                    {explanation.titleExplanation}
                     </div>
-                    {expandedExplanation === index && (
-                        <div className="explanation-text-DiagramStep3">
-                            {Array.isArray(explanation.textExplanation)
-                                ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
-                                : explanation.textExplanation}
-                        </div>
-                    )}
+                    <img
+                    src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
+                    className={`arrow-icon-diagram3 ${expandedExplanation === index ? 'rotated' : ''} ${index === 0 ? 'arrow-icon1-diagram3' : ''} ${index === 1 ? 'arrow-icon2-diagram3' : ''}`}
+                    alt="Arrow"
+                    />
                 </div>
+
+                {expandedExplanation === index && (
+                    <div className="explanation-text-container3">
+                    <div className="explanation-text-scroll3">
+                        {Array.isArray(explanation.textExplanation)
+                        ? explanation.textExplanation.map((text, idx) => <div key={idx}>{text}</div>)
+                        : explanation.textExplanation
+                        }
+                    </div>
+                    <p className='small-text-drop3'>על מנת לקרוא את כל המלל יש לגלול למטה *</p>
+                    </div>
+                )}
+                </div>
+
             ))}
                 <hr className='dotted hr1-step3' />
-                        <div className="roles-div-DiagramStep3">
-                <div  onClick={handleFirstFrameClick}  key="first-role" className="role1-container-DiagramStep3">
+                <div className="roles-div-DiagramStep3">
+                <div
+                    key="first-role"
+                    className={`role1-container-DiagramStep3 ${selectedOption === "גדוד" ? "active-role" : "inactive-role"}`}
+                    onClick={() => {
+                    if (selectedOption === "גדוד") {
+                        handleFirstFrameClick();
+                    }
+                    }}
+                    style={{ cursor: selectedOption === "גדוד" ? "pointer" : "default" }}
+                >
                     <div className="role-DiagramStep3">
                     <img className='first-img-step3' src={subRole.srcSolider}/>
 

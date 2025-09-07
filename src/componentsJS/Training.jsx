@@ -71,14 +71,7 @@ function Training() {
                     </div>
                 ))}
             </div>
-        </div>
-    );
-}
-
-export default Training;
-
-
- {/* <div className='navigation-btn-Tra'>
+               {/* <div className='navigation-btn-Tra'>
                     <div onClick={() => navigate("/Ready")} className='prevTra'>
                         <p>לבחירת נושא</p>
                         <img className="arrow leftTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
@@ -88,3 +81,11 @@ export default Training;
                         <img className="arrow rightTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
                     </div>
                 </div> */}
+        </div>
+    );
+  
+}
+
+export default Training;
+
+

@@ -25,6 +25,7 @@
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(1px);
         z-index: -1;
+        z-index: -1;
   }
   
   .white-circle-Refua{

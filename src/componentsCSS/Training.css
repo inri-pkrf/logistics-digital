@@ -17,21 +17,21 @@
   .Training::before {
     content: "";
     position: absolute;
-    top: 49px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 94%;
     background: rgba(0, 0, 0, 0.5);
-     backdrop-filter: blur(1px);    /* טשטוש */
-    -webkit-backdrop-filter: blur(1px); /* תמיכה בספארי */
+     backdrop-filter: blur(3px);    /* טשטוש */
+    -webkit-backdrop-filter: blur(3px); /* תמיכה בספארי */
     z-index: -1;
   }
   
   .white-circle-Training{
-    position: absolute;
+position: absolute;
     width: 100vw;
-    height: 120vh;
-    margin-top: 46vh;
+    height: 176vh;
+    margin-top: 101vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -43,19 +43,116 @@
     color: rgb(89, 89, 89);
     font-size: 3em;
   }
-    
-  .sub-titleTra{
-    font-family: 'KARANTINA';
-    color: rgb(89, 89, 89);
-    font-size: 3em;
-    text-align: right;
-    padding-right: 7vw;
+  .txt-training{
+      font-family: 'Assistant';
+  font-size: 5vmin;
+  text-align: right;
+  color:rgb(58, 58, 58);
+  padding-right: 5vw;
+  padding-left: 5vw;
+  direction: rtl;
   }
-  .container-btn{
+
+
+
+
+
+.explanation-div-Training {
     position: relative;
-    width:80vw;
-    height: auto;
-  }
+    top: -2vh;
+    background-color: #d9d9d9;
+    width: 90vw;
+    right: -5vw;
+    margin-bottom: 9vw;
+    border-radius: 6vw;
+    direction: rtl;
+}
+
+
+
+
+.explanation-title-Training {
+    font-family: 'Karantina', cursive;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    color: rgb(58, 57, 57);
+}
+
+.explanation-text-Training {
+ 
+    font-family: 'Assistant', sans-serif;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    direction: rtl;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+    top: 2vh;
+    position: relative;
+    line-height: 5vh;
+    padding-bottom: 2vh;
+}
+
+.Training .explanation-text-scroll{
+  max-height: 20vh;
+    min-height: 6vh;
+    overflow-y: auto;
+    text-align: right;
+     padding-right: 4vh;
+    padding-left: 4vh;
+    text-align: right;
+}
+.Training .small-text-drop{
+    font-size: 4vmin;
+    direction: ltr;
+    font-weight: 600;
+    color: #4e4d4d;
+    padding-bottom: 1vh;
+}
+
+.Training .arrow-icon1 {
+    height: 3vh;
+    width: auto;
+    right: 2vw;
+    position: relative;
+    top: -3.42vh;
+    padding-left: -23vw;
+    margin-left: -230px;
+    transform: rotate(180deg);
+}
+
+.arrow-icon1.rotated {
+    transform: rotate(90deg);
+}
+
+.arrow-icon1-diagram {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 4.5vh;
+    left: 3vh;
+}
+
+.arrow-icon2-diagram {
+    height: 4vh;
+    width: auto;
+    position: absolute;
+    top: 11vh;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+
+
+
+
+
+
+
+
 
   .navigation-btn-Tra {
     position: relative;

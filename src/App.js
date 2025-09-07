@@ -24,7 +24,9 @@ import Battalions from './componentsJS/Battalions';
 import Validiation from './componentsJS/Validiation';
 import BackDoor from './componentsJS/BackDoor';
 import BackYard from './componentsJS/BackYard';
-
+import Yamach from './componentsJS/Yamach';
+import Maintenance from './componentsJS/Maintenance';
+import People from './componentsJS/People';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
@@ -81,7 +83,10 @@ function App() {
                     <Route path="/MagnifyPic" element={<MagnifyPic />} />
                     <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
                     <Route path="/Refua" element={<Refua />} />
+                    <Route path="/Yamach" element={<Yamach />} />
+                    <Route path="/Maintenance" element={<Maintenance />} />
                     <Route path="/training" element={<Training />} />
+                    <Route path="/people" element={<People />} />
                     <Route path="/fast" element={<Fast />} />
                     <Route path="/rounds" element={<Rounds />} />
                     <Route path="/BATTALIONS" element={<Battalions />} />

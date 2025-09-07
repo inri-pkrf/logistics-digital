@@ -26,7 +26,7 @@ function Refua() {
                 <img
             src={`${process.env.PUBLIC_URL}/assets/imgs/optimizing.png`}
             className="Routine-btn"
-            onClick={()=>navigate("/Yamach")}
+            onClick={()=>navigate("/Maintenance")}
           />
             <p className='Routine-text'> לחצו על מנת ללמוד על שגרת אחזקה  </p>
         </div>

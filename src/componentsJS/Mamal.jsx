@@ -4,97 +4,69 @@ import { useNavigate } from 'react-router-dom';
 
 function Mamal() {
     const navigate = useNavigate();
+    const [expandedExplanation, setExpandedExplanation] = useState(null);
 
+    const handleToggleExplanation = (index) => {
+        setExpandedExplanation(expandedExplanation === index ? null : index);
+    };
 
-      const [expanded, setExpanded] = useState(null); 
-        const [selectedCards, setSelectedCards] = useState([]);
-    
-        const points = [
-    { 
-        title: "ייעול זמן", 
-        text: `זמן ההעמסה והפריקה ע"ג דולבים מתקצר לאור שימוש באמצעים תומכים כגון מלגזות ועגלות משטחים וצמצום ידיים עובדות – מאפשר הוצאת סבבים מהירים לשטח הכינוס.` 
-    },
-    { 
-        title: "איכות השינוע", 
-        text: `האמצעים נשמרים בצורה טובה יותר ע"ג דולבים סגורים מאשר אריזה ע"ג משטח בידיים.` 
-    },
-    { 
-        title: "שטח אחסנה", 
-        text: `האחסנה במרוכז בדולבים מקטינה את נפח הציוד ומסייעת להגברת הסדר והשליטה בציוד בשטח הכינוס ובניהול המלאי.` 
-    },
-    { 
-        title: "שיטת הגיוס", 
-        text: `בשל הנפח הנמוך שתופס הציוד, ניתן לנייד יותר אמצעים בפחות סבבים אל שטח הכינוס – מאפשר גיוס מהיר יותר של כמות חיילים גדולה יותר.` 
-    },
-    { 
-        title: "נוחות החייל", 
-        text: `לא נדרש להיסחב עם שק חפצים ואין חתימה על ציוד שהחייל לא מתכוון להשתמש בו. בנוסף, בחירת מדים לפי מידה עדיפה על פני קבלת מערום שקי חפצים לפי התפלגות מוגדרת.` 
-    }
-];
-
-    
-        const handleToggle = (index) => {
-            setExpanded(index);
-            // אם הכרטיס עוד לא נבחר, מוסיפים אותו למערך selectedCards
-            if (!selectedCards.includes(index)) {
-                setSelectedCards([...selectedCards, index]);
-            }
-        };    const handleClose = () => setExpanded(null);
+    const explanations = [
+        {
+            title:`העקרונות הלוגיסטיים למעמ"ל:`,
+            text: (
+                <>
+                      1. קיצור זמני הנג"ח והמעמ"ל ע"ב ימ"ח מבצעי מהיר – אחסנת האמצעים בריכוז פלוגיתי ע"ב דולבים.<br/>
+                    2. התבססות על משאיות עם דופן הרמה הידראולית לקיצור זמני העמסה ופריקה וביצוע סבבים מהירים.<br/>
+                    3. מתן עדיפות לסבבים המבצעיים ואחריהם הסבבים המנהלתיים.<br/>
+                    4. התאמת שיטת הסבבים לכל גדוד חוד חנית / איתן / יערה / פלוגות מהירות.<br/>
+                    5. לבנת היסוד לביצוע המעמ"ל על בסיס הגלמ"ר.<br/>
+                    6. התבססות על אמצעי ניוד אורגניים בשלב הגיוס וצמצום התלות ביר"מ.<br/>
+                    7. הסד"כ יגיע לשטח הכינוס באופן ישיר והציוד יגיע אל הסד"כ בדחיפה מהימ"ח.<br/>
+                    8. שליפת סד"כ מתע"מ בהתאם לפקודת אמ"צ וגיוס מילואים במקביל.<br/>
+                    9. עצמאות לוגיסטית מרמת הגדוד בשלב המעמ"ל וב-24 השעות הראשונות להפעלה.<br/>
+                    10. מימוש משימת השיטור – שליטה בצירים בשלב המעמ"ל ע"ב סד"כ מ.צ דן.<br/>
+                </>
+            )
+        }
+    ];
 
     return (
         <div className="Maml">
             <div className='white-circle-Maml'>
-                <h1 className="titleMaml">עקרונות הגיוס המהיר</h1>  
-                       <button 
-                        className="fllow-button" 
-                        onClick={() =>
-                            navigate("/MagnifyPic", {
-                            state: {
-                                imagePath: `${process.env.PUBLIC_URL}/assets/imgs/fllow.png`,
-                                situation: "Maml" 
-                            }
-                            })
-                        }
-                        >
-                    תרשים זרימה עקרונות הגיוס     
-                        </button>
+                <h1 className="titleMaml">עקרונות המעמ"ל</h1>  
 
-                        <p className='txt-Maml'>כחלק מתובנות מלחמת 'חרבות ברזל' ולאחר ביצוע תחקיר מקיף בפקע"ר הוחלט על מעבר לשיטת אחסנה לחלק ניכר מהציוד בימ"חים ע"ג דולבים. זאת כדי לייעל את שיטת ההצטיידות ולאפשר מוכנות מהירה לכל תרחיש.
-                        </p>
+                {/* הטקסט הקיים נשאר במקום */}
+                <p className='txt-Maml'>
+                    שינויים באופי האיומים על ישראל מגדילים את הצורך במוכנות הפיקוד ויחידותיו למעבר מהיר ומסודר בין מצבי תפקוד, תוך מתן מענה לאירועים מבצעיים ולמשימות סיוע אזרחי.  
+                    יכולת מחלקת הלוגיסטיקה לעבור ממצב שגרה לחירום מבטיחה עמידה בייעוד ובמשימות הפיקוד.  
+                    תכנית המעמ"ל תופעל בכל תרחיש אופרטיבי, בהתאם ללימודי לקחי מלחמות קודמות, בשני אופנים – הפתעה מ-0 עד 100 או גיוס מדורג.
+                </p>
+                <img className='MaImg' src={`${process.env.PUBLIC_URL}/assets/imgs/maml.jpg`} alt="אימונים" />
 
-                        <p className='txt-Maml'>הציוד שעבר לשיטת האחסנה החדשה ע"ג דולבים:<br/>
-                        <b>ציוד אישי</b><br/>
-                        <b>מיגון אישי</b><br/>
-                        <b> ציוד חילוץ קל</b><br/>
-                        <b> ציוד חילוץ ייעודי</b><br/>
-                        <b>פק"ל נתק</b>
-                        </p>
-                           <div className="cards-container">
-                    {points.map((item, index) => (
+
+                {/* הסבר נפתח מתחת לטקסט הקיים */}
+                {explanations.map((item, index) => (
+                    <div key={index} className="explanation-div-Maml">
                         <div
-                            key={index}
-                            className={`card ${index < 3 ? "first-row" : "second-row"} ${selectedCards.includes(index) ? 'active' : ''}`}
-                            onClick={() => handleToggle(index)}
+                            className="explanation-title-wrapper-Maml"
+                            onClick={() => handleToggleExplanation(index)}
                         >
-                            <div className="card-title">{item.title}</div>
+                            <div className="explanation-title-Maml">{item.title}</div>
+                            <img
+                                src={`${process.env.PUBLIC_URL}/assets/imgs/nextBlack.png`}
+                                className={`arrow-icon1 ${expandedExplanation === index ? 'rotated' : ''}`}
+                                alt="Arrow"
+                            />
                         </div>
-                    ))}
 
-                    {expanded !== null && (
-                        <div className="overlay">
-                            <div className="overlay-content">
-                                <img onClick={handleClose} src={process.env.PUBLIC_URL + '/assets/imgs/XBtn.png'} alt="Close" className="XBtn" />
-                                <h2>{points[expanded].title}</h2>
-                                <p>{points[expanded].text}</p>
+                        {expandedExplanation === index && (
+                            <div className="explanation-text-container">
+                                <div className="explanation-text-scroll">{item.text}</div>
+                                <p className='small-text-drop'>על מנת לקרוא את כל המלל יש לגלול למטה *</p>
                             </div>
-                        </div>
-                    )}
-                </div>
-
-
-            
-
-
+                        )}
+                    </div>
+                ))}
 
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/emergency")} className='prev'>

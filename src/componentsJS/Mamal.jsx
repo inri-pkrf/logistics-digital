@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../componentsCSS/Fast.css';
+import '../componentsCSS/Mamal.css';
 import { useNavigate } from 'react-router-dom';
 
-function Fast() {
+function Mamal() {
     const navigate = useNavigate();
 
 
@@ -42,16 +42,16 @@ function Fast() {
         };    const handleClose = () => setExpanded(null);
 
     return (
-        <div className="Fast">
-            <div className='white-circle-Fast'>
-                <h1 className="titleFast">עקרונות הגיוס המהיר</h1>  
+        <div className="Maml">
+            <div className='white-circle-Maml'>
+                <h1 className="titleMaml">עקרונות הגיוס המהיר</h1>  
                        <button 
                         className="fllow-button" 
                         onClick={() =>
                             navigate("/MagnifyPic", {
                             state: {
                                 imagePath: `${process.env.PUBLIC_URL}/assets/imgs/fllow.png`,
-                                situation: "fast" 
+                                situation: "Maml" 
                             }
                             })
                         }
@@ -59,10 +59,10 @@ function Fast() {
                     תרשים זרימה עקרונות הגיוס     
                         </button>
 
-                        <p className='txt-fast'>כחלק מתובנות מלחמת 'חרבות ברזל' ולאחר ביצוע תחקיר מקיף בפקע"ר הוחלט על מעבר לשיטת אחסנה לחלק ניכר מהציוד בימ"חים ע"ג דולבים. זאת כדי לייעל את שיטת ההצטיידות ולאפשר מוכנות מהירה לכל תרחיש.
+                        <p className='txt-Maml'>כחלק מתובנות מלחמת 'חרבות ברזל' ולאחר ביצוע תחקיר מקיף בפקע"ר הוחלט על מעבר לשיטת אחסנה לחלק ניכר מהציוד בימ"חים ע"ג דולבים. זאת כדי לייעל את שיטת ההצטיידות ולאפשר מוכנות מהירה לכל תרחיש.
                         </p>
 
-                        <p className='txt-fast'>הציוד שעבר לשיטת האחסנה החדשה ע"ג דולבים:<br/>
+                        <p className='txt-Maml'>הציוד שעבר לשיטת האחסנה החדשה ע"ג דולבים:<br/>
                         <b>ציוד אישי</b><br/>
                         <b>מיגון אישי</b><br/>
                         <b> ציוד חילוץ קל</b><br/>
@@ -111,4 +111,4 @@ function Fast() {
     );
 }
 
-export default Fast;
+export default Mamal;

@@ -123,7 +123,7 @@
     position: relative;
     width: 70vw;
     height: 70vw;
-    right: 10%;
+    right: 15%;
     max-width: 600px;
     max-height: 600px;
     margin: 0 auto;
@@ -132,15 +132,15 @@
 
 .venn-circle {
 position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 55vw;
+    height: 55vw;
     max-width: 250px;
     max-height: 250px;
     border-radius: 50%;
     border: 3px solid white;
     font-family: "Assistant";
-    color: white;
-    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    font-size: 6vmin;
     text-align: center;
     display: flex;
     align-items: center;
@@ -151,27 +151,76 @@ position: absolute;
 }
 
 /* מיקום העיגולים */
+/* עיגול שמאלי למעלה */
 .circle-a {
   top: 0;
-  left: 25%;
-
+  left: 0%;
 }
+
+/* עיגול ימני למעלה */
+.circle-b {
+    top: 0;
+    left: 55%;
+}
+
+/* עיגול אחד למטה באמצע */
+.circle-c {
+  top: 50%;
+  left: 25%;
+}
+
+
+.circle-a {
+  background-color: rgba(0, 30, 85, 0.8); 
+  border-color: #0080ff; 
+    color:white;
+}
+
+
+
+.circle-c{
+  background-color: #03363fcc; /* כהה יותר */
+  border-color: #00ffffcc; /* כהה יותר */
+    color:white;
+}
+
+
 
 .circle-b {
-    top: 43%;
-    left: -5%;
-
+  background-color: rgba(87, 43, 0, 0.8); /* כהה יותר */
+  border-color: #ff8000; /* כהה יותר */
+  color:white;
+}
+.circle-a.clicked {
+  background-color: rgba(0, 89, 255, 0.8); 
+  border-color: #0080ff; 
+    color:white;
 }
 
-.circle-c {
-top: 43%;
-  left: 55%;
 
+
+.circle-c.clicked{
+  background-color: #00b2d1cc; /* כהה יותר */
+  border-color: #00ffffcc; /* כהה יותר */
+    color:white;
 }
 
 
 
-.ready-clicked {
-  color: #70cfed;
-  border: 3px solid #70cfed;
+.circle-b.clicked {
+  background-color: rgba(212, 106, 0, 0.8); /* כהה יותר */
+  border-color: #ff8000; /* כהה יותר */
+  color:white;
 }
+
+
+.venn-circle.clicked::after {
+  content: "✔";
+  position: absolute;
+  top: 10px;
+  right:25vw;
+  font-size: 10Vmin;
+  color: #ffffff;
+}
+
+

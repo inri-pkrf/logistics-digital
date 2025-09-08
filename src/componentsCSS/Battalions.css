@@ -54,24 +54,25 @@ z-index: -1;
   }
 
 
-
-  .navigation-btn-Bat {
-    position: relative;
-    bottom: -62vh;
+ 
+ .Battalions .navigation-btn{
+position: relative;
+    bottom: -57vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    width: 95%;
-    max-width: 607px;
+    width: 90%;
     direction: rtl;
-    gap: 103px;
+    gap: 260px;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
+    Z-INDEX: 1000000;
 }
 
-.nextBat, .prevBat {
+.Battalions.next.prev {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: transparent;
     color: rgb(89, 89, 89);
@@ -82,25 +83,20 @@ z-index: -1;
     font-weight: bold;
 }
 
-/* כפתור חזור - חץ מימין, טקסט משמאל */
-.prevBat {
-    flex-direction: row-reverse;
-}
-
-/* כפתור קדימה - חץ משמאל, טקסט מימין */
-.nextBat {
-    flex-direction: row;
-}
-
-.arrowBat {
-    width: auto;
-    height: 5vh;
-    margin: 0 1vw;
-}
-
-.leftBat {
+.Battalions .left{
     transform: rotate(180deg);
+
 }
+
+.Battalions .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
+}
+
+
 
 .card-content{
   background-color:  rgb(136 186 223);

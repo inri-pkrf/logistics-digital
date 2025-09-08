@@ -17,6 +17,8 @@
     text-align: center;
 }
 
+
+
 /* סיבוב התמונה כאשר המכשיר במצב אופקי */
 @media screen and (orientation: landscape) {
     .magnified-image-nafa-landscape {
@@ -56,9 +58,24 @@
         position: fixed;
     }
     .close-btn-landscape{
-    color:black
-    } 
+    color:black;
+     position: absolute;
+    top: 7px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 40px;
+    font-size: 3em;
+    cursor: pointer;
+    outline: none;
+    transform: rotate(90deg);
+    font-weight: bolder;
+    z-index: 200000;
 }
+    } 
+
 
 /* סיבוב התמונה כאשר המכשיר במצב אנכי */
 @media screen and (orientation: portrait) {
@@ -101,27 +118,39 @@
         height: auto;
         position: fixed;
     }
-    .close-btn-portrait{
-        color:white;
-        } 
+        .magnified-image-training-portrait {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.magnified-image-fast-portrait{
+           width: 85%;
+        height: auto;
+        object-fit: contain;
 }
 
-.close-btn {
-    position: absolute;
-    top: 7px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    width: 55px;
-    height: 40px;
-    font-size: 3em;
-    cursor: pointer;
-    outline: none;
-    transform: rotate(90deg);
-    font-weight: bolder;
-    z-index: 10000;
+
+ .close-btn-portrait {
+    color: white !important;
+position: absolute;
+top: 7px;
+right: 20px;
+background-color: transparent;
+border: none;
+border-radius: 50%;
+width: 55px;
+height: 40px;
+font-size: 14vmin;
+cursor: pointer;
+outline: none;
+font-weight: bolder;
+z-index: 200000;
+font-family: "Assistant";
 }
+
+    
+}
+
 .close-btn-nafa {
     color: white;
 }

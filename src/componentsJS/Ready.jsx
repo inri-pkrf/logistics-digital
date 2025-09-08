@@ -29,26 +29,26 @@ const Ready = () => {
       <h1 className='ready-title'>היערכות לחירום </h1>
      <div className="venn-container">
   <button 
-    className={`venn-circle circle-a ${visitedPages["Refua"] ? "ready-clicked" : ""}`} 
-    onClick={() => handleNavigation("Refua")}
-  >
-    <p>אמצעים</p>
-  </button>
+  className={`venn-circle circle-a ${visitedPages["Refua"] ? "clicked" : ""}`} 
+  onClick={() => handleNavigation("Refua")}
+>
+  <p>אמצעים</p>
+</button>
 
-  <button 
-    className={`venn-circle circle-b ${visitedPages["training"] ? "ready-clicked" : ""}`} 
-    onClick={() => handleNavigation("training")}
-  >
-    <p>אימונים</p>
-  </button>
+<button 
+  className={`venn-circle circle-b ${visitedPages["training"] ? "clicked" : ""}`} 
+  onClick={() => handleNavigation("training")}
+>
+  <p>אימונים</p>
+</button>
 
-  <button 
-    className={`venn-circle circle-c ${visitedPages["people"] ? "ready-clicked" : ""}`} 
-    onClick={() => handleNavigation("people")}
-  >
-    <p> ניהול כוח אדם
- </p>
-  </button>
+<button 
+  className={`venn-circle circle-c ${visitedPages["people"] ? "clicked" : ""}`} 
+  onClick={() => handleNavigation("people")}
+>
+  <p>ניהול כוח אדם</p>
+</button>
+
 </div>
 
       </div>

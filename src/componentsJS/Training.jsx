@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
 import '../componentsCSS/Training.css';
 import { useNavigate } from 'react-router-dom';
@@ -24,6 +25,7 @@ function Training() {
                 </>
             )
         }
+       
     ];
 
     return (
@@ -70,17 +72,33 @@ function Training() {
                         )}
                     </div>
                 ))}
+                <h2 className="SubtitleTra"> מתווה אימוני פלוגת המפקדה לשנת 2025 </h2>
+                      <img
+                        src={`${process.env.PUBLIC_URL}/assets/imgs/training2.jpg`}
+                        className='TraImg'
+                        onClick={() =>
+                            navigate("/MagnifyPic", {
+                                state: {
+                                    imagePath: `${process.env.PUBLIC_URL}/assets/imgs/training2.jpg`,
+                                    situation: "training"   
+                                }
+                            })
+                        }
+                    />
+                    <p className='small-text-drop'> ניתן ללחוץ על התמונה על מנת להגדילה*</p>
+
+
             </div>
-               {/* <div className='navigation-btn-Tra'>
-                    <div onClick={() => navigate("/Ready")} className='prevTra'>
-                        <p>לבחירת נושא</p>
-                        <img className="arrow leftTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
+               <div className='navigation-btn'>
+                    <div onClick={() => navigate("/ready")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-                    <div onClick={() => navigate("/training")} className='nextTra'>
-                        <p>לנושא הבא</p>
-                        <img className="arrow rightTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
+                    <div onClick={() => navigate("/people")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-                </div> */}
+                </div>
         </div>
     );
   

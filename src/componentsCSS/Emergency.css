@@ -100,6 +100,10 @@ z-index: -1;
         position: absolute;
         margin-top: 47vh;
     }
+    .thirdBtn{
+            position: absolute;
+        margin-top: 65vh;
+    }
     .btn-clicked{
         color:#70cfed;
         border: solid 3px #70cfed;

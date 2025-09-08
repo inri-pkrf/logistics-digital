@@ -39,7 +39,11 @@ function MagnifyPic() {
         : (situation === "נפה" ? "magnified-image-nafa-portrait" :
             situation === "גדוד" ? "magnified-image-gdud-portrait" :
             situation === "מחוז" ? "magnified-image-mahoz-portrait" :
-            situation === "הערכת-מצב" ? "magnified-image-validation-portrait" : "");
+            situation === "הערכת-מצב" ? "magnified-image-validation-portrait" :
+                situation === "training" ? "magnified-image-training-portrait" :
+                situation === "fast" ? "magnified-image-fast-portrait" :""
+            );
+
 
     // קביעת ה-class לכפתור close
     const closeBtnClass = situation === "נפה" ? "close-btn-nafa" : isLandscape ? "close-btn-landscape" : "close-btn-portrait";

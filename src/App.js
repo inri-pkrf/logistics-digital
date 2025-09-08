@@ -27,6 +27,7 @@ import BackYard from './componentsJS/BackYard';
 import Yamach from './componentsJS/Yamach';
 import Maintenance from './componentsJS/Maintenance';
 import People from './componentsJS/People';
+import Mamal from './componentsJS/Mamal';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
@@ -88,6 +89,7 @@ function App() {
                     <Route path="/training" element={<Training />} />
                     <Route path="/people" element={<People />} />
                     <Route path="/fast" element={<Fast />} />
+                    <Route path="/maml" element={<Mamal />} />
                     <Route path="/rounds" element={<Rounds />} />
                     <Route path="/BATTALIONS" element={<Battalions />} />
                     <Route path="/validation" element={<Validiation />} />

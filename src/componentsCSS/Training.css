@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 94%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.849);
      backdrop-filter: blur(3px);    /* טשטוש */
     -webkit-backdrop-filter: blur(3px); /* תמיכה בספארי */
     z-index: -1;
@@ -29,28 +29,34 @@
   
   .white-circle-Training{
 position: absolute;
-    width: 100vw;
-    height: 176vh;
-    margin-top: 101vh;
+    width: 160vw;
+    height: 220vh;
+    margin-top: 150vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
     z-index: 999;
   }
     
-  .titleTra{
+  .Training .titleTra{
     font-family: 'KARANTINA';
-    color: rgb(89, 89, 89);
+    color: rgb(236, 139, 48);
     font-size: 3em;
+  }
+  .SubtitleTra{
+    font-family:'Assistant';
+    color: rgb(89, 89, 89);
+    font-size:6vmin;
   }
   .txt-training{
       font-family: 'Assistant';
   font-size: 5vmin;
   text-align: right;
   color:rgb(58, 58, 58);
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding-right: -5vw;
+  padding-left: 35vw;
   direction: rtl;
+  width: 90vw;
   }
 
 
@@ -62,7 +68,7 @@ position: absolute;
     top: -2vh;
     background-color: #d9d9d9;
     width: 90vw;
-    right: -5vw;
+    right: -35vw;
     margin-bottom: 9vw;
     border-radius: 6vw;
     direction: rtl;
@@ -123,55 +129,64 @@ position: absolute;
     transform: rotate(180deg);
 }
 
-.arrow-icon1.rotated {
+.Training .arrow-icon1.rotated {
     transform: rotate(90deg);
 }
 
-.arrow-icon1-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 4.5vh;
-    left: 3vh;
-}
-
-.arrow-icon2-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 11vh;
-    right: 50%;
-    transform: translateX(50%);
+.TraImg{
+  width: 60VW;
+  height: auto;
 }
 
 
+.Ref2Img{
+  width: 80vw;
+  height: auto;
+}
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: pointer;
+}
 
+.fullscreen-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
 
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 
-
-
-
-
-
-
-  .navigation-btn-Tra {
+  .Training .navigation-btn{
     position: relative;
-    bottom: -12vh;
-    left: 50%;
+    bottom: -177vh;
+    left: 46%;
     transform: translateX(-50%);
-    display: flex
-;
+    display: flex;
     justify-content: center;
     width: 90%;
-    max-width: 600px;
     direction: rtl;
-    gap: 137px;
+    gap: 260px;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
+    Z-INDEX: 1000000;
 }
 
-.nextTra, .prevTra {
+.Training.next .prev {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: transparent;
     color: rgb(89, 89, 89);
@@ -182,22 +197,15 @@ position: absolute;
     font-weight: bold;
 }
 
-/* כפתור חזור - חץ מימין, טקסט משמאל */
-.prevTra {
-    flex-direction: row-reverse;
-}
-
-/* כפתור קדימה - חץ משמאל, טקסט מימין */
-.nextTra {
-    flex-direction: row;
-}
-
-
-.leftTra {
+.Training .left{
     transform: rotate(180deg);
+
 }
 
-.Ref2Img{
-  width: 80vw;
-  height: auto;
+.Training .text-lable{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    color: #626262;
+    font-weight: bold;
 }

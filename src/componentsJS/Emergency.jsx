@@ -38,6 +38,11 @@ const Emergency = () => {
         >
           סבבי העמסה
         </button>
+        <button 
+          className={`emer-btn thirdBtn ${visitedPages["maml"] ? "btn-clicked" : ""}`} 
+          onClick={() => handleNavigation("maml")}
+        >עקרונות המעמ"ל
+        </button>
       </div>
     </div>
   );

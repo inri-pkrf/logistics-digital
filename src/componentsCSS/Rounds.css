@@ -59,7 +59,7 @@
  
   .units-buttons {
     display: flex;
-    margin-top: 7vh;
+    margin-top: 2vh;
     flex-direction: column;
     gap: 20px;
 }
@@ -83,21 +83,21 @@
 
 .unit-button.right {
   align-self: flex-end;
-background: linear-gradient(90deg, #7c294d, #041155);  
+  background: linear-gradient(135deg, #411030, #912f47);
 border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
 .unit-button.left {
   align-self: flex-start;
-background: linear-gradient(90deg, #7c294d, #041155);  
+  background: linear-gradient(135deg, #411030, #912f47);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
 
 .Rounds .navigation-btn{
    position: relative;
-    bottom: -3vh;
+    bottom: 3vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

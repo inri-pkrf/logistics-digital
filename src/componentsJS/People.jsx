@@ -53,7 +53,16 @@ function People() {
                         </div>
                     )}
                 </div>
-
+                <div className='navigation-btn'>
+                    <div onClick={() => navigate("/ready")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
+                    <div onClick={() => navigate("/people")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -62,14 +71,3 @@ function People() {
 
 export default People;
 
-
- {/* <div className='navigation-btn-Tra'>
-                    <div onClick={() => navigate("/Ready")} className='prevTra'>
-                        <p>לבחירת נושא</p>
-                        <img className="arrow leftTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
-                    </div>
-                    <div onClick={() => navigate("/People")} className='nextTra'>
-                        <p>לנושא הבא</p>
-                        <img className="arrow rightTra" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`} />
-                    </div>
-                </div> */}

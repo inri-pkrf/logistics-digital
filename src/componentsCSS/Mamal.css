@@ -1,4 +1,4 @@
-.Fast{
+.Mamal{
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     overflow-y: scroll; /* Ensure the container is scrollable */
     overflow-x: hidden;
   }
-  .Fast::before {
+  .Mamal::before {
    content: "";
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@
     z-index: -1;
   }
   
-  .white-circle-Fast{
+  .white-circle-Mamal{
       position: absolute;
     width: 100vw;
     height: 163vh;
@@ -39,7 +39,7 @@
 
   }
     
-  .titleFast{
+  .titleMamal{
     font-family: 'KARANTINA';
     color: rgb(89, 89, 89);
     font-size: 3em;
@@ -58,7 +58,7 @@
 
 
 
-  .Fast .navigation-btn {
+  .Mamal .navigation-btn {
     position: relative;
     bottom: -2vh;
     left: 50%;
@@ -73,7 +73,7 @@
     margin-bottom: 20px;
 }
 
-.Fast .next .prev {
+.Mamal .next .prev {
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -95,7 +95,7 @@
   border-radius: 20px;
 }
 
-  .txt-fast{
+  .txt-Mamal{
       font-family: 'Assistant';
   font-size: 5vmin;
   text-align: right;
@@ -106,7 +106,7 @@
   width: 90vw;
   }
 
-.Fast .cards-container {
+.Mamal .cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -115,7 +115,7 @@
 }
 
 
-.Fast .card {
+.Mamal .card {
     width: 30vw;
     height: 30vw; 
     background: #a0c4ff; 
@@ -135,7 +135,7 @@
 
 
 /* כותרת כרטיסיות */
-.Fast .card-title {
+.Mamal .card-title {
     font-family: "Assistant", sans-serif;
     color: #2d2d2d;
     font-size: 1.2rem;
@@ -170,7 +170,7 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 /* כפתור סגירה */
-.Fast .close-btn {
+.Mamal .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -189,7 +189,7 @@
 }
 
 /* כותרת overlay */
-.Fast .overlay-content h2 {
+.Mamal .overlay-content h2 {
     margin-bottom: 10px;
     font-size: 9vmin;
     text-align: center;
@@ -197,7 +197,7 @@
 }
 
 /* טקסט overlay */
-.Fast .overlay-content p {
+.Mamal .overlay-content p {
     font-size: 5vmin;
     line-height: 1.5;
     direction: rtl;
@@ -205,12 +205,12 @@
 }
 
 /* כותרת כרטיסיות */
-.Fast .card-title {
+.Mamal .card-title {
     font-family: "Assistant";
     color: #2d2d2d;
     font-size: 5vmin;
     font-weight: bolder;
 }
-.Fast .card.active {
+.Mamal .card.active {
     background: #5f7eaf;     color: #fff; /* אפשר לשנות גם את הצבע של הטקסט */
 }

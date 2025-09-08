@@ -48,18 +48,16 @@ function Battalions() {
                 <h1 className="card-title">{`סבבי העמסה מספר ${buttonTexts[currentStep - 1]}`}</h1>
                 <p className='text-batel'> {unit.steps[currentStep - 1]} </p>{/* התוכן עבור הצעד הנבחר */}
                 </div>
-                <div className='navigation-btn-Bat'>
-                    <div onClick={()=>navigate("/emergency")} className='prevBat'>
-                        <p> לבחירת נושא</p>
-                    <img className="arrowBat leftBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-                          </div>
-                    <div onClick={()=>navigate("/war")} className='nextBat'>
-                    <p>לנושא הבא</p>
-
-                    <img className="arrowBat rightBat" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-
+                 <div className='navigation-btn'>
+                    <div onClick={() => navigate("/emergency")} className='prev'>
+                        <p className='text-lable'>הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Previous" />
                     </div>
+                    <div onClick={()=>navigate("/war")} className='next'>
+                        <p className='text-lable'>הבא </p>
 
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Next" />
+                    </div>
                 </div>
             </div>
         </div>

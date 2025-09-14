@@ -1,6 +1,5 @@
    @media screen and (max-width: 768px)  {
       
-
 .Menu-container {
     position: fixed;
     top: 0;
@@ -51,18 +50,17 @@
 position: absolute;
         margin-top: 10vh;
         right: 0%;
-        /* transform: translateX(40%); */
         width: 100vw;
         direction: rtl;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
-        gap: 3vh;              /* מרווח בין הכפתורים */
+        gap: 3vh;              
 }
 
 .button-design {
   display: flex;
-  flex-direction: column; /* מסודר אנכית */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -71,13 +69,13 @@ position: absolute;
 .btn-title {
   font-family: 'ASSISTANT', sans-serif;
   color: white;
-  width: 100%;       /* תופס את כל רוחב הכפתור */
-  font-size: 1.1em;  /* אפשר לכוונן לפי הצורך */
+  width: 100%;
+  font-size: 1.1em;  
   font-weight: bolder;
-  margin-top: 1vh;   /* רווח מעל הכותרת */
+  margin-top: 1vh;  
   text-align: center;
-  word-wrap: break-word; /* מאפשר שבר שורות בתוך המילה אם ארוכה */
-  white-space: normal;   /* מבטיח שהכותרת לא תשאר באותה שורה */
+  word-wrap: break-word;
+  white-space: normal;   
 }
 
       

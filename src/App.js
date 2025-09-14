@@ -4,30 +4,31 @@ import './App.css';
 import Intro from './componentsJS/Intro';
 import Info from './componentsJS/Info';
 import Menu from './componentsJS/Menu';
-import Mivne from './componentsJS/Mivne';
+import Mivne from './PartOne/Mivne';
 import Header from './componentsJS/Header';
-import Ready from './componentsJS/Ready';
-import Emergency from './componentsJS/Emergency';
-import War from './componentsJS/War';
-import Diagram from './componentsJS/DiagramStep1';
-import DiagramStep2 from './componentsJS/DiagramStep2';
-import DiagramStep3 from './componentsJS/DiagramStep3';
+import Ready from './PartTwo/Ready';
+import Emergency from './PartThree/Emergency';
+import War from './PartFour/War';
+import Diagram from './PartOne/DiagramStep1';
+import DiagramStep2 from './PartOne/DiagramStep2';
+import DiagramStep3 from './PartOne/DiagramStep3';
 import MagnifyPic from './componentsJS/MagnifyPic';
-import DiagramStep3Sub from './componentsJS/DiagramStep3Sub';
-import DiagramStep3Mahoz from './componentsJS/DiagramStep3Mahoz';
-import Refua from './componentsJS/Refua';
-import Training from './componentsJS/Training';
-import Fast from './componentsJS/Fast';
-import ExcelMinala from './componentsJS/ExcelMinala';
-import Rounds from './componentsJS/Rounds';
-import Battalions from './componentsJS/Battalions';
-import Validiation from './componentsJS/Validiation';
-import BackDoor from './componentsJS/BackDoor';
-import BackYard from './componentsJS/BackYard';
-import Yamach from './componentsJS/Yamach';
-import Maintenance from './componentsJS/Maintenance';
-import People from './componentsJS/People';
-import Mamal from './componentsJS/Mamal';
+import DiagramStep3Sub from './PartOne/DiagramStep3Sub';
+import DiagramStep3Mahoz from './PartOne/DiagramStep3Mahoz';
+import Refua from './PartTwo/Refua';
+import Training from './PartTwo/Training';
+import Fast from './PartThree/Fast';
+import ExcelMinala from './PartFour/ExcelMinala';
+import Rounds from './PartThree/Rounds';
+import Battalions from './PartThree/Battalions';
+import Validiation from './PartFour/Validiation';
+import BackDoor from './PartFour/BackDoor';
+import HapakMichlala from './PartFour/HapakMichlala';
+import BackYard from './PartFour/BackYard';
+import Yamach from './PartTwo/Yamach';
+import Maintenance from './PartTwo/Maintenance';
+import People from './PartTwo/People';
+import Mamal from './PartThree/Mamal';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
@@ -96,6 +97,7 @@ function App() {
                     <Route path="/excelExplenation" element={<ExcelMinala />} />
                     <Route path="/backdoor" element={<BackDoor />} />
                     <Route path="/BackYard" element={<BackYard />} />
+                    <Route path="/hapakMichlala" element={<HapakMichlala />} />
                 </Routes>
             )}
         </div>

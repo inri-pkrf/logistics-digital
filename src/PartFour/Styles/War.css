@@ -1,0 +1,114 @@
+.War-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url('/public/assets/imgs/Bg2.jpg');
+    overflow-y: scroll; /* Ensure the container is scrollable */
+    overflow-x: hidden;
+
+}
+
+/* שכבת השחרה */
+.War-container::before {
+      content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background: rgb(0 0 0 / 71%);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(1px);
+        z-index: -1;
+}
+
+    
+    
+    .war-title{
+        font-family: "karantina";
+        font-size: 3em;
+        font-weight: 400;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 90vw;
+        color: #ffffff;
+        margin-top: -56vh;
+        text-align: center;
+    
+    }
+    .title-container-war{
+        background-color: rgb(0 0 0 / 82%);
+        border: white solid 3px;
+        border-right: none;
+        width: 94vw;
+        right: 0vw;
+        position: absolute;
+        margin-top: -64vh;
+        height: 12vh;
+        z-index: -1;
+        border-top-left-radius: 10vh;
+        border-bottom-left-radius: 10vh;
+        
+        
+    }
+    .war-title{
+        font-family: "karantina";
+        font-size: 3em;
+        padding-left: 25vw;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 3vh;
+        width: 90vw;
+        color: #ffffff;
+        text-align: left;
+    
+    }
+    .icon-title-war{
+        position: absolute;
+        height: 10vh;
+        right: 12vw;
+        margin-top: 1vh;
+        width: auto;
+    }
+
+    .war-btn{
+        background-color: #050506;
+        border: solid 3px white;
+        position: absolute;
+        border-radius: 50px;
+        width: 89vw;
+        font-family: "Assistant";
+        color: white;
+        font-size: 1.5em;
+        right: 54%;
+        transform: translateX(50%);
+        height: 9vh;
+    }
+    .btnWar-first{
+        position: absolute;
+        margin-top: 21vh;
+    }
+    .btnWar-seconed{
+        position: absolute;
+        margin-top: 38vh;
+    }
+    .btnWar-third{
+        position: absolute;
+        margin-top: 55vh;
+    }
+
+
+    .war-clicked{
+        color:#70cfed;
+        border: solid 3px #70cfed;
+
+    }

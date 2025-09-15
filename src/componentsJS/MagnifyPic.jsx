@@ -41,7 +41,8 @@ function MagnifyPic() {
             situation === "מחוז" ? "magnified-image-mahoz-portrait" :
             situation === "הערכת-מצב" ? "magnified-image-validation-portrait" :
                 situation === "training" ? "magnified-image-training-portrait" :
-                situation === "fast" ? "magnified-image-fast-portrait" :""
+                situation === "fast" ? "magnified-image-fast-portrait" :  
+                situation === "hapak" ? "magnified-image-hapak-portrait" :""
             );
 
 
@@ -50,9 +51,10 @@ function MagnifyPic() {
 
     return (
         <div className="MagnifyPic">
-            <button className={`close-btn ${closeBtnClass}`} onClick={() => navigate(-1)}>
-                x
-            </button>
+
+            <img src={process.env.PUBLIC_URL + '/assets/imgs/xBtnWhite.png'} alt="Close" className={`close-btn ${closeBtnClass}`} onClick={() => navigate(-1)}/>
+
+            
             <img src={imagePath} alt="Magnified" className={imageClass} />
         </div>
     );

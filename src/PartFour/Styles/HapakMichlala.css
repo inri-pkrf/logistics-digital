@@ -44,11 +44,41 @@
     font-size: 3em;
   }
     
- .hapkMivne{
-     position: relative;
-    width: 77vw;
-    height: auto;
+.hapkMivne {
+  width: 77vw;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.889);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transform: none;
+}
+
+.expanded-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+}
+.XBtn-HAPAK{
+    position: fixed;
+    width: 5VW;
+    position: AUTO;
+}
+
+
+
 .txt-hapak{
 font-family: "Assistant";
     position: relative;
@@ -102,7 +132,7 @@ font-family: "Assistant";
     font-weight: bold;
 }
 .HapakNav {
-    background: linear-gradient(90deg, #142d42 0%, #3e5697 100%);
+ background: linear-gradient(90deg, #142d42 0%, #3e5697 100%);
     border: none;
     color: white;
     padding: 12px 25px;
@@ -111,8 +141,10 @@ font-family: "Assistant";
     border-radius: 12px;
     cursor: pointer;
     width: 45vw;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Assistant';
+    transition: all 0.3s 
+ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .HapakNav:hover {

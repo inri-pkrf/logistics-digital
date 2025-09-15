@@ -29,6 +29,7 @@ import Yamach from './PartTwo/Yamach';
 import Maintenance from './PartTwo/Maintenance';
 import People from './PartTwo/People';
 import Mamal from './PartThree/Mamal';
+import Fields from './PartFour/Fields';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
@@ -98,6 +99,7 @@ function App() {
                     <Route path="/backdoor" element={<BackDoor />} />
                     <Route path="/BackYard" element={<BackYard />} />
                     <Route path="/hapakMichlala" element={<HapakMichlala />} />
+                    <Route path="/fields" element={<Fields />} />
                 </Routes>
             )}
         </div>

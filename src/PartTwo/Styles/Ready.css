@@ -87,47 +87,16 @@
         position: absolute;
         left: 13vw;
     }
-    /* .ready-btn{
-        background-color: #050506;
-        border: solid 3px white;
-        position: absolute;
-        border-radius: 50px;
-        width: 89vw;
-        font-family: "Assistant";
-        color: white;
-        font-size: 1.5em;
-        right: 54%;
-        transform: translateX(50%);
-        height: 9vh;
-    }
-    .btnready-first{
-        position: absolute;
-        margin-top: 21vh;
-    }
-    .btnready-seconed{
-        position: absolute;
-        margin-top: 38vh;
-    }
-    .btnready-third{
-        position: absolute;
-        margin-top: 55vh;
-    }
-
-
-    .ready-clicked{
-        color:#70cfed;
-        border: solid 3px #70cfed;
-
-    } */
+    
     .venn-container {
-    position: relative;
+  position: relative;
     width: 70vw;
     height: 70vw;
     right: 15%;
     max-width: 600px;
     max-height: 600px;
     margin: 0 auto;
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .venn-circle {
@@ -217,10 +186,18 @@ position: absolute;
 .venn-circle.clicked::after {
   content: "✔";
   position: absolute;
-  top: 10px;
-  right:25vw;
+  top: 30px;
+  right:24vw;
   font-size: 10Vmin;
   color: #ffffff;
 }
 
-
+.KOH{
+   position: relative;
+    left: -2vw;
+    top: 40vh;
+    z-index: 1000;
+    color: white;
+    font-family: "Assistant";
+    font-size: 6vmin;
+}

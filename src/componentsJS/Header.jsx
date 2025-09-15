@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../componentsCSS/Header.css';
-// import Hamburger from '../componentsJS/Hamburger';
+
+import Hamburger from '../componentsJS/Hamburger';
 
 function Header() {
   const navigate = useNavigate();
@@ -18,13 +19,8 @@ function Header() {
         className="App-logo"
         alt="logo"
       />
-      
-      <img
-        src={`${process.env.PUBLIC_URL}/assets/imgs/home.png`}
-        className="home-icon"
-        alt="logo"
-        onClick={() => navigate('/menu')} 
-      />
+      <Hamburger></Hamburger>
+     
 
       
       <button

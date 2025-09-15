@@ -29,10 +29,10 @@
   }
   
   .white-circle-Refua{
-    position: absolute;
+       position: absolute;
     width: 100vw;
-    height: 120vh;
-    margin-top: 46vh;
+    height: 106vh;
+    margin-top: 31vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -125,8 +125,8 @@ font-family: 'KARANTINA';
   }
 
   .Refua .navigation-btn{
-       position: relative;
-    bottom: 12vh;
+     position: relative;
+    bottom: 29vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -136,6 +136,7 @@ font-family: 'KARANTINA';
     gap: 260px;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
+
 }
 
 .Refua.next .prev {
@@ -172,4 +173,10 @@ font-family: 'KARANTINA';
 .Ref2Img{
   width: 80vw;
   height: auto;
+}
+.clickedDiv {
+  border: 3px solid #007BFF; /* מסגרת כחולה */
+  box-shadow: 0 0 15px rgba(0,123,255,0.5);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }

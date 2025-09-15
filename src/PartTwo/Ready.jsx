@@ -27,6 +27,7 @@ const Ready = () => {
          <div className='title-container-ready'>
          <img className='icon-title-ready' src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}  />
       <h1 className='ready-title'>היערכות לחירום </h1>
+      <p className='KOH'>כו"כ</p>
      <div className="venn-container">
   <button 
   className={`venn-circle circle-a ${visitedPages["Refua"] ? "clicked" : ""}`} 

@@ -135,3 +135,38 @@
   color: grey;
   width: 60vw;
 }
+   .ExcelMinala .navigation-btn{
+      position: relative;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex
+;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 20px;
+}
+
+.ExcelMinala.next .prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+
+
+
+.ExcelMinala .left{
+    transform: rotate(180deg);
+
+}

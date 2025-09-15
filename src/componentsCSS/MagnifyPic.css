@@ -128,24 +128,29 @@
         height: auto;
         object-fit: contain;
 }
+.magnified-image-hapak-portrait{
+      width: 98%;
+        height: auto;
+        object-fit: contain;
+}
 
 
  .close-btn-portrait {
-    color: white !important;
-position: absolute;
-top: 7px;
-right: 20px;
-background-color: transparent;
-border: none;
-border-radius: 50%;
-width: 55px;
-height: 40px;
-font-size: 14vmin;
-cursor: pointer;
-outline: none;
-font-weight: bolder;
-z-index: 200000;
-font-family: "Assistant";
+color: white !important;
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        width: 55px;
+        height: auto;
+        font-size: 14vmin;
+        cursor: pointer;
+        outline: none;
+        font-weight: bolder;
+        z-index: 200000;
+        font-family: "Assistant";
 }
 
     

@@ -1,4 +1,4 @@
-.Validiation{
+.Fields{
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     overflow-y: scroll; /* Ensure the container is scrollable */
     overflow-x: hidden;
   }
-  .Validiation::before {
+  .Fields::before {
     content: "";
     position: absolute;
     top: 49px;
@@ -27,62 +27,39 @@
     z-index: -1;
   }
   
-  .white-circle-Validiation{
-    position: absolute;
-    width: 153vw;
-    height: 360vh;
-    margin-top: 291vh;
+  .white-circle-Fields{
+        position: absolute;
+    width: 127vw;
+    height: 117vh;
+    margin-top: 39vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
     z-index: 999;
   }
     
-  .titleVal{
-font-family: 'KARANTINA';
-    color: rgb(89, 89, 89);
-    font-size: 3em;
-    margin-top: 9vh;
-  }
-    
-  .sub-titleVal{
+  .titleFields{
     font-family: 'KARANTINA';
     color: rgb(89, 89, 89);
-    font-size: 2.5em;
-    direction: rtl;
-    text-align: right;
-    padding-right: 34vw;
+    font-size: 3em;
   }
-  .container-btn{
+    
+
+
+
+
+.txt-fields{
+font-family: "Assistant";
     position: relative;
-    width:80vw;
-    height: auto;
-  }
- 
-  .video-val{
-    width:90vw;
-    height: auto;
-  }
-  .explanationVal{
-    font-family: "Assistant";
     width: 90vw;
-    padding-right: 5vw;
-    padding-left: 31vw;
-    font-size: 1.1em;
-  }
-  .orders-val{
-    text-align: right;
-    width: 90vw;
-    padding-left: 30vw;
+    right: -17vw;
+    color: #595959;
+    font-size: 5vmin;
     direction: rtl;
-    font-family: "Assistant";
-    font-size: 1.1em;
-    margin-top: 5vh;
-  }
- 
-    .Validiation .navigation-btn{
-      position: relative;
-    bottom: 2vh;
+}
+  .Fields .navigation-btn{
+   position: relative;
+    bottom: 12vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex
@@ -95,7 +72,7 @@ font-family: 'KARANTINA';
     margin-bottom: 20px;
 }
 
-.Validiation.next .prev {
+.Fields.next .prev {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,18 +88,44 @@ font-family: 'KARANTINA';
 
 
 
-.Validiation .left{
+.Fields .left{
     transform: rotate(180deg);
 
 }
 
 
-.Validiation .text-lable{
+.Fields .text-lable{
     text-align: center;
     position: relative;
     top: 10vh;
     color: #626262;
     font-weight: bold;
 }
-  
- 
+.HapakNav {
+ background: linear-gradient(90deg, #142d42 0%, #3e5697 100%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    margin: 12px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 45vw;
+    font-family: 'Assistant';
+    transition: all 0.3s 
+ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.HapakNav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* סטייל לכפתורים שכבר נלחצו */
+.HapakNav.visited {
+    background: linear-gradient(90deg, #1e82df 0%, #9ca5fc 100%);
+    color: white;
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}

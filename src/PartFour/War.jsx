@@ -42,10 +42,10 @@ const War = () => {
         </button>
 
         <button 
-          className={`war-btn btnWar-third ${visitedPages["validation"] ? "war-clicked" : ""}`} 
-          onClick={() => handleNavigation("validation")}
+          className={`war-btn btnWar-third ${visitedPages["fields"] ? "war-clicked" : ""}`} 
+          onClick={() => handleNavigation("fields")}
         >
-          הערכת מצב
+          שטחי שהייה
         </button>
       </div>
     </div>

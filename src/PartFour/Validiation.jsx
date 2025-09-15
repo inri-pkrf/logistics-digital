@@ -52,22 +52,20 @@ function Validiation() {
             <SlideCards people={validations?.[1]?.people} />
 
             </div>
+              <div className='navigation-btn'>
+                        <div onClick={() => navigate("/hapakMichlala")} className='prev'>
+                            <p className='text-lable'> הקודם</p>
+                            <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="הקודם" />
+                        </div>
+                        <div onClick={() => navigate("/fields")} className='next'>
+                            <p className='text-lable'>הבא</p>
+                            <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="הבא" />
+                        </div>
+                    </div>
            
 
 
-                {/* <div className='navigation-btn'>
-                    <div className='prev'>
-                        <p> הקודם</p>
-                    <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-                          </div>
-                    <div className='next'>
-                    <p> הבא</p>
-
-                    <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/arrow.svg`}/>    
-
-                    </div>
-
-                </div> */}
+                
 
             </div>
 

@@ -1,0 +1,330 @@
+/* קונטיינר ראשי */
+#quiz {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 140vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000;
+  direction: rtl;
+}
+
+/* כותרת של השאלה */
+.question-number-q {
+  font-size: 4em;
+  font-family: "karantina";
+  color: rgb(86, 195, 232);
+  margin-top: 10vh;
+}
+
+/* שאלה */
+.question-q {
+  margin-top: 3vh;
+  direction: rtl;
+  font-size: 1.2em;
+  color: rgb(89, 89, 89);
+  font-family: "Heebo";
+  text-align: center;
+  padding: 0 5vw;
+}
+.progress-bar-container-q {
+  direction: rtl;
+  position: relative;
+  width: 90%;
+  height: 10px;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+.progress-bar-q {
+  height: 100%;
+  background-color: #1bbfe5;
+  transition: width 0.1s linear;
+}
+
+
+
+/* תשובות */
+.answers-q {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.answer-button-q {
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Heebo";
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f8f8f8;
+}
+
+.answer-button-q.selected {
+  background-color: #2858ab;
+  color: white;
+}
+
+/* כפתורי ניווט */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+.prev-button,
+.next-button,
+.button-disabled {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: "Heebo";
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-button {
+  background-color: rgb(28, 180, 227);
+}
+
+.next-button {
+  background-color: #2858ab;
+}
+
+.button-disabled {
+  background-color: rgb(102, 102, 102);
+  opacity: 0.3;
+  cursor: default;
+}
+
+
+.results {
+    height: 100vh;
+    font-size: 1.2em;
+    direction: rtl;
+    text-align: center;
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    right: 0vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public/assets/imgs/Bg2.png");
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Assistant";
+    z-index: 10000;
+}
+.results::before {
+         content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background: rgb(0 0 0 / 71%);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(1px);
+        z-index: -1;
+}
+
+
+
+/* ניקוד */
+.score {
+    font-family: "Karantina";
+    font-size: 21vmin;
+    margin-top: -40vh;
+    color: rgb(255 255 255);
+}
+
+/* הודעה */
+.message {
+  color: white;
+    position: absolute;
+    font-family: "Assistant";
+    font-size: 7vmin;
+    margin-top: -7vh;
+    right: 50%;
+    width: 108vw;
+    font-weight: bold;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+/* שם משתמש */
+.user-name {
+  font-family: "Assistant", Arial;
+    color: #ffffff;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 8vmin;
+    margin-top: -20vh;
+    width: 90%;
+    text-align: center;
+}
+
+/* כפתור שיתוף */
+.share-btn {
+    background-color: rgb(33, 173, 216);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 6vmin;
+    font-family: "Heebo";
+    width: 77%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 15vh;
+    cursor: pointer;
+    display: block;
+}
+
+/* כפתור נסה שוב */
+.try-button {
+ position: absolute;
+    background-color: #2858ab;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Assistant", Arial;
+    width: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 28vh;
+    cursor: pointer;
+    display: block;
+}
+
+/* כפתור אפס הכל */
+.reset-btn {
+    position: absolute;
+    background-color: #2858ab;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Assistant", Arial;
+    width: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 39vh;
+    cursor: pointer;
+    display: block;
+
+}
+.mistakes-btn{
+     background-color: rgb(80 131 221);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Heebo";
+    width: 45%;
+    position: absolute;
+    margin: 2em auto;
+    cursor: pointer;
+    right: 28vw;
+    display: block;
+    top: 47vh;
+}
+
+/* כפתור סיום */
+.end-btn {
+    background-color: rgb(33, 173, 216);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Heebo";
+    width: 45%;
+    position: absolute;
+    right: 28vw;
+    top: 57vh;
+    margin: 2em auto;
+    cursor: pointer;
+    display: block;
+}
+
+.container-endBtn{
+ position: fixed;
+    top: 10vh;
+    width: 100vw;
+    background-color: white;
+    height: 10vh;
+}
+
+.container-mistakes{
+position: relative;
+    margin-top: 12vh;
+    text-align: right;
+    font-family: 'ASSISTANT';
+    width: 90vw;
+    padding-left: 4vw;
+    direction: rtl;
+}
+
+.mistake-q.wrong{
+    color: #f86363;
+    font-size: 6vmin
+}
+.mistake-q.correct{
+    color: #2b8f96;
+    font-size: 6vmin
+}
+.ans-mis{
+  font-size: 5vmin;
+}
+.ans-mis-cor{
+  font-size: 5vmin;
+  font-weight: 200;
+
+}
+
+.back-btn-mis{
+height: 6vh;
+    margin-top: 2vh;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Heebo";
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(33, 173, 216);
+
+}
+
+ 

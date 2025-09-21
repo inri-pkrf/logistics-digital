@@ -6,13 +6,12 @@ const Hamburger = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // ✅ התחלה עם מערך בטוח
   const [visitedPages, setVisitedPages] = useState(() => {
     try {
       const storedPages = JSON.parse(sessionStorage.getItem('visitedPages'));
-      return Array.isArray(storedPages) ? storedPages : [];
+      return storedPages && typeof storedPages === 'object' ? storedPages : {};
     } catch (e) {
-      return [];
+      return {};
     }
   });
 
@@ -24,12 +23,13 @@ const Hamburger = () => {
     { name: 'היערכות לחירום', path: '/ready' },
     { name: 'נוהל גיוס לחירום', path: '/emergency' },
     { name: 'ניהול לחימה', path: '/war' },
-    { name: 'בוחן', path: '/simulation' },
+    { name: 'מבחן', path: '/test' },
   ];
 
+  // מעדכן visitedPages בכל פעם שמשתמש מגיע ל-path חדש
   useEffect(() => {
-    if (!visitedPages.includes(location.pathname)) {
-      const updatedVisitedPages = [...visitedPages, location.pathname];
+    if (!visitedPages[location.pathname]) {
+      const updatedVisitedPages = { ...visitedPages, [location.pathname]: true };
       setVisitedPages(updatedVisitedPages);
       sessionStorage.setItem('visitedPages', JSON.stringify(updatedVisitedPages));
     }
@@ -41,6 +41,9 @@ const Hamburger = () => {
   };
 
   const isActive = (path) => location.pathname === path;
+
+  // בודק אם כל ארבעת העמודים הראשיים ביקרו בהם
+  const allPagesVisited = ['/mivne', '/ready', '/emergency', '/war'].every(path => visitedPages[path]);
 
   return (
     <div>
@@ -59,14 +62,15 @@ const Hamburger = () => {
         <h1 className="menu-title">עזר לוגיסטיקה</h1>
         <ul className="menu-list">
           {subjects.map((subject) => {
-            const visited = Array.isArray(visitedPages) && visitedPages.includes(subject.path);
+            const visited = visitedPages[subject.path];
+            const locked = subject.path === '/test' && !allPagesVisited;
             return (
               <li
                 key={subject.path}
-                onClick={() => handleMenuClick(subject.path)}
-                className={`menu-item ${isActive(subject.path) ? 'active' : ''} ${visited ? 'visited' : ''}`}
+                onClick={() => !locked && handleMenuClick(subject.path)}
+                className={`menu-item ${isActive(subject.path) ? 'active' : ''} ${visited ? 'visited' : ''} ${locked ? 'locked' : ''}`}
               >
-                {subject.name}
+                {subject.name} {locked && '🔒'}
               </li>
             );
           })}

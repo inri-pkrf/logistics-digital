@@ -30,6 +30,8 @@ import Maintenance from './PartTwo/Maintenance';
 import People from './PartTwo/People';
 import Mamal from './PartThree/Mamal';
 import Fields from './PartFour/Fields';
+import FinalScreen from './componentsJS/FinalScreen';
+import Quiz from './componentsJS/Quiz';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
@@ -100,6 +102,8 @@ function App() {
                     <Route path="/BackYard" element={<BackYard />} />
                     <Route path="/hapakMichlala" element={<HapakMichlala />} />
                     <Route path="/fields" element={<Fields />} />
+                    <Route path="/test" element={<FinalScreen />} />
+                    <Route path="/quiz" element={<Quiz />} />
                 </Routes>
             )}
         </div>

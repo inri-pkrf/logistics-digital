@@ -46,16 +46,30 @@
         text-align: center;
     
     }
-   .buttons-container {
+.buttons-container {
 position: absolute;
-        margin-top: 10vh;
+        margin-top: 30vh;
         right: 0%;
         width: 100vw;
         direction: rtl;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
-        gap: 3vh;              
+        gap: 3vh;
+        justify-items: center;
+        align-items: center;
+}
+.button-design.quiz-button {
+    grid-column: 1 / span 2;  /* תופס את שתי העמודות */
+    justify-self: center;      /* במרכז */
+    margin-top: 2vh;           /* רווח מעל */
+}
+
+.button-design.locked {
+    opacity: 0.5;           /* חצי שקוף */
+    pointer-events: none;   /* לא ניתן ללחוץ עליו */
+    filter: grayscale(100%); /* האייקון הופך לאפור */
+    position: relative;
 }
 
 .button-design {

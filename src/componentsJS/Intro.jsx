@@ -87,10 +87,9 @@ const Intro = () => {
             id="logo-white" 
             className="move-to-center" 
           />
-         <h1 id="welcome-text-intro"> ברוכים הבאים לעזר ללוגיסטיקה</h1>
-             <p id="introduction-sub">ברוכים הבאים ללומדה הלוגיסטית במפקדות.
-            בעזר זה תוכלו להעמיק וללמוד על מבנה, ייעוד ותפקידי הלוגיסטיקה במפקדות השונות ובעלי התפקידים השונים.
-            בנוסף, תלמדו על תהליך הגיוס והוצאת הסבבים השונים, ועל ניהול הלחימה, חצר אחורית, עזר המנהלה והערכות המצב
+         <h1 id="welcome-text-intro"> ברוכים וברוכות הבאים והבאות <br/> לעזר ללוגיסטיקה</h1>
+             <p id="introduction-sub">
+          
             </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/imgs/whiteNextBtn.png`}

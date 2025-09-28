@@ -48,54 +48,32 @@
     
    
     .speech-container {
-        margin-top: 43vh;
-        width: 90vw;
-        height: 80vh;
-        background-color: black;
-        border-radius: 20px;
-        border: 3px solid white;
-        overflow-y: auto;
-        font-size: 1.1em;
-        text-align: right;
-        position: relative;
-        color: white;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        box-sizing: border-box;
-        
-
-
+   margin-top: 30vh;
+    width: 90vw;
+    height: 69vh;
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 1.1em;
+    text-align: right;
+    position: relative;
+    color: white;
+    
+    box-sizing: border-box;
     }
     .speech{
-        text-align: right;
-        position: absolute;
-        direction: rtl;
-        padding-right: 5vw;
-        padding-left: 5vw;
-        padding-top: 10vh;
-        font-family: "Assistant";
+     text-align: right;
+    position: absolute;
+    direction: rtl;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    font-size: 5.5vmin;
+    font-family: "Assistant";
 
     }
-    .speech-container::-webkit-scrollbar {
-        width: 12px; /* גודל ה-scrollbar */
-    }
-    
-    /* ה-track יהיה קצר יותר */
-    .speech-container::-webkit-scrollbar-track {
-        background: transparent;
-        box-shadow: inset 0 0 1px 1px white;
-        border-radius: 10px;
-        height: 20px; /* גורם ל-track להיות קצר ב-20% */
-        margin: 10% 0; /* מרכז את ה-track */
-    }
-    
-    /* ה-thumb יהיה ריבוע רחב ולבן אך קצר יותר */
-    .speech-container::-webkit-scrollbar-thumb {
-        background: white;
-        border-radius: 4px;
-        height: 40%; /* ה-thumb תופס פחות מקום */
-    }
-    
+  
     
     
  .quote{
@@ -107,17 +85,6 @@
     right: 4vw;
  }
  
-.speech-credits{
-    text-align: left;
-    position: relative;
-    direction: rtl;
-    padding-right: 5vw;
-    padding-left: 5vw;
-    width: 32vw;
-    padding-top: 102vh;
-    font-family: "Assistant";
-}
-
 
 
 
@@ -145,14 +112,13 @@ hr.dotted-line{
 
 }
 .greeting-div{
-    position: relative;
+      position: relative;
     width: 75vw;
-    right: -6%;
+    right: -9%;
     height: 27vh;
-    margin-top: 6vh;
+    margin-top: 37vh;
     border-radius: 20px;
     background-color: white;
-
 }
 
 .logo1{
@@ -177,8 +143,8 @@ hr.dotted-line{
     position: absolute;
 }
 .start-button{
-    position: absolute;
-    margin-top: 140vh;
+position: absolute;
+    margin-top: 118vh;
     background-color: #000000;
     color: #fff;
     border: 2px solid #ffffff;
@@ -187,9 +153,8 @@ hr.dotted-line{
     font-size: 3em;
     width: 63vw;
     font-family: "Karantina", sans-serif;
-    /* transition: all 0.3s ease; */
     cursor: pointer;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .start-button:active{

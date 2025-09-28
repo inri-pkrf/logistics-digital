@@ -70,7 +70,7 @@
   transform: translateX(50%);
   bottom: 20vh;
   animation: bounce2 2s ease infinite;
-  height: 10vh;
+  height: 15vh;
   width: auto;
   /* top: 77vh; */
 }
@@ -310,14 +310,14 @@ font-family: 'Karantina', Arial;
 
 @keyframes bounce2 {
   0% {
-    bottom: 8vh;
+    bottom: 27vh;
   }
 
   50% {
-    bottom: 6vh;
+    bottom: 25vh;
   }
 
   100% {
-    bottom: 8vh;
+    bottom: 27vh;
   }
 }

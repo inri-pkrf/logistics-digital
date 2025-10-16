@@ -104,12 +104,12 @@
     transform: rotate(180deg);
 }
 .next-title{
-    font-family: "Assistant";
+      font-family: "Assistant";
     color: white;
     margin-top: 2vh;
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
     position: absolute;
-    left: 13vw;
+    left: 16vw;
 }

@@ -145,6 +145,10 @@ ease;
     color: white;
   }
 
+  .locked{
+    opacity: 0.5;
+  }
+
   /* כפתור "בוחן" שלא מאופשר */
 .fade {
     opacity: 0.5; /* שקיפות נמוכה */

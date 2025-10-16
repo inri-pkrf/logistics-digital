@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useVisitedPages } from '../hooks/useVisitedPages ';
 import '../componentsCSS/Menu.css';
 
 const Menu = () => {
   const navigate = useNavigate();
+  const { visitedPages, markVisited } = useVisitedPages();
 
   const pages = [
     { name: "mivne", icon: "mivneIcon.svg", className: "mivne-button" },
@@ -12,29 +14,25 @@ const Menu = () => {
     { name: "war", icon: "warIcon.svg", className: "war-button" }
   ];
 
-  // כפתור המבחן
   const quizPage = { name: "quiz", icon: "quiz.svg", className: "quiz-button", title: "מבחן", path: "/test" };
 
-  const [visitedPages, setVisitedPages] = useState(() => {
-    return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
-  });
-
-  useEffect(() => {
-    sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
-  }, [visitedPages]);
-
-  // בודקים אם כל ארבעת העמודים הראשיים ביקרו בהם
+  // בודק אם כל ארבעת העמודים הראשיים ביקרו בהם
   const allPagesVisited = pages.every(page => visitedPages[`/${page.name}`]);
 
   const handleNavigation = (page) => {
-    if (page.name === "quiz" && !allPagesVisited) return; // נעול אם לא ביקרו בכל העמודים
-    setVisitedPages(prev => ({ ...prev, [page.path || `/${page.name}`]: true }));
+    // אם מדובר במבחן והכל עוד לא נצפה – לא מאפשר ניווט
+    if (page.name === "quiz" && !allPagesVisited) return;
+    markVisited(page.path || `/${page.name}`);
     navigate(page.path || `/${page.name}`);
   };
 
   const renderPageButton = (page) => {
     const path = page.path || `/${page.name}`;
     const isVisited = visitedPages[path];
+
+    // אם זה מבחן ועדיין נעול, נוסיף את ה-class 'locked'
+    const lockedClass = page.name === "quiz" && !allPagesVisited ? 'locked' : '';
+
     const iconPath = isVisited 
       ? `${process.env.PUBLIC_URL}/assets/blueIcons/${page.icon.replace('.svg', 'Blue.svg')}` 
       : `${process.env.PUBLIC_URL}/assets/icons/${page.icon}`;
@@ -43,7 +41,7 @@ const Menu = () => {
       <div 
         key={page.name} 
         onClick={() => handleNavigation(page)} 
-        className={`button-design ${page.className} ${page.name === "quiz" && !allPagesVisited ? 'locked' : ''}`}
+        className={`button-design ${page.className} ${lockedClass}`}
       >
         <div className={`icon-container ${isVisited ? 'pressed' : ''}`}>
           <img src={iconPath} className="menu-icon" alt={page.name} />

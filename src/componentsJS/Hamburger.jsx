@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useVisitedPages } from '../hooks/useVisitedPages ';
 import '../componentsCSS/Hamburger.css';
 
 const Hamburger = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  const [visitedPages, setVisitedPages] = useState(() => {
-    try {
-      const storedPages = JSON.parse(sessionStorage.getItem('visitedPages'));
-      return storedPages && typeof storedPages === 'object' ? storedPages : {};
-    } catch (e) {
-      return {};
-    }
-  });
-
+  const { visitedPages, markVisited } = useVisitedPages();
   const [isOpen, setIsOpen] = useState(false);
 
   const subjects = [
@@ -26,23 +18,14 @@ const Hamburger = () => {
     { name: 'מבחן', path: '/test' },
   ];
 
-  // מעדכן visitedPages בכל פעם שמשתמש מגיע ל-path חדש
-  useEffect(() => {
-    if (!visitedPages[location.pathname]) {
-      const updatedVisitedPages = { ...visitedPages, [location.pathname]: true };
-      setVisitedPages(updatedVisitedPages);
-      sessionStorage.setItem('visitedPages', JSON.stringify(updatedVisitedPages));
-    }
-  }, [location.pathname, visitedPages]);
-
   const handleMenuClick = (path) => {
     setIsOpen(false);
+    markVisited(path);
     navigate(path);
   };
 
   const isActive = (path) => location.pathname === path;
 
-  // בודק אם כל ארבעת העמודים הראשיים ביקרו בהם
   const allPagesVisited = ['/mivne', '/ready', '/emergency', '/war'].every(path => visitedPages[path]);
 
   return (

@@ -22,20 +22,20 @@
   width: 100%;
   height: 94%;
   background: rgba(0, 0, 0, 0.5);
-   backdrop-filter: blur(1px);    /* טשטוש */
-    -webkit-backdrop-filter: blur(1px); /* תמיכה בספארי */
+   backdrop-filter: blur(1px);  
+    -webkit-backdrop-filter: blur(1px); 
   z-index: -1;
 }
 
 .white-circle{
     position: absolute;
-    width: 100vw; /* רוחב המלבן */
-    height: 90vh; /* גובה המלבן */
+    width: 100vw; 
+    height: 90vh; 
     margin-top: 20vh;
     background-color: white;
-    border-top-left-radius: 50% 15%; /* מעגל את הפינה השמאלית העליונה */
-    border-top-right-radius: 50% 15%; /* מעגל את הפינה הימנית העליונה */
-    z-index: 999; /* מוודא שהמלבן נמצא מעל לתמונה */
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%; 
+    z-index: 999; 
 
   
 }
@@ -131,4 +131,38 @@
 }
 .text-nafa{
   color: #21467a;
+}
+
+
+ .DiagramStep1 .navigation-btn{
+ position: relative;
+    bottom: -72vh;
+    left: 76%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 27px;
+    Z-INDEX: 1000000;
+}
+
+.DiagramStep1.next .prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(89, 89, 89);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.DiagramStep1 .left{
+    transform: rotate(180deg);
+
 }

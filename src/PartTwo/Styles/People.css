@@ -161,7 +161,7 @@
     background: #5f7eaf;     color: #fff; /* אפשר לשנות גם את הצבע של הטקסט */
 }
 
- .Training .navigation-btn{
+ .People .navigation-btn{
     position: relative;
     bottom: -177vh;
     left: 46%;

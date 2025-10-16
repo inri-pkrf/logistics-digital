@@ -31,6 +31,12 @@ function DiagramStep1() {
                         <p className="text-choose text-gdud">גדוד</p>
                     </div>
                 </div>
+                 <div className='navigation-btn'>
+                    <div onClick={() => navigate("/mivne")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
+                </div>
             </div>
         </div>
     );

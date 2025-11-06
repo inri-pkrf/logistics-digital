@@ -29,10 +29,10 @@
   }
   
   .white-circle-Maintenance{
-    position: absolute;
+     position: absolute;
     width: 100vw;
-    height: 149vh;
-    margin-top: 72vh;
+    height: 173vh;
+    margin-top: 98vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;

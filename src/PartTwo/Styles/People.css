@@ -163,8 +163,8 @@
 
  .People .navigation-btn{
     position: relative;
-    bottom: -177vh;
-    left: 46%;
+    bottom: -1vh;
+    left: 49%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;

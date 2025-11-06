@@ -40,9 +40,6 @@
   
 }
   
-  
-
-
 .title-DiagramStep1 {
   position: absolute;
   transform: translateX(50%);
@@ -165,4 +162,23 @@
 .DiagramStep1 .left{
     transform: rotate(180deg);
 
+}
+
+.menu-back{
+        text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    background-color: #324978;
+    width: 43vw;
+    font-size: 5vmin;
+    height: 6vh;
+    padding-bottom: 1vh;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    margin-top: 2vh;
+    right: 50%;
+    transform: translateX(50%);
 }

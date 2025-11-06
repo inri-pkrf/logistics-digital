@@ -8,6 +8,7 @@ function DiagramStep1() {
     return (
         <div className="DiagramStep1">
             <div className='white-circle'>
+                <button className='menu-back' onClick={()=> navigate('/menu')}> חזרה לעמוד הבית</button>
                 <div className='title-DiagramStep1'>בחר/י במפקדה הרצוייה</div>
 
                 <div className="buttons-diagrm1">
@@ -31,12 +32,7 @@ function DiagramStep1() {
                         <p className="text-choose text-gdud">גדוד</p>
                     </div>
                 </div>
-                 <div className='navigation-btn'>
-                    <div onClick={() => navigate("/mivne")} className='prev'>
-                        <p className='text-lable'> הקודם</p>
-                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
-                    </div>
-                </div>
+                
             </div>
         </div>
     );

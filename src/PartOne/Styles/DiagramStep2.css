@@ -1,453 +1,454 @@
-.DiagramStep2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex
-;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    background-image: url("/public/assets/imgs/Bg2.jpg");
-    overflow-y: scroll;
-    overflow-x: hidden;
-    direction: rtl;
+.DiagramStep2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-image: url("/public/assets/imgs/Bg2.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
+  direction: rtl;
 }
 
 .DiagramStep2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 94%;
-    background: rgba(0, 0, 0, 0.5);
-     backdrop-filter: blur(1px);    /* טשטוש */
-    -webkit-backdrop-filter: blur(1px); /* תמיכה בספארי */
-    z-index: -1;
-  }
- 
-.white-circle2{
-    position: absolute;
-    width: 180vw;
-    background-color: white;
-    border-top-left-radius: 50% 15%;
-    border-top-right-radius: 50% 15%;
-    z-index: 999;
-
-  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px); /* טשטוש */
+  -webkit-backdrop-filter: blur(1px); /* תמיכה בספארי */
+  z-index: -1;
 }
-   
+
+.white-circle2 {
+  position: absolute;
+  width: 180vw;
+  background-color: white;
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 15%;
+  z-index: 999;
+}
 
 .title-DiagramStep2 {
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    font-family: 'Karantina', cursive;
-    font-size: 12vw;
-    top: 24vh;
-    width: 59%;
-    text-align: center;
-    color: #50565c;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  font-family: "Karantina", cursive;
+  font-size: 12vw;
+  top: 24vh;
+  width: 59%;
+  text-align: center;
+  color: #50565c;
 }
-
-
-
 
 .explanation-div-DiagramStep2 {
- position: relative;
-    top: 43vh;
-    background-color: #d9d9d9;
-    width: 90vw;
-    right: 45vw;
-    margin-bottom: 9vw;
-    border-radius: 6vw;
-    direction: rtl;
+  position: relative;
+  top: 43vh;
+  background-color: #d9d9d9;
+  width: 90vw;
+  right: 45vw;
+  margin-bottom: 9vw;
+  border-radius: 6vw;
+  direction: rtl;
 }
 
-
-
-
 .explanation-title-DiagramStep2 {
-    font-family: 'Karantina', cursive;
-    font-size: 8vw;
-    text-align: center;
-    margin-top: 2vh;
-    padding-top: 2vh;
-    color: rgb(58, 57, 57);
+  font-family: "Karantina", cursive;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  color: rgb(58, 57, 57);
 }
 
 .explanation-text-DiagramStep2 {
- 
-    font-family: 'Assistant', sans-serif;
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
-    direction: rtl;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    text-align: right;
-    top: 2vh;
-    position: relative;
-    line-height: 5vh;
-    padding-bottom: 2vh;
+  font-family: "Assistant", sans-serif;
+  font-size: 4vw;
+  color: rgb(0, 0, 0);
+  direction: rtl;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  text-align: right;
+  top: 2vh;
+  position: relative;
+  line-height: 5vh;
+  padding-bottom: 2vh;
 }
 
-.explanation-text-scroll{
+.explanation-text-scroll {
   max-height: 40vh;
-    min-height: 6vh;
-    overflow-y: auto;
-    text-align: right;
-     padding-right: 4vh;
-    padding-left: 4vh;
-    text-align: right;
+  min-height: 6vh;
+  overflow-y: auto;
+  text-align: right;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  text-align: right;
 }
-.small-text-drop{
-    font-size: 4vmin;
-    direction: ltr;
-    font-weight: 600;
-    color: #4e4d4d;
-    padding-bottom: 1vh;
+.small-text-drop {
+  font-size: 4vmin;
+  direction: ltr;
+  font-weight: 600;
+  color: #4e4d4d;
+  padding-bottom: 1vh;
 }
 
 .DiagramStep2 .arrow-icon1 {
-    height: 3vh;
-    width: auto;
-    right: 2vw;
-    position: relative;
-    top: -3.42vh;
-    padding-left: -23vw;
-    margin-left: -230px;
-    transform: rotate(180deg);
+  height: 3vh;
+  width: auto;
+  right: 2vw;
+  position: relative;
+  top: -3.42vh;
+  padding-left: -23vw;
+  margin-left: -230px;
+  transform: rotate(180deg);
 }
 
 .arrow-icon1.rotated {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .arrow-icon1-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 4.5vh;
-    left: 3vh;
+  height: 4vh;
+  width: auto;
+  position: absolute;
+  top: 4.5vh;
+  left: 3vh;
 }
 
 .arrow-icon2-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 11vh;
-    right: 50%;
-    transform: translateX(50%);
+  height: 4vh;
+  width: auto;
+  position: absolute;
+  top: 11vh;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .arrow-icon3-diagram {
-    height: 4vh;
-    width: auto;
-    position: absolute;
-    top: 3.4vh;
-    left: 4vh;
+  height: 4vh;
+  width: auto;
+  position: absolute;
+  top: 3.4vh;
+  left: 4vh;
 }
 
 .subText-step2 {
-    position: relative;
-    right: 49vw;
-    font-family: 'Assistant', sans-serif;
-    font-size: 5vw;
-    color: grey;
-    text-align: center;
-    top: 50vh;
-    width: 82vw;
-    direction: rtl;
+  position: relative;
+  right: 49vw;
+  font-family: "Assistant", sans-serif;
+  font-size: 5vw;
+  color: grey;
+  text-align: center;
+  top: 50vh;
+  width: 82vw;
+  direction: rtl;
 }
 
 .stpe2Img {
-    position: relative;
-    right: 0vw;
-    top: 51vh;
-    height: auto;
-    width: 88vw;
+  position: relative;
+  right: 0vw;
+  top: 51vh;
+  height: auto;
+  width: 88vw;
 }
 
 .text-img {
-    position: relative;
-    right: 61vw;
-    top: 52vh;
-    font-family: 'Assistant', sans-serif;
-    font-size: 3.5vw;
-    color: grey;
-    width: 60vw;
+  position: relative;
+  right: 61vw;
+  top: 52vh;
+  font-family: "Assistant", sans-serif;
+  font-size: 3.5vw;
+  color: grey;
+  width: 60vw;
 }
-
-
-
-
-
-
-
-
-
 
 .blackArrow-step2 {
-    position: relative;
-    right: 0vw;
-    top: 73vh;
-    height: auto;
-    width: 17vw;
+  position: relative;
+  right: 0vw;
+  top: 73vh;
+  height: auto;
+  width: 17vw;
 }
 
-
-
-
 .all-diagram {
-  position: relative;
+     position: relative;
     width: 100vw;
-    font-family: 'Karantina', cursive;
+    font-family: "Karantina", cursive;
     color: rgb(69, 69, 69);
     top: 49vh;
     margin-bottom: 31vh;
-    height: 119vh;
-    RIGHT: 40VW;
+    height: auto;
+    right: 40vw;
 }
-
-
-
 
 .line {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    top: 2vh;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 2vw solid #595959;
+  top: 2vh;
 }
 .line-nafa {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    top: 2vh;
-    height: 104vh;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 2vw solid #595959;
+  top: 2vh;
+  height: 104vh;
 }
 .line-gdud {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    top: 2vh;
-    height: 150vh;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 2vw solid #595959;
+  top: 2vh;
+  height: 150vh;
 }
-.line-mahoz{
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    top: 2vh;
-    height: 201vh;
+.line-mahoz {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 2vw solid #595959;
+  top: 2vh;
+  height: 201vh;
 }
-.line-pikud{
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    border-left: 2vw solid #595959;
-    top: 2vh;
-    height: 184vh;
+.line-pikud {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  border-left: 2vw solid #595959;
+  top: 2vh;
+  height: 184vh;
 }
-
-
 
 .small-line {
-    position: absolute;
-    border-left: 2vw solid #595959;
-    height: 14vh;
-    transform: rotate(90deg);
-    left: 36vw;
-    top: 29vh;
+  position: absolute;
+  border-left: 2vw solid #595959;
+  height: 14vh;
+  transform: rotate(90deg);
+  left: 36vw;
+  top: 29vh;
 }
-.small-line2{
-    position: absolute;
-    border-left: 2vw solid #595959;
-    height: 14vh;
-    transform: rotate(90deg);
-    left: 62vw;
-    top: 47vh;
+.small-line2 {
+  position: absolute;
+  border-left: 2vw solid #595959;
+  height: 14vh;
+  transform: rotate(90deg);
+  left: 62vw;
+  top: 47vh;
 }
-
-
-
 
 .first-frame {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    width: 42vw;
-    height: 42vw;
-    text-align: center;
-    font-size: 8.5vw;
-    background-color: #ffffff;
-    border: 4px solid #595959;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 42vw;
+  height: 42vw;
+  text-align: center;
+  font-size: 8.5vw;
+  background-color: #ffffff;
+  border: 4px solid #595959;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-img {
-    height: 10vh;
-    width: auto;
-    display: block;
+  height: 10vh;
+  width: auto;
+  display: block;
 }
-
 
 .second-frame {
-    width: 15vh;
-    height: 15vh;
-    padding: 1vh;
-    text-align: center;
-    position: relative;
-    left: -60vw;
-    top: 24vh;
-    font-size: 6vw;
-    background-color: white;
-    border: 4px solid #595959;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 15vh;
+  height: 15vh;
+  padding: 1vh;
+  text-align: center;
+  position: relative;
+  left: -60vw;
+  top: 24vh;
+  font-size: 6vw;
+  background-color: white;
+  border: 4px solid #595959;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 .seconed-img {
-    height: 60%; /* מתאם גודל התמונה */
-    width: auto;
+  height: 60%;
+  width: auto;
 }
 
 .second-frame p {
-    margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
-    font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
+  margin-top: 2vh;
+  font-size: 4vw;
 }
 
-
 .third-frame {
-    width: 15vh;
-    height: 15vh;
-    padding: 1vh;
-    text-align: center;
-    position: relative;
-    left: -10vw;
-    top: 26vh;
-    font-size: 6vw;
-    background-color: white;
-    border: 4px solid #595959;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 15vh;
+  height: 15vh;
+  padding: 1vh;
+  text-align: center;
+  position: relative;
+  left: -10vw;
+  top: 26vh;
+  font-size: 6vw;
+  background-color: white;
+  border: 4px solid #595959;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .third-img {
-    height: 60%; /* מתאם גודל התמונה */
-    width: auto;
+  height: 60%; /* מתאם גודל התמונה */
+  width: auto;
 }
 
 .third-frame p {
-    margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
-    font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
+  margin-top: 2vh; /* מוסיף רווח בין התמונה לטקסט */
+  font-size: 4vw; /* אפשר לשנות את הגודל פה לפי הצורך */
 }
 
-
-
-
-
-
-
 .frame {
-    cursor: pointer;
-    text-align: center;
-    color: rgb(81, 81, 81);
-    position: relative;
-    width: 29vw;
-    height: 22vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    margin-bottom: 4vh;
-    top: 31vh;
-    left: -35vw;
-    font-size: 7vw;
-    background-color: white;
-    border: 4px solid #595959;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(81, 81, 81);
+  position: relative;
+  width: 29vw;
+  height: 22vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-bottom: 4vh;
+  top: 31vh;
+  left: -35vw;
+  font-size: 7vw;
+  background-color: white;
+  border: 4px solid #595959;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 hr.dotted {
-    border: none;
-    border-top: 3px dotted #4e4d4d;
-    width: 40vh;
-    height: 0;
-    padding: 0;
-    position: relative;
- }
+  border: none;
+  border-top: 3px dotted #4e4d4d;
+  width: 40vh;
+  height: 0;
+  padding: 0;
+  position: relative;
+}
 
- .hr1{
-    right: 1vw;
-    top: 47vh;
- }
+.hr1 {
+  right: 1vw;
+  top: 47vh;
+}
 
- .hr2{
-    right: 1vw;
-    top: 59vh;
- }
- .third-img{
-    height: 60%; /* מתאם גודל התמונה */
-    width: auto;
- }
- .whiteCircle2-gdud{
+.hr2 {
+  right: 1vw;
+  top: 59vh;
+}
+.third-img {
+  height: 60%; /* מתאם גודל התמונה */
+  width: auto;
+}
+.whiteCircle2-gdud {
+     position: absolute;
+    width: 180vw;
+    height: 247vh;
+    margin-top: 182vh;
+    background-color: white;
+    border-top-left-radius: 50% 15%;
+    border-top-right-radius: 50% 15%;
+    z-index: 999;
+}
+.whiteCircle2-nafa {
+  position: absolute;
+  width: 180vw;
+  height: 270vh;
+  margin-top: 194vh;
+  background-color: white;
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 15%;
+  z-index: 999;
+}
+.whiteCircle2-mahoz {
     position: absolute;
     width: 180vw;
-    height: 289vh;
-    margin-top: 217vh;
+    height: 308vh;
+    margin-top: 234vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
     z-index: 999;
- }
- .whiteCircle2-nafa{
-    position: absolute;
-    width: 180vw;
-    height: 270vh;
-    margin-top: 194vh;
-    background-color: white;
-    border-top-left-radius: 50% 15%;
-    border-top-right-radius: 50% 15%;
-    z-index: 999;
- }
- .whiteCircle2-mahoz{
-       position: absolute;
-    width: 180vw;
-    height: 357vh;
-    margin-top: 285vh;
-    background-color: white;
-    border-top-left-radius: 50% 15%;
-    border-top-right-radius: 50% 15%;
-    z-index: 999;
- }
- .whiteCircle2-pikud{
-    position: absolute;
-    width: 180vw;
-    height: 338vh;
-    margin-top: 265vh;
-    background-color: white;
-    border-top-left-radius: 50% 15%;
-    border-top-right-radius: 50% 15%;
-    z-index: 999;
- }
+}
+.whiteCircle2-pikud {
+  position: absolute;
+  width: 180vw;
+  height: 308vh;
+  margin-top: 233vh;
+  background-color: white;
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 15%;
+  z-index: 999;
+}
+
+.DiagramStep2 .navigation-btn {
+ position: absolute;
+    bottom: -28%;
+    left: 83%;
+    transform: translateX(-50%);
+    display: flex
+;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: "Assistant", sans-serif;
+    z-index: 1000000;
+}
+
+.DiagramStep2.next .prev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(89, 89, 89);
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.DiagramStep2 .left {
+  transform: rotate(180deg);
+}
+
+.DiagramStep2 .text-lable {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  color: #626262;
+  font-weight: bold;
+}

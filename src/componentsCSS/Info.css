@@ -101,20 +101,11 @@
     color: rgb(58, 57, 57);
     font-family: "Assistant";
 }
-hr.dotted-line{
-    border-top: 5px dotted #ffffff;
-    border-bottom: none;
-    position: absolute;
-    margin-top: 1vh;
-    right: 50%;
-    transform: translateX(50%);
-    width: 84vw;
 
-}
 .greeting-div{
-      position: relative;
+    position: relative;
     width: 75vw;
-    right: -9%;
+    right: -8%;
     height: 27vh;
     margin-top: 37vh;
     border-radius: 20px;

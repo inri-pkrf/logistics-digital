@@ -203,6 +203,13 @@ function DiagramStep2() {
                     {subRole.name}
                 </div>
             ))}
+             <div className='navigation-btn'>
+                    <div onClick={() => navigate("/diagram")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
+                   
+                </div>
 
             </div>
             </div>
@@ -215,6 +222,9 @@ function DiagramStep2() {
                 title={popupContent.title}
                 content={popupContent.content}
             /> 
+              
+
+
 </div>
                         
     );

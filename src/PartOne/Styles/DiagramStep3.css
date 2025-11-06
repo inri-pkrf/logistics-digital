@@ -134,10 +134,10 @@ height: 105vh;
 }
 
 .whiteCircle3-pikud{
- position: absolute;
+       position: absolute;
     width: 180vw;
-    height: 289vh;
-    margin-top: 217vh;
+    height: 236vh;
+    margin-top: 164vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -259,14 +259,14 @@ height: 105vh;
 
 
 .btn-prev{
-    color: #212853;
+     color: #212853;
     font-size: 5vw;
     text-align: center;
     text-decoration: underline;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     position: relative;
-    top: 25vh;
+    top: 9vh;
 }
 .whiteCircle3Dif{
     position: absolute;

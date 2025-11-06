@@ -11,13 +11,9 @@ const Ready = () => {
     return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
   });
 
-  // עדכון הסטייט לאחר ניווט
   useEffect(() => {
-    // אם יש עדכון ב-visitedPages, נשמור אותו ב-sessionStorage
     sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
   }, [visitedPages]);
-
-  // עדכון הסטייט של עמוד שביקרנו בו
   const handleNavigation = (page) => {
     setVisitedPages(prev => ({ ...prev, [page]: true }));
     navigate(`/${page}`);
@@ -25,6 +21,7 @@ const Ready = () => {
   return (
     <div className="Ready-container">
          <div className='title-container-ready'>
+          <p className='Ready-instructions'>לחצו על הנושאים על מנת ללמוד</p>
          <img className='icon-title-ready' src={`${process.env.PUBLIC_URL}/assets/icons/refuaIcon.svg`}  />
       <h1 className='ready-title'>היערכות לחירום </h1>
       <p className='KOH'>כו"כ</p>
@@ -51,6 +48,16 @@ const Ready = () => {
 </button>
 
 </div>
+<div className='navigation-btn'>
+                    <div onClick={() => navigate("/menu")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrow.png`} />
+                    </div>
+                    <div onClick={() => navigate("/emergency")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrow.png`} />
+                    </div>
+                </div>
 
       </div>
     

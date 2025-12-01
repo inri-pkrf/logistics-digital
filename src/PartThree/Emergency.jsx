@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from 'react';
+// Emergency.js
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Styles/Emergency.css';
+import { useVisitedPages } from '../hooks/useVisitedPages .js';
 
 const Emergency = () => {
   const navigate = useNavigate();
-
-  // שמירה אם המשתמש היה ב /fast וב /rounds
-  const [visitedPages, setVisitedPages] = useState(() => {
-    return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
-  });
-
-  useEffect(() => {
-    sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
-  }, [visitedPages]);
+  const { visitedPages, markVisited } = useVisitedPages();
 
   const handleNavigation = (page) => {
-    setVisitedPages(prev => ({ ...prev, [page]: true }));
+    markVisited(page);
     navigate(`/${page}`);
   };
 
@@ -26,24 +20,35 @@ const Emergency = () => {
         <h1 className='emergency-title'>נוהל גיוס לחירום</h1>
 
         <button 
-          className={`emer-btn firstBtn ${visitedPages["fast"] ? "btn-clicked" : ""}`} 
+          className={`emer-btn firstBtn ${visitedPages["/fast"] ? "btn-clicked" : ""}`} 
           onClick={() => handleNavigation("fast")}
         >
           עקרונות הגיוס המהיר
         </button>
 
         <button 
-          className={`emer-btn seconedBtn ${visitedPages["rounds"] ? "btn-clicked" : ""}`} 
+          className={`emer-btn seconedBtn ${visitedPages["/rounds"] ? "btn-clicked" : ""}`} 
           onClick={() => handleNavigation("rounds")}
         >
           סבבי העמסה
         </button>
         <button 
-          className={`emer-btn thirdBtn ${visitedPages["maml"] ? "btn-clicked" : ""}`} 
+          className={`emer-btn thirdBtn ${visitedPages["/maml"] ? "btn-clicked" : ""}`} 
           onClick={() => handleNavigation("maml")}
-        >עקרונות המעמ"ל
+        >
+          עקרונות המעמ"ל
         </button>
       </div>
+      <div className='navigation-btn'>
+                    <div onClick={() => navigate("/menu")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrow.png`} />
+                    </div>
+                    <div onClick={() => navigate("/backdoor")} className='next'>
+                        <p className='text-lable'>הבא</p>
+                        <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrow.png`} />
+                    </div>
+                </div>
     </div>
   );
 };

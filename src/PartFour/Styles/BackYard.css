@@ -24,19 +24,19 @@
 }
 
 .Yard-back-landscape {
-     width: 97vw;
+  width: 97vw;
     position: fixed;
-    top: 11vh;
+    top: 16vh;
     height: auto;
 }
 .side-buttons {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-top: 7vh;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    position: absolute;
+    top: 43.5%;
+    transform: translateY(-50%);
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .side-buttons.left {
@@ -50,7 +50,7 @@
 .side-button {
     width: 11vw;
     font-family: "Assistant";
-    height: 19vh;
+    height: 16.2vh;
     background: rgb(197 227 255);
     color: #363636;
     display: flex;
@@ -61,20 +61,20 @@
     border-radius: 6px;
 }
 .BackYard-orders{
-    font-family: "Assistant";
-    color:white;
+font-family: "Assistant";
+    color: white;
     position: absolute;
     margin-top: 90vh;
-    font-size: 5vmin;
+    font-size: 7vmin;
 }
 
   .BackYard .XBtn {
-    position: absolute;
+   position: absolute;
     top: 4vw;
     left: 2vw;
     background: none;
     border: none;
-    width: 6vw;
+    width: 3vw;
     z-index: 2000;
   }
   

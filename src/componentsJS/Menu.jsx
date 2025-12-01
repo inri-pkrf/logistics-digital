@@ -17,7 +17,7 @@ const Menu = () => {
 
   const quizPage = { name: "quiz", icon: "quiz.svg", className: "quiz-button", title: "מבחן", path: "/test" };
 
-  // ✅ סימון אוטומטי של העמוד הנוכחי
+
   useEffect(() => {
     markVisited(location.pathname);
   }, [location.pathname]);

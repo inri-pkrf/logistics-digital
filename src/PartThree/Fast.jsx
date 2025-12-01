@@ -69,6 +69,7 @@ function Fast() {
                         <b> ציוד חילוץ ייעודי</b><br/>
                         <b>פק"ל נתק</b>
                         </p>
+                        <p className='txt-fast'>יתרונות השיטה ותמיכתה בקיצור זמן הגיוס – TOP5:</p>
                            <div className="cards-container">
                     {points.map((item, index) => (
                         <div

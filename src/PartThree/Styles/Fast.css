@@ -59,8 +59,8 @@
 
 
   .Fast .navigation-btn {
-    position: relative;
-    bottom: -2vh;
+position: relative;
+    bottom: 3vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -97,7 +97,7 @@
 
   .txt-fast{
       font-family: 'Assistant';
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   text-align: right;
   color:rgb(58, 58, 58);
   padding-right: -5vw;
@@ -116,8 +116,8 @@
 
 
 .Fast .card {
-    width: 30vw;
-    height: 30vw; 
+    width: 25vw;
+    height: 25vw; 
     background: #a0c4ff; 
     border-radius: 10px;
     padding: 10px;

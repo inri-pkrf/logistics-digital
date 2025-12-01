@@ -170,9 +170,9 @@ position: absolute;
 }
 
   .Training .navigation-btn{
-    position: absolute;       /* צמוד תמיד למסך */
-    bottom: -130vh;             /* צמוד לתחתית */
-    left: 50%;             /* למרכז במסך */
+position: absolute;
+    bottom: -118vh;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -180,8 +180,8 @@ position: absolute;
     direction: rtl;
     gap: 260px;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 0;      /* אין צורך ב-margin */
-    z-index: 1000000;      /* מעל כל האלמנטים */
+    margin-bottom: 0;
+    z-index: 1000000;
 
 }
 

@@ -8,9 +8,9 @@ function Rounds() {
     const units = [
         "גדוד חילוץ - חוד חנית",
         "גדוד חילוץ -איתן",
-        "פלוגות מהירות",
+       "גדוד יערה",
+    //   ` פלוגות מהירות`,
         `גדוד אב"כ`,
-        `גדוד חי"ר קל`
     ];
     const handleNavigation = (unit) => {
         navigate('/BATTALIONS', { state: { unitName: unit } });

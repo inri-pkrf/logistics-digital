@@ -48,6 +48,7 @@ position: absolute;
     color: rgb(89, 89, 89);
     font-size:6vmin;
   }
+
   .txt-training{
       font-family: 'Assistant';
   font-size: 5vmin;
@@ -87,22 +88,21 @@ position: absolute;
 }
 
 .explanation-text-Training {
- 
-    font-family: 'Assistant', sans-serif;
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
-    direction: rtl;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    text-align: right;
-    top: 2vh;
-    position: relative;
-    line-height: 5vh;
-    padding-bottom: 2vh;
+
+    position: absolute; /* או fixed אם את רוצה שהוא יישאר על המסך */
+    top: 100%; /* יפתח מתחת לכותרת */
+    left: 0;
+    width: 100%; /* אפשר להתאים לפי הצורך */
+    max-height: 50vh; /* הגבלת גובה */
+    overflow-y: auto; /* גלילה פנימית */
+    background-color: #d9d9d9;
+    border-radius: 6vw;
+    z-index: 2000; /* מעל כל התוכן */
+
 }
 
 .Training .explanation-text-scroll{
-  max-height: 20vh;
+  max-height: 28vh;
     min-height: 6vh;
     overflow-y: auto;
     text-align: right;
@@ -170,9 +170,9 @@ position: absolute;
 }
 
   .Training .navigation-btn{
-    position: relative;
-    bottom: -177vh;
-    left: 46%;
+    position: absolute;       /* צמוד תמיד למסך */
+    bottom: -130vh;             /* צמוד לתחתית */
+    left: 50%;             /* למרכז במסך */
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -180,8 +180,9 @@ position: absolute;
     direction: rtl;
     gap: 260px;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 27px;
-    Z-INDEX: 1000000;
+    margin-bottom: 0;      /* אין צורך ב-margin */
+    z-index: 1000000;      /* מעל כל האלמנטים */
+
 }
 
 .Training.next .prev {

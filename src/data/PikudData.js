@@ -34,7 +34,7 @@ const pikud = {
 `,
     comandor:{
         name:`מפקד מלכ"א`,
-        src:`${process.env.PUBLIC_URL}/assets/imgs/pikudComandor.svg`,
+        src:`${process.env.PUBLIC_URL}/assets/pikud/MahozComandor.svg`,
         popupTitle:`מפקד מלכ"א`,
         popupText:[
            

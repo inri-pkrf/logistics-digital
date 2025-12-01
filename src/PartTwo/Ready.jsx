@@ -1,23 +1,19 @@
-import React , { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom'; 
+import React , {useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useVisitedPages } from '../hooks/useVisitedPages .js';
 
 import './Styles/Ready.css';
 
 const Ready = () => {
+  const { visitedPages, markVisited } = useVisitedPages();
+  const location = useLocation();
   const navigate = useNavigate();
 
-  const [visitedPages, setVisitedPages] = useState(() => {
-    return JSON.parse(sessionStorage.getItem("visitedPages")) || {};
-  });
-
   useEffect(() => {
-    sessionStorage.setItem("visitedPages", JSON.stringify(visitedPages));
-  }, [visitedPages]);
-  const handleNavigation = (page) => {
-    setVisitedPages(prev => ({ ...prev, [page]: true }));
-    navigate(`/${page}`);
-  };
+    // סימון אוטומטי של העמוד הנוכחי
+    markVisited(location.pathname);
+  }, [location.pathname]);
+
   return (
     <div className="Ready-container">
          <div className='title-container-ready'>
@@ -26,23 +22,23 @@ const Ready = () => {
       <h1 className='ready-title'>היערכות לחירום </h1>
       <p className='KOH'>כו"כ</p>
      <div className="venn-container">
-  <button 
-  className={`venn-circle circle-a ${visitedPages["Refua"] ? "clicked" : ""}`} 
-  onClick={() => handleNavigation("Refua")}
+<button 
+  className={`venn-circle circle-a ${visitedPages["/Refua"] ? "clicked" : ""}`} 
+  onClick={() => navigate("/Refua")}
 >
   <p>אמצעים</p>
 </button>
 
 <button 
-  className={`venn-circle circle-b ${visitedPages["training"] ? "clicked" : ""}`} 
-  onClick={() => handleNavigation("training")}
+  className={`venn-circle circle-b ${visitedPages["/training"] ? "clicked" : ""}`} 
+  onClick={() => navigate("/training")}
 >
   <p>אימונים</p>
 </button>
 
 <button 
-  className={`venn-circle circle-c ${visitedPages["people"] ? "clicked" : ""}`} 
-  onClick={() => handleNavigation("people")}
+  className={`venn-circle circle-c ${visitedPages["/people"] ? "clicked" : ""}`} 
+  onClick={() => navigate("/people")}
 >
   <p>ניהול כוח אדם</p>
 </button>

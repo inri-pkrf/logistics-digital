@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useVisitedPages } from '../hooks/useVisitedPages ';
 import '../componentsCSS/Hamburger.css';
@@ -18,9 +18,14 @@ const Hamburger = () => {
     { name: 'מבחן', path: '/test' },
   ];
 
+  // ✅ סמן את העמוד הנוכחי כ-visited גם אם נכנסת אליו ישירות
+  useEffect(() => {
+    markVisited(location.pathname);
+  }, [location.pathname]);
+
   const handleMenuClick = (path) => {
     setIsOpen(false);
-    markVisited(path);
+    markVisited(path); // סימון בעת לחיצה
     navigate(path);
   };
 

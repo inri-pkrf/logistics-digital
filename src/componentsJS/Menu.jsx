@@ -1,10 +1,11 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useVisitedPages } from '../hooks/useVisitedPages ';
 import '../componentsCSS/Menu.css';
 
 const Menu = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { visitedPages, markVisited } = useVisitedPages();
 
   const pages = [
@@ -16,11 +17,14 @@ const Menu = () => {
 
   const quizPage = { name: "quiz", icon: "quiz.svg", className: "quiz-button", title: "מבחן", path: "/test" };
 
-  // בודק אם כל ארבעת העמודים הראשיים ביקרו בהם
+  // ✅ סימון אוטומטי של העמוד הנוכחי
+  useEffect(() => {
+    markVisited(location.pathname);
+  }, [location.pathname]);
+
   const allPagesVisited = pages.every(page => visitedPages[`/${page.name}`]);
 
   const handleNavigation = (page) => {
-    // אם מדובר במבחן והכל עוד לא נצפה – לא מאפשר ניווט
     if (page.name === "quiz" && !allPagesVisited) return;
     markVisited(page.path || `/${page.name}`);
     navigate(page.path || `/${page.name}`);
@@ -29,8 +33,6 @@ const Menu = () => {
   const renderPageButton = (page) => {
     const path = page.path || `/${page.name}`;
     const isVisited = visitedPages[path];
-
-    // אם זה מבחן ועדיין נעול, נוסיף את ה-class 'locked'
     const lockedClass = page.name === "quiz" && !allPagesVisited ? 'locked' : '';
 
     const iconPath = isVisited 

@@ -10,16 +10,17 @@ export const useVisitedPages = () => {
     }
   });
 
-  // שמירה ב-sessionStorage
+  // סימון עמוד כ-visited
   const markVisited = (path) => {
     setVisitedPages(prev => {
       const updated = { ...prev, [path]: true };
       sessionStorage.setItem('visitedPages', JSON.stringify(updated));
+      console.log("Visited pages updated:", updated);
       return updated;
     });
   };
 
-  // listener ל-sessionStorage כדי לסנכרן בין קומפוננטים
+  // listener ל-sessionStorage
   useEffect(() => {
     const handleStorage = (e) => {
       if (e.key === 'visitedPages') {
@@ -27,6 +28,7 @@ export const useVisitedPages = () => {
           const updated = JSON.parse(e.newValue);
           if (updated && typeof updated === 'object') {
             setVisitedPages(updated);
+            console.log("Visited pages updated from storage:", updated);
           }
         } catch {}
       }

@@ -47,14 +47,14 @@ function BackYard() {
                     <p className='rotate-txt'> סובבו את המסך למצב אופקי</p>
                 </div>
             )}
-
+      <p className="BackYard-orders">לחצו על הכפתורים וצפו בסרטונים</p>
             <img
                 src={`${process.env.PUBLIC_URL}/assets/imgs/BackYard.jpg`}
                 className={imageClass}
                 onClick={() => navigate("/BackYard")}
                 alt="Backyard"
             />
-            <p className="BackYard-orders">לחצו על הכפתורים וצפו בסרטונים</p>
+      
 
             <div className="side-buttons left">
                 {leftButtons.map(btn => (

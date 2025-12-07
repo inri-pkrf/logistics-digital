@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useVisitedPages } from '../hooks/useVisitedPages ';
 import '../componentsCSS/Menu.css';
 
-const Menu = () => {
+const Menu = ({ setAllowLandscape }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { visitedPages, markVisited } = useVisitedPages();
+
+  const [isVideoZoomed, setIsVideoZoomed] = useState(false); // מצב הגדלת וידאו
 
   const pages = [
     { name: "mivne", icon: "mivneIcon.svg", className: "mivne-button" },
@@ -16,7 +18,6 @@ const Menu = () => {
   ];
 
   const quizPage = { name: "quiz", icon: "quiz.svg", className: "quiz-button", title: "מבחן", path: "/test" };
-
 
   useEffect(() => {
     markVisited(location.pathname);
@@ -58,6 +59,13 @@ const Menu = () => {
     );
   };
 
+  // פונקציה לטיפול בלחיצה על הוידאו
+  const handleVideoClick = () => {
+    const newZoomState = !isVideoZoomed;
+    setIsVideoZoomed(newZoomState);
+    if (setAllowLandscape) setAllowLandscape(newZoomState); // מאפשר אופקי רק כשמגדילים
+  };
+
   return (
     <div className="Menu-container">
       <h1 className='home-title'>עזר דיגיטלי בתחום <br /> הלוגיסטיקה במפקדות</h1>
@@ -65,17 +73,23 @@ const Menu = () => {
         {pages.map(renderPageButton)}
         {renderPageButton(quizPage)}
       </div>
-           <video className="video-menu" controls  playsInline>
-                <source src={`${process.env.PUBLIC_URL}/assets/media/War.mp4`} type="video/mp4" />
-                <track 
-                default 
-                kind="captions" 
-                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
-                srclang="en" 
-                label="English" 
-                />
-                Your browser does not support the video tag.
-            </video>
+
+      <video
+        className={`video-menu ${isVideoZoomed ? 'zoomed' : ''}`} // מוסיף class כשמוגדל
+        controls
+        playsInline
+        onClick={handleVideoClick} // לחיצה על הוידאו מגדילה/מחזירה
+      >
+        <source src={`${process.env.PUBLIC_URL}/assets/media/War.mp4`} type="video/mp4" />
+        <track 
+          default 
+          kind="captions" 
+          src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
+          srclang="en" 
+          label="English" 
+        />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };

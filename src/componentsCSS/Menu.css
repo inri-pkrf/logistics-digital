@@ -140,6 +140,15 @@
         right: 50%;
         transform: translateX(50%);
   }
+  .video-menu.zoomed {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
     }
 
 

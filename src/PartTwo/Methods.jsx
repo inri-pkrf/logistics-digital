@@ -48,7 +48,7 @@ function Methods() {
                     />
                     <p className='Routine-text'>לחצו על מנת ללמוד על שגרת אחזקה</p>
                 </div>
-                <video className="video-means" controls  playsInline>
+                {/* <video className="video-means" controls  playsInline>
                 <source src={`${process.env.PUBLIC_URL}/assets/media/methods.mp4`} type="video/mp4" />
                 <track 
                 default 
@@ -58,7 +58,7 @@ function Methods() {
                 label="English" 
                 />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
 
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/Ready")} className='prev'>

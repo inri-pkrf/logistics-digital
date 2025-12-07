@@ -22,26 +22,26 @@ const Ready = () => {
       <h1 className='ready-title'>היערכות לחירום </h1>
       <p className='KOH'>כו"כ</p>
      <div className="venn-container">
-<button 
+<div 
   className={`venn-circle circle-a ${visitedPages["/Methods"] ? "clicked" : ""}`} 
   onClick={() => navigate("/Methods")}
 >
   <p>אמצעים</p>
-</button>
+</div >
 
-<button 
+<div  
   className={`venn-circle circle-b ${visitedPages["/training"] ? "clicked" : ""}`} 
   onClick={() => navigate("/training")}
 >
   <p>אימונים</p>
-</button>
+</div >
 
-<button 
+<div  
   className={`venn-circle circle-c ${visitedPages["/people"] ? "clicked" : ""}`} 
   onClick={() => navigate("/people")}
 >
   <p>ניהול כוח אדם</p>
-</button>
+</div >
 
 </div>
 <div className='navigation-btn'>

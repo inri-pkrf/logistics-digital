@@ -65,6 +65,17 @@ const Menu = () => {
         {pages.map(renderPageButton)}
         {renderPageButton(quizPage)}
       </div>
+           <video className="video-menu" controls  playsInline>
+                <source src={`${process.env.PUBLIC_URL}/assets/media/War.mp4`} type="video/mp4" />
+                <track 
+                default 
+                kind="captions" 
+                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
+                srclang="en" 
+                label="English" 
+                />
+                Your browser does not support the video tag.
+            </video>
     </div>
   );
 };

@@ -39,8 +39,8 @@
   }
     
   .People .titleTra{
-    font-family: 'KARANTINA';
-    color: rgb(74 177 255);
+     font-family: 'KARANTINA';
+    color: rgb(6 151 96);
     font-size: 3em;
   }
   .txt-People{
@@ -64,7 +64,7 @@
 .People .card {
     width: 30vw;
     height: 30vw; 
-    background: #a0c4ff; 
+    background: #73e7ca; 
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
@@ -105,7 +105,7 @@
 
 /* תוכן בתוך ה-overlay */
 .overlay-content {
-    background: #a0c4ff; 
+   background: #63c4ab; 
     padding: 30px;
     border-radius: 10px;
     max-width: 500px;
@@ -158,7 +158,7 @@
     font-weight: bolder;
 }
 .People .card.active {
-    background: #5f7eaf;     color: #fff; /* אפשר לשנות גם את הצבע של הטקסט */
+    background:#4c9683;     color: #fff; /* אפשר לשנות גם את הצבע של הטקסט */
 }
 
  .People .navigation-btn{

@@ -15,7 +15,7 @@ import DiagramStep3 from './PartOne/DiagramStep3';
 import MagnifyPic from './componentsJS/MagnifyPic';
 import DiagramStep3Sub from './PartOne/DiagramStep3Sub';
 import DiagramStep3Mahoz from './PartOne/DiagramStep3Mahoz';
-import Refua from './PartTwo/Refua';
+import Methods from './PartTwo/Methods';
 import Training from './PartTwo/Training';
 import Fast from './PartThree/Fast';
 import ExcelMinala from './PartFour/ExcelMinala';
@@ -35,7 +35,7 @@ import Quiz from './componentsJS/Quiz';
 function App() {
     const [isLandscape, setIsLandscape] = useState(false);
     const location = useLocation();
-    const excludedRoutes = ["/BackYard", "/MagnifyPic"]; // רשימה של דפים שאין צורך בהגבלה של המצב האופקי
+    const excludedRoutes = ["/BackYard", "/MagnifyPic","/Methods"] ; // רשימה של דפים שאין צורך בהגבלה של המצב האופקי
 
     useEffect(() => {
         function checkOrientation() {
@@ -87,7 +87,7 @@ function App() {
                     <Route path="/DiagramStep3Sub" element={<DiagramStep3Sub />} />
                     <Route path="/MagnifyPic" element={<MagnifyPic />} />
                     <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
-                    <Route path="/Refua" element={<Refua />} />
+                    <Route path="/Methods" element={<Methods />} />
                     <Route path="/Yamach" element={<Yamach />} />
                     <Route path="/Maintenance" element={<Maintenance />} />
                     <Route path="/training" element={<Training />} />

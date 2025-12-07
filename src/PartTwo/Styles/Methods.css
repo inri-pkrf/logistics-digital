@@ -1,4 +1,4 @@
-.Refua{
+.Methods{
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     overflow-y: scroll; /* Ensure the container is scrollable */
     overflow-x: hidden;
   }
-  .Refua::before {
+  .Methods::before {
   content: "";
         position: absolute;
         top: 0;
@@ -28,11 +28,11 @@
         z-index: -1;
   }
   
-  .white-circle-Refua{
-       position: absolute;
+  .white-circle-Methods{
+    position: absolute;
     width: 100vw;
-    height: 106vh;
-    margin-top: 31vh;
+    height: 120vh;
+    margin-top: 43vh;
     background-color: white;
     border-top-left-radius: 50% 15%;
     border-top-right-radius: 50% 15%;
@@ -124,9 +124,9 @@ font-family: 'KARANTINA';
     font-family: 'Assistant', sans-serif;
   }
 
-  .Refua .navigation-btn{
-     position: relative;
-    bottom: 29vh;
+  .Methods .navigation-btn{
+  position: relative;
+    bottom: 20vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -139,7 +139,7 @@ font-family: 'KARANTINA';
 
 }
 
-.Refua.next .prev {
+.Methods.next .prev {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,13 +155,13 @@ font-family: 'KARANTINA';
 
 
 
-.Refua .left{
+.Methods .left{
     transform: rotate(180deg);
 
 }
 
 
-.Refua .text-lable{
+.Methods .text-lable{
     text-align: center;
     position: relative;
     top: 10vh;
@@ -180,3 +180,12 @@ font-family: 'KARANTINA';
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
+
+ .video-means{
+    width:90vw;
+    height: auto;
+    top: 70vh;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }

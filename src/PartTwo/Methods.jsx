@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Styles/Refua.css';
+import './Styles/Methods.css';
 import { useNavigate } from 'react-router-dom';
 
-function Refua() {
+function Methods() {
     const navigate = useNavigate();
     const [clickedDiv, setClickedDiv] = useState(null); // איזה דיב נלחץ
 
@@ -19,8 +19,8 @@ function Refua() {
     };
 
     return (
-        <div className="Refua">
-            <div className='white-circle-Refua'>
+        <div className="Methods">
+            <div className='white-circle-Methods'>
                 <h1 className="titleRef"> אמצעים  </h1>
                 <h1 className="sub-titleRef">ציוד בימ"ח </h1>
 
@@ -48,6 +48,17 @@ function Refua() {
                     />
                     <p className='Routine-text'>לחצו על מנת ללמוד על שגרת אחזקה</p>
                 </div>
+                <video className="video-means" controls  playsInline>
+                <source src={`${process.env.PUBLIC_URL}/assets/media/methods.mp4`} type="video/mp4" />
+                <track 
+                default 
+                kind="captions" 
+                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
+                srclang="en" 
+                label="English" 
+                />
+                Your browser does not support the video tag.
+            </video>
 
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/Ready")} className='prev'>
@@ -64,4 +75,4 @@ function Refua() {
     );
 }
 
-export default Refua;
+export default Methods;

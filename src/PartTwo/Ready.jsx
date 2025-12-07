@@ -23,8 +23,8 @@ const Ready = () => {
       <p className='KOH'>כו"כ</p>
      <div className="venn-container">
 <button 
-  className={`venn-circle circle-a ${visitedPages["/Refua"] ? "clicked" : ""}`} 
-  onClick={() => navigate("/Refua")}
+  className={`venn-circle circle-a ${visitedPages["/Methods"] ? "clicked" : ""}`} 
+  onClick={() => navigate("/Methods")}
 >
   <p>אמצעים</p>
 </button>

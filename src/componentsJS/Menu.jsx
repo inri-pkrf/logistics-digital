@@ -73,23 +73,18 @@ const Menu = ({ setAllowLandscape }) => {
         {pages.map(renderPageButton)}
         {renderPageButton(quizPage)}
       </div>
+<iframe
+  src="https://drive.google.com/file/d/18lDVpU0QMwyMTUR9ceXZPOWz7aeNKPF0/preview
+"
+  className={`video-menu ${isVideoZoomed ? 'zoomed' : ''}`}
+  allow="autoplay"
+  frameBorder="0"
+  allowFullScreen
+  title="Video Player"
+  onClick={handleVideoClick} // אם את רוצה שהלחיצה תשנה מצב אופקי
+></iframe>
 
-      <video
-        className={`video-menu ${isVideoZoomed ? 'zoomed' : ''}`} // מוסיף class כשמוגדל
-        controls
-        playsInline
-        onClick={handleVideoClick} // לחיצה על הוידאו מגדילה/מחזירה
-      >
-        <source src={`${process.env.PUBLIC_URL}/assets/media/War.mp4`} type="video/mp4" />
-        <track 
-          default 
-          kind="captions" 
-          src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
-          srclang="en" 
-          label="English" 
-        />
-        Your browser does not support the video tag.
-      </video>
+
     </div>
   );
 };

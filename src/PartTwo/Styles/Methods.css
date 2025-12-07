@@ -181,10 +181,10 @@ font-family: 'KARANTINA';
   transition: all 0.2s ease;
 }
 
- .video-means{
+ .video-methods{
     width:90vw;
-    height: auto;
-    top: 70vh;
+    height: 30vh;
+    top: 65vh;
     position: absolute;
     right: 50%;
     transform: translateX(50%);

@@ -48,17 +48,15 @@ function Methods() {
                     />
                     <p className='Routine-text'>לחצו על מנת ללמוד על שגרת אחזקה</p>
                 </div>
-                <video className="video-means" controls  playsInline>
-                <source src={`${process.env.PUBLIC_URL}/assets/media/methods.mp4`} type="video/mp4" />
-                <track 
-                default 
-                kind="captions" 
-                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
-                srclang="en" 
-                label="English" 
-                />
-                Your browser does not support the video tag.
-            </video>
+               <iframe
+                src="https://drive.google.com/file/d/1GBTmqbxlbFiuhfSgJE3AdBAoBeFCO12Z/preview"
+
+                className={`video-methods`}
+                allow="autoplay"
+                frameBorder="0"
+                allowFullScreen
+                title="Video Player"
+                ></iframe>
 
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/Ready")} className='prev'>

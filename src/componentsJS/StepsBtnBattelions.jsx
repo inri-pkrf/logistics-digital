@@ -1,51 +1,38 @@
 import React from 'react';
 import '../componentsCSS/StepsBtnBattelions.css';
 import { useNavigate } from 'react-router-dom';
+import units from '../Data/Units';
 
-function StepsBtnBattelions({ numSteps, currentStep, onStepChange }) {
+function StepsBtnBattelions({ numSteps, currentStep, onStepChange, unitName }) {
     const navigate = useNavigate();
 
-    // טקסטים של הכפתורים
-    const buttonTexts = [
-        '1',
-        '2-3',
-        '4',
-        '5-9'
-    ];
+    const unit = units.find(u => u.name === unitName);
+    const stepTexts = unit?.stepNumbers || Array.from({ length: numSteps }, (_, i) => i + 1);
 
-    // פונקציה לשינוי שלב
     const handleButtonClick = (step) => {
-        if (onStepChange) {
-            onStepChange(step); // עדכון השלב הנוכחי ב-parent
-        }
+        if (onStepChange) onStepChange(step);
     };
+
     const handleFirstButton = () => {
-        onStepChange(1); // מאפסים את השלב ל-1
-        navigate("/rounds"); // ניווט חזרה
+        onStepChange(1);
+        navigate("/rounds");
     };
-    
 
     return (
         <div className="StepsBtnBattelions">
-            <p className='order'> לחצו על מספר הסבב על מנת לראות הסבר עליו</p>
+            <p className='order'>לחצו על מספר הסבב על מנת לראות הסבר עליו</p>
             <div className="all-steps-Battelions">
-                {/* הצגת כפתורים בהתאם למספר השלבים */}
                 {Array.from({ length: numSteps }).map((_, index) => (
                     <div
                         key={index}
                         className={`btn-steps-Battelions ${currentStep === index + 1 ? 'selected' : ''}`}
-                        onClick={() => handleButtonClick(index + 1)} // קוראים לפונקציה ששולחת את השלב
+                        onClick={() => handleButtonClick(index + 1)}
                     >
-                        {buttonTexts[index] || (index + 1)} {/* אם לא נמצא טקסט, תציג את המספר */}
+                        {stepTexts[index]}
                     </div>
                 ))}
 
-                {/* כפתור חזרה לבחירת גדוד */}
-                <div
-                    className="step1-Battelions"
-                    id="step4-Battelions"
-                    onClick={() => handleFirstButton()}
-                >
+                <div className="step1-Battelions" onClick={handleFirstButton}>
                     חזרה לבחירת גדוד
                 </div>
             </div>

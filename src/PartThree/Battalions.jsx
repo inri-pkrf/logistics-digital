@@ -8,54 +8,53 @@ function Battalions() {
     const navigate = useNavigate();
     const location = useLocation();
     const unitName = location.state?.unitName || "";
-   const buttonTexts = [
-        '1',
-        '2-3',
-        '4',
-        '5-9'
-    ];
-    // כאן אנחנו לא עושים return מראש, אלא שומרים את השלב באחסון
+
+    // מחפשים את היחידה ב-units
     const unit = units.find(unit => unit.name === unitName);
 
     const [currentStep, setCurrentStep] = useState(() => {
-        // אם יש שלב שמור ב-sessionStorage, נקרא אותו, אחרת נתחיל מ-1
         const savedStep = sessionStorage.getItem('currentStep');
-        return savedStep ? Number(savedStep) : 1; // אם אין שלב שמור, מתחילים ב-1
+        return savedStep ? Number(savedStep) : 1;
     });
 
-    // אם לא נמצא unit, נציג הודעת שגיאה
+    // אם לא נמצא unit, מציגים הודעת שגיאה
     if (!unit) {
-        return <div>היחידה לא נמצאה</div>; // שגיאה אם אין יחידה תואמת
+        return <div>היחידה לא נמצאה</div>;
     }
 
-    // פונקציה שתשנה את התוכן לפי הצעד שנבחר
+    // שינוי שלב ושמירה ב-sessionStorage
     const handleStepChange = (stepNumber) => {
-        setCurrentStep(stepNumber); // עדכון השלב הנוכחי
-        sessionStorage.setItem('currentStep', stepNumber); // שמירה ב-sessionStorage
+        setCurrentStep(stepNumber);
+        sessionStorage.setItem('currentStep', stepNumber);
     };
 
     return (
         <div className="Battalions">
             <div className='white-circle-Battalions'>
                 <h1 className="titleBattalions">{unitName}</h1>
-                <StepsBtnBattelions
-                    numSteps={unit.steps.length}
-                    currentStep={currentStep} // מעבירים את השלב הנוכחי
-                    onStepChange={handleStepChange} // מעבירים את הפונקציה לשינוי שלב
-                />
-                {/* מציגים את התוכן של השלב הנבחר בתוך div */}
+                
+                    <StepsBtnBattelions
+                        numSteps={unit.steps.length}
+                        currentStep={currentStep}
+                        onStepChange={handleStepChange}
+                        unitName={unitName} // ← זה החלק שחסר
+                    />
+
                 <div className="card-content">
-                <h1 className="card-title">{`סבבי העמסה מספר ${buttonTexts[currentStep - 1]}`}</h1>
-                <p className='text-batel'> {unit.steps[currentStep - 1]} </p>{/* התוכן עבור הצעד הנבחר */}
+                    {/* מציגים את המספור של הסבב מתוך unit.stepNumbers */}
+                    <h1 className="card-title">
+                        {`סבבי העמסה מספר ${unit.stepNumbers[currentStep - 1]}`}
+                    </h1>
+                    <p className='text-batel'>{unit.steps[currentStep - 1]}</p>
                 </div>
-                 <div className='navigation-btn'>
+
+                <div className='navigation-btn'>
                     <div onClick={() => navigate("/emergency")} className='prev'>
                         <p className='text-lable'>הקודם</p>
                         <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Previous" />
                     </div>
-                    <div onClick={()=>navigate("/war")} className='next'>
-                        <p className='text-lable'>הבא </p>
-
+                    <div onClick={() => navigate("/war")} className='next'>
+                        <p className='text-lable'>הבא</p>
                         <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Next" />
                     </div>
                 </div>

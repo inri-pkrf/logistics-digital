@@ -156,9 +156,9 @@
 
 /* ניקוד */
 .score {
-    font-family: "Karantina";
+font-family: "Karantina";
     font-size: 21vmin;
-    margin-top: -40vh;
+    margin-top: -61vh;
     color: rgb(255 255 255);
 }
 
@@ -168,7 +168,7 @@
     position: absolute;
     font-family: "Assistant";
     font-size: 7vmin;
-    margin-top: -7vh;
+    margin-top: -17vh;
     right: 50%;
     width: 108vw;
     font-weight: bold;
@@ -184,7 +184,7 @@
     right: 50%;
     transform: translateX(50%);
     font-size: 8vmin;
-    margin-top: -20vh;
+    margin-top: -45vh;
     width: 90%;
     text-align: center;
 }
@@ -244,7 +244,7 @@
 
 }
 .mistakes-btn{
-     background-color: rgb(80 131 221);
+background-color: rgb(80 131 221);
     color: white;
     border: none;
     border-radius: 50px;
@@ -253,11 +253,11 @@
     font-family: "Heebo";
     width: 45%;
     position: absolute;
-    margin: 2em auto;
+    margin: 1em auto;
     cursor: pointer;
     right: 28vw;
     display: block;
-    top: 47vh;
+    top: 48vh;
 }
 
 /* כפתור סיום */

@@ -68,7 +68,7 @@ const Menu = ({ setAllowLandscape }) => {
 
   return (
     <div className="Menu-container">
-      <h1 className='.menu-main-title'>עזר דיגיטלי בתחום <br /> הלוגיסטיקה במפקדות</h1>
+      <h1 className='menu-main-title'>עזר דיגיטלי בתחום <br /> הלוגיסטיקה במפקדות</h1>
       <div className="buttons-container">
         {pages.map(renderPageButton)}
         {renderPageButton(quizPage)}

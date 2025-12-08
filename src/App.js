@@ -12,6 +12,7 @@ import War from './PartFour/War';
 import Diagram from './PartOne/DiagramStep1';
 import DiagramStep2 from './PartOne/DiagramStep2';
 import DiagramStep3 from './PartOne/DiagramStep3';
+import DiagramStep3Mahoz from './PartOne/DiagramStep3Mahoz';
 import MagnifyPic from './componentsJS/MagnifyPic';
 import Methods from './PartTwo/Methods';
 import Training from './PartTwo/Training';
@@ -83,6 +84,7 @@ function App() {
           <Route path="/diagram" element={<Diagram />} />
           <Route path="/DiagramStep2" element={<DiagramStep2 />} />
           <Route path="/DiagramStep3" element={<DiagramStep3 />} />
+          <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
           <Route path="/MagnifyPic" element={<MagnifyPic ref={videoRef} />} /> {/* כאן יש אפשרות אופקי אם גדול */}
           <Route path="/Methods" element={<Methods />} />
           <Route path="/training" element={<Training />} />

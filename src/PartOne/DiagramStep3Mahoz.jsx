@@ -114,6 +114,13 @@ function DiagramStep3Mahoz() {
                 חזרה לבחירת תאים נוספים
             </div>
 
+                <div className='navigation-btn'>
+                    <div onClick={() => navigate("/DiagramStep2")} className='prev'>
+                        <p className='text-lable'> הקודם</p>
+                        <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
+                    </div>
+                   
+                </div>
 
         
             </div>

@@ -251,3 +251,43 @@
     border-top-right-radius: 50% 15%;
     z-index: 999;
 }
+
+
+.DiagramStep3 .navigation-btn {
+position: absolute;
+    bottom: -22%;
+    left: 83%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    direction: rtl;
+    gap: 260px;
+    font-family: "Assistant", sans-serif;
+    z-index: 1000000;
+}
+
+.DiagramStep3Mahoz .next .prev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(89, 89, 89);
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.DiagramStep3Mahoz .left {
+  transform: rotate(180deg);
+}
+
+.DiagramStep3Mahoz .text-lable {
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  color: #626262;
+  font-weight: bold;
+}

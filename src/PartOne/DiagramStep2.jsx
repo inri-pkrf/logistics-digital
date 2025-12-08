@@ -138,7 +138,7 @@ function DiagramStep2() {
             <div
                 className='second-frame'
                 onClick={() => {
-                    if(selectedOption !== "מחוז" ){
+                    if(selectedOption !== "מחוז" && selectedOption !== "נפה" ){
                             handleSeconedFrameClick();
                     }
                     // if (selectedOption === "גדוד") {

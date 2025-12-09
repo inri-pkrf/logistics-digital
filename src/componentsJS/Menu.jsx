@@ -75,16 +75,18 @@ const Menu = ({ setAllowLandscape }) => {
       </div>
 
       <h2 className='minititle'>לוגיסטיקה בחרבות ברזל</h2>
-<iframe
-  src="https://www.youtube.com/embed/fmyaWMgItr0"
-  className={`video-menu ${isVideoZoomed ? 'zoomed' : ''}`}
-  allow="autoplay; fullscreen"
-  frameBorder="0"
-  allowFullScreen
-  title="Video Player"
-  onClick={handleVideoClick}
-></iframe>
 
+ <video className="video-menu" controls  playsInline>
+                <source src={`${process.env.PUBLIC_URL}/assets/media/war.mp4`} type="video/mp4" />
+                <track 
+                default 
+                kind="captions" 
+                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
+                srclang="en" 
+                label="English" 
+                />
+                Your browser does not support the video tag.
+            </video>
 
 
     </div>

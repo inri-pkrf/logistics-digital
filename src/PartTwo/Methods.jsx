@@ -48,15 +48,15 @@ function Methods() {
                     />
                     <p className='Routine-text'>לחצו על מנת ללמוד על שגרת אחזקה</p>
                 </div>
-               <iframe
-                src="https://drive.google.com/file/d/1GBTmqbxlbFiuhfSgJE3AdBAoBeFCO12Z/preview"
+              <iframe
+            src="https://www.youtube.com/embed/UJFAHBLYIXI"
+            className="video-methods"
+            allow="autoplay; fullscreen"
+            frameBorder="0"
+            allowFullScreen
+            title="Video Player"
+            ></iframe>
 
-                className={`video-methods`}
-                allow="autoplay"
-                frameBorder="0"
-                allowFullScreen
-                title="Video Player"
-                ></iframe>
 
                 <div className='navigation-btn'>
                     <div onClick={() => navigate("/Ready")} className='prev'>

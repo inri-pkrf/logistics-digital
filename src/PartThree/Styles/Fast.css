@@ -59,7 +59,7 @@
 
 
   .Fast .navigation-btn {
-position: relative;
+    position: relative;
     bottom: 3vh;
     left: 50%;
     transform: translateX(-50%);
@@ -68,7 +68,7 @@ position: relative;
     width: 90%;
     max-width: 600px;
     direction: rtl;
-    gap: 240px;
+    gap: 53vw;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }

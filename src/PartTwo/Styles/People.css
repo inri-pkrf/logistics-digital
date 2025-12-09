@@ -162,7 +162,7 @@
 }
 
  .People .navigation-btn{
-    position: relative;
+        position: relative;
     bottom: -1vh;
     left: 49%;
     transform: translateX(-50%);
@@ -170,7 +170,7 @@
     justify-content: center;
     width: 90%;
     direction: rtl;
-    gap: 260px;
+    gap: 53vw;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 27px;
     Z-INDEX: 1000000;

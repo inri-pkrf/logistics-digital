@@ -12,15 +12,23 @@ import War from './PartFour/War';
 import Diagram from './PartOne/DiagramStep1';
 import DiagramStep2 from './PartOne/DiagramStep2';
 import DiagramStep3 from './PartOne/DiagramStep3';
-import DiagramStep3Mahoz from './PartOne/DiagramStep3Mahoz';
 import MagnifyPic from './componentsJS/MagnifyPic';
+import DiagramStep3Sub from './PartOne/DiagramStep3Sub';
+import DiagramStep3Mahoz from './PartOne/DiagramStep3Mahoz';
 import Methods from './PartTwo/Methods';
 import Training from './PartTwo/Training';
-import People from './PartTwo/People';
 import Fast from './PartThree/Fast';
 import ExcelMinala from './PartFour/ExcelMinala';
 import Rounds from './PartThree/Rounds';
 import Battalions from './PartThree/Battalions';
+import Validiation from './PartFour/Validiation';
+import BackDoor from './PartFour/BackDoor';
+import HapakMichlala from './PartFour/HapakMichlala';
+import BackYard from './PartFour/BackYard';
+import Yamach from './PartTwo/Yamach';
+import Maintenance from './PartTwo/Maintenance';
+import People from './PartTwo/People';
+import Mamal from './PartThree/Mamal';
 import Fields from './PartFour/Fields';
 import FinalScreen from './componentsJS/FinalScreen';
 import Quiz from './componentsJS/Quiz';
@@ -74,28 +82,36 @@ function App() {
         </div>
       ) : (
         <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/mivne" element={<Mivne />} />
-          <Route path="/ready" element={<Ready />} />
-          <Route path="/emergency" element={<Emergency />} />
-          <Route path="/war" element={<War />} />
-          <Route path="/diagram" element={<Diagram />} />
-          <Route path="/DiagramStep2" element={<DiagramStep2 />} />
-          <Route path="/DiagramStep3" element={<DiagramStep3 />} />
-          <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
-          <Route path="/MagnifyPic" element={<MagnifyPic ref={videoRef} />} /> {/* כאן יש אפשרות אופקי אם גדול */}
-          <Route path="/Methods" element={<Methods />} />
-          <Route path="/training" element={<Training />} />
-          <Route path="/people" element={<People />} />
-          <Route path="/fast" element={<Fast />} />
-          <Route path="/rounds" element={<Rounds />} />
-          <Route path="/BATTALIONS" element={<Battalions />} />
-          <Route path="/fields" element={<Fields />} />
-          <Route path="/test" element={<FinalScreen />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/excelExplenation" element={<ExcelMinala />} />
+                 <Route path="/" element={<Intro />} />
+                    <Route path="/info" element={<Info />} />
+                    <Route path="/menu" element={<Menu />} />
+                    <Route path="/mivne" element={<Mivne />} />
+                    <Route path="/ready" element={<Ready />} />
+                    <Route path="/emergency" element={<Emergency />} />
+                    <Route path="/war" element={<War />} />
+                    <Route path="/diagram" element={<Diagram />} />
+                    <Route path="/DiagramStep2" element={<DiagramStep2 />} />
+                    <Route path="/DiagramStep3" element={<DiagramStep3 />} />
+                    <Route path="/DiagramStep3Sub" element={<DiagramStep3Sub />} />
+                    <Route path="/MagnifyPic" element={<MagnifyPic />} />
+                    <Route path="/DiagramStep3Mahoz" element={<DiagramStep3Mahoz />} />
+                    <Route path="/Methods" element={<Methods />} />
+                    <Route path="/Yamach" element={<Yamach />} />
+                    <Route path="/Maintenance" element={<Maintenance />} />
+                    <Route path="/training" element={<Training />} />
+                    <Route path="/people" element={<People />} />
+                    <Route path="/fast" element={<Fast />} />
+                    <Route path="/maml" element={<Mamal />} />
+                    <Route path="/rounds" element={<Rounds />} />
+                    <Route path="/BATTALIONS" element={<Battalions />} />
+                    <Route path="/validation" element={<Validiation />} />
+                    <Route path="/excelExplenation" element={<ExcelMinala />} />
+                    <Route path="/backdoor" element={<BackDoor />} />
+                    <Route path="/BackYard" element={<BackYard />} />
+                    <Route path="/hapakMichlala" element={<HapakMichlala />} />
+                    <Route path="/fields" element={<Fields />} />
+                    <Route path="/test" element={<FinalScreen />} />
+                    <Route path="/quiz" element={<Quiz />} />
         </Routes>
       )}
     </div>

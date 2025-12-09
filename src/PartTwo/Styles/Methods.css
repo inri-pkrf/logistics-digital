@@ -125,17 +125,17 @@ font-family: 'KARANTINA';
   }
 
   .Methods .navigation-btn{
-  position: relative;
-    bottom: 20vh;
+position: relative;
+    bottom: 13vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     width: 90%;
     direction: rtl;
-    gap: 260px;
+    gap: 53vw;
     font-family: 'Assistant', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 
 }
 

@@ -94,15 +94,15 @@ z-index: -1;
     }
     .firstBtn{
         position: absolute;
-        margin-top: 27vh;
+        margin-top: 17vh;
     }
     .seconedBtn{
         position: absolute;
-        margin-top: 47vh;
+        margin-top: 37vh;
     }
     .thirdBtn{
             position: absolute;
-        margin-top: 65vh;
+        margin-top: 57vh;
     }
     .btn-clicked{
         color:#70cfed;
@@ -120,7 +120,7 @@ z-index: -1;
     justify-content: center;
     width: 90%;
     direction: rtl;
-    gap: 260px;
+    gap: 53vw;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 27px;
     Z-INDEX: 1000000;

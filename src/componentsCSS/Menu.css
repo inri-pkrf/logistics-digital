@@ -52,8 +52,8 @@
     
     }
 .buttons-container {
-        position: absolute;
-        margin-top: 5vh;
+position: absolute;
+        margin-top: -7vh;
         right: 0%;
         width: 100vw;
         direction: rtl;
@@ -98,8 +98,8 @@
 
       
       .icon-container {
-        width: 14vh;
-        height: 14vh;
+        width: 12vh;
+        height: 12vh;
         border-radius: 50%;
         background-color: rgb(0 0 0 / 82%);
         border: 2px solid white;
@@ -120,8 +120,8 @@
       
     
       .pressed{
-         width: 14vh;
-        height: 14vh;
+         width: 12vh;
+        height: 12vh;
         border-radius: 50%;
         background-color: rgb(0 0 0 / 82%);
         border: 2px solid #70cfed;
@@ -147,6 +147,18 @@
     top: 0;
     left: 0;
     z-index: 999;
+}
+.minititle{
+        font-family: "karantina";
+        font-size: 2em;
+        font-weight: 400;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 90vw;
+        color: #ffffff;
+        margin-top: 64vh;
+        text-align: right;
 }
 
     }

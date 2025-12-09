@@ -59,7 +59,7 @@
   }
   
   .Maintenance .navigation-btn{
-       position: relative;
+    position: relative;
     bottom: 8vh;
     left: 50%;
     transform: translateX(-50%);
@@ -67,7 +67,7 @@
     justify-content: center;
     width: 90%;
     direction: rtl;
-    gap: 260px;
+    gap: 53vw;
     font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }

@@ -97,8 +97,8 @@ font-family: "Assistant";
     justify-content: center;
     width: 90%;
     direction: rtl;
-    gap: 260px;
-    font-family: 'Assistant', sans-serif;
+    gap: 53vw;   
+     font-family: 'Assistant', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -141,6 +141,34 @@ font-family: "Assistant";
     border-radius: 12px;
     cursor: pointer;
     width: 45vw;
+    font-family: 'Assistant';
+    transition: all 0.3s 
+ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.HapakNav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* סטייל לכפתורים שכבר נלחצו */
+.HapakNav.visited {
+    background: linear-gradient(90deg, #1e82df 0%, #9ca5fc 100%);
+    color: white;
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.HapakNav {
+ background: linear-gradient(90deg, #142d42 0%, #3e5697 100%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    margin: 12px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 40vw;
     font-family: 'Assistant';
     transition: all 0.3s 
 ease;

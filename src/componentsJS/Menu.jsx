@@ -73,16 +73,18 @@ const Menu = ({ setAllowLandscape }) => {
         {pages.map(renderPageButton)}
         {renderPageButton(quizPage)}
       </div>
+
+      <h2 className='minititle'>לוגיסטיקה בחרבות ברזל</h2>
 <iframe
-  src="https://drive.google.com/file/d/18lDVpU0QMwyMTUR9ceXZPOWz7aeNKPF0/preview
-"
+  src="https://www.youtube.com/embed/fmyaWMgItr0"
   className={`video-menu ${isVideoZoomed ? 'zoomed' : ''}`}
-  allow="autoplay"
+  allow="autoplay; fullscreen"
   frameBorder="0"
   allowFullScreen
   title="Video Player"
-  onClick={handleVideoClick} // אם את רוצה שהלחיצה תשנה מצב אופקי
+  onClick={handleVideoClick}
 ></iframe>
+
 
 
     </div>

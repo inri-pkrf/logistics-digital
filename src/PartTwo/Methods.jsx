@@ -48,14 +48,18 @@ function Methods() {
                     />
                     <p className='Routine-text'>לחצו על מנת ללמוד על שגרת אחזקה</p>
                 </div>
-              <iframe
-            src="https://www.youtube.com/embed/UJFAHBLYIXI"
-            className="video-methods"
-            allow="autoplay; fullscreen"
-            frameBorder="0"
-            allowFullScreen
-            title="Video Player"
-            ></iframe>
+           
+            <video className="video-methods" controls  playsInline>
+                <source src={`${process.env.PUBLIC_URL}/assets/media/methods.mp4`} type="video/mp4" />
+                <track 
+                default 
+                kind="captions" 
+                src={`${process.env.PUBLIC_URL}/assets/media/Validiation_subtitles_en.vtt`} 
+                srclang="en" 
+                label="English" 
+                />
+                Your browser does not support the video tag.
+            </video>
 
 
                 <div className='navigation-btn'>

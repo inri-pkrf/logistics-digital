@@ -63,3 +63,14 @@
     top:5%;
     left:5%;
  }
+
+  .fullscreen-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 10vmin;
+  cursor: pointer;
+  position: absolute;
+  top:19%;
+  left:15%;
+}

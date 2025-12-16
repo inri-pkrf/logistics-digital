@@ -188,4 +188,5 @@ position: relative;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
+    background-color: rgb(0, 0, 0);
   }

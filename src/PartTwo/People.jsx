@@ -64,7 +64,7 @@ function People() {
                         <p className='text-lable'> הקודם</p>
                         <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-                    <div onClick={() => navigate("/Refua")} className='next'>
+                    <div onClick={() => navigate("/Ready")} className='next'>
                         <p className='text-lable'>הבא</p>
                         <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>

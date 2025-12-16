@@ -1,111 +1,79 @@
-.BackYard{
+.BackYard {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100000;
     background-color: rgb(0, 0, 0);
-    overflow-y: scroll; /* Ensure the container is scrollable */
-    overflow-x: hidden;
-  }
-
-  .Yard-back-portrait {
-    height: 43vh;
-    position: fixed;
-    top: 28vh;
-    width: auto;
-    transform: rotate(90deg);
-}
-
-.Yard-back-landscape {
-height: auto;
-    position: fixed;
-    top: 13vh;
-    width: 97vw;
-}
-.side-buttons {
-  display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-top: 7vh;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 100000;
+}
+
+/* כותרת */
+.BackYard-orders {
+    color: #fff;
+    font-family: Assistant;
+    font-size: 5vmin;
+    margin-top: 8vh;
+    text-align: center;
+}
+
+/* כפתור סגירה */
+.BackYard .XBtn {
+    width: 4vw;
+    z-index: 2000;
+}
+
+.yard-close-button {
     position: absolute;
-    top: 40.5%;
-    transform: translateY(-50%);
+    top: 1vw;
+    left: 1vw;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.side-buttons.left {
-  left: 0px;
+/* קונטיינר מרכזי אנכי */
+.BackYard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh; /* מרווח אנכי בין הכפתורים לתמונה */
+    margin-top: 8vh;
 }
 
-.side-buttons.right {
-  right: 0px;
+/* שורות כפתורים */
+.buttons-row {
+    display: flex;
+    gap: 2vw; /* מרווח בין הכפתורים בשורה */
+    flex-wrap: wrap; /* מאפשר כיווץ במסכים קטנים */
+    justify-content: center;
 }
 
+/* תמונת הרקע */
+.Yard-back-landscape {
+    width: 130vw; /* ניתן לשנות גודל */
+    height: auto;
+    border-radius: 12px;
+}
+
+/* סגנון הכפתורים */
 .side-button {
-    width: 11vw;
+    width: 22vw;
+    height: 8vh;
     font-family: "Assistant";
-    height: 16.2vh;
+    font-weight: 700;
     background: rgb(197 227 255);
     color: #363636;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-weight: 700;
     border-radius: 6px;
-}
-.BackYard-orders{
-color: #fff;
-    font-family: Assistant;
-    font-size: 5vmin;
-    margin-top: -84vh;
-    position: absolute;
-}
-
-  .BackYard .XBtn {
-    left: 1vw;
-    top: 4vw;
-    width: 2vw;
-    z-index: 2000;
-  }
-  
-  .yard-close-button {
-    position: absolute;
-    top: -2vw;
-    left: 3vw;
-    background: none;
-    border: none;
-    font-size: 8vw;
-    cursor: pointer;
-    width: 13vw;
-    height: 9vh;
-    border: none;
-  }
-
-.rotate-message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.8);
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 20px 30px;
-  border-radius: 12px;
-  z-index: 3000;
-  text-align: center;
-  height: 100vh;
-  width:100vw;
-
-}
-.rotate-txt{
-  margin-top: 38vh;
-  font-size: 15vmin;
-  font-family: "Karantina";
+    text-align: center;
+    padding: 0.5vh 0;
 }

@@ -74,7 +74,7 @@ const Menu = ({ setAllowLandscape }) => {
         {renderPageButton(quizPage)}
       </div>
 
-      <h2 className='minititle'>לוגיסטיקה בחרבות ברזל</h2>
+      <h2 className='minititle'>סרטון על לוגיסטיקה במהלך חרבות ברזל</h2>
 
  <video className="video-menu" controls  playsInline>
                 <source src={`${process.env.PUBLIC_URL}/assets/media/war.mp4`} type="video/mp4" />

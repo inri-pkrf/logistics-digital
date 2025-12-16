@@ -1,20 +1,20 @@
 .homepage-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative; /* משנה מ-fixed ל-relative כדי שהתוכן יזרום טבעית */
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* לפחות גובה מסך */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     z-index: 1000;
     background-image: url('/public/assets/imgs/Bg2.jpg');
-    overflow-y: scroll; /* Ensure the container is scrollable */
+    padding: 5vh 0 10vh 0; /* padding תחתון כדי שהכפתור לא ייגע בקצה */
+    overflow-y: auto;
     overflow-x: hidden;
-
 }
+
 
 /* שכבת השחרה */
 .homepage-container::before {
@@ -23,119 +23,73 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 145%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.815);
-     backdrop-filter: blur(3px);    /* טשטוש */
-    -webkit-backdrop-filter: blur(3px); /* תמיכה בספארי */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     z-index: -1;
 }
 
-    
-    
-    .home-title{
-        font-family: "karantina";
-        font-size: 3em;
-        font-weight: 400;
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        width: 90vw;
-        color: #ffffff;
-        margin-top: -56vh;
-        text-align: center;
-    
-    }
-    
-   
-    .speech-container {
-   margin-top: 30vh;
+.home-title {
+    font-family: "karantina";
+    font-size: 3em;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.speech-container {
     width: 90vw;
-    height: 69vh;
     background-color: black;
     border-radius: 20px;
     border: 3px solid white;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    padding: 2vh 2vw;
     font-size: 1.1em;
     text-align: right;
-    position: relative;
     color: white;
-    
     box-sizing: border-box;
-    }
-    .speech{
-     text-align: center;
-    position: absolute;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.speech {
     direction: rtl;
-    padding-right: 5vw;
-    padding-left: 5vw;
     font-size: 5.5vmin;
     font-family: "Assistant";
-
-    }
-  
-    
-    
- .quote{
-    width: auto;
-    height: 8vh;
-    position: absolute;
-    margin-top: 3vh;
-    z-index: 10000;
-    right: 4vw;
- }
- 
-
-
-
-.credits{
-    text-align: center;
-    position: absolute;
-    direction: rtl;
- text-align: center;
-    position: absolute;
-    direction: rtl;
-    padding-right: 5vw;
-    margin-top: 14vh;
-    width: 74vw;
-    color: rgb(58, 57, 57);
-    font-family: "Assistant";
 }
 
-.greeting-div{
-    position: relative;
+.greeting-div {
     width: 75vw;
-    right: -8%;
-    height: 27vh;
-    margin-top: 37vh;
     border-radius: 20px;
     background-color: white;
+    padding: 2vh 2vw;
+    box-sizing: border-box;
+    display: flex;               /* הפיכת הדיב להורה flex */
+    flex-direction: column;      /* שמירה על הטקסט מתחת */
+    align-items: center;
+    margin-bottom: 2vh;
 }
 
-.logo1{
-    position: absolute;
+.greeting-logos {
+    display: flex;               /* שורה */
+    justify-content: center;     /* ממרכז את הלוגואים */
+    gap: 2vw;                    /* רווח בין הלוגואים */
+    margin-bottom: 1vh;
+}
+
+.logo1, .logo2 {
     width: 16vw;
     height: auto;
-    margin-top: 2vh;
-    right: 25%;
 }
-.logo2{
-    position: absolute;
-    width: 16vw;
-    height: auto;
-    margin-top: 2vh;
-    right: 51%;
+
+.credits {
+    text-align: center;
+    font-family: "Assistant";
+    margin-top: 1vh;
 }
-.footer{
-    margin-top: 0vh;
-    background-color: rgb(0 0 0);
-    height: 5vh;
-    width: 100vw;
-    position: absolute;
-}
-.start-button{
-position: absolute;
-    margin-top: 118vh;
+
+.start-button {
     background-color: #000000;
     color: #fff;
     border: 2px solid #ffffff;
@@ -147,8 +101,7 @@ position: absolute;
     cursor: pointer;
     text-transform: uppercase;
 }
-
-.start-button:active{
+.start-button:active {
     background-color: #ffffff;
-    color:black;
+    color: black;
 }

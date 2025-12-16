@@ -40,11 +40,11 @@ function Maintenance() {
 
 
                 <div className='navigation-btn'>
-                    <div onClick={() => navigate("/Yamach")} className='prev'>
+                    <div onClick={() => navigate("/Methods")} className='prev'>
                         <p className='text-lable'> הקודם</p>
                         <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>
-                    <div onClick={() => navigate("/training")} className='next'>
+                    <div onClick={() => navigate("/Methods")} className='next'>
                         <p className='text-lable'>הבא</p>
                         <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} />
                     </div>

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../componentsCSS/Quiz.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import quizData from '../Data/QuizData';
 import html2canvas from 'html2canvas';
 
-const Quiz = ({ onReset }) => {
+const Quiz = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { firstName, lastName } = location.state || {};
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,9 +60,21 @@ const Quiz = ({ onReset }) => {
     setShowMistakes(false);
   };
 
+  const restartLesson = () => {
+    // מאפס state
+    sessionStorage.clear();
+    localStorage.clear();
+    // מחזיר לעמוד הבית עם רענון מלא
+    if (window.history && window.history.pushState) {
+      window.history.pushState(null, '', '/intro');
+      window.location.reload(true);
+    } else {
+      window.location = '/intro';
+    }
+  };
+
   const captureAndShareScreenshot = () => {
     const element = document.querySelector('.results');
-
     html2canvas(element).then((canvas) => {
       const dataUrl = canvas.toDataURL('image/png');
       const byteString = atob(dataUrl.split(',')[1]);
@@ -129,33 +142,33 @@ const Quiz = ({ onReset }) => {
           </div>
         </div>
       ) : (
-        showMistakes && score<100 ? (
+        showMistakes && score < 100 ? (
           <div className="mistakes-container">
             <h2>איפה טעית?</h2>
             <div className='container-mistakes'>
-           {quizData
-          .map((question, index) => ({ question, index })) // שמירה על האינדקס המקורי
-          .filter(({ question, index }) => selectedAnswers[index] !== question.correctAnswer)
-          .map(({ question, index }) => {
-            const userAnswer = selectedAnswers[index];
-            const correctAnswer = question.correctAnswer;
+              {quizData
+                .map((question, index) => ({ question, index }))
+                .filter(({ question, index }) => selectedAnswers[index] !== question.correctAnswer)
+                .map(({ question, index }) => {
+                  const userAnswer = selectedAnswers[index];
+                  const correctAnswer = question.correctAnswer;
 
-            return (
-              <div key={index} className="mistake-item wrong">
-                <p className="mistake-q wrong">
-                  <strong>שאלה {index + 1}:</strong> {question.question}
-                </p>
-                <p className="ans-mis"> ענית לא נכון:{userAnswer || 'לא ענית'}</p>
-                <p className="ans-mis-cor">תשובה נכונה: {correctAnswer}</p>
-              </div>
-            );
-          })}
-
+                  return (
+                    <div key={index} className="mistake-item wrong">
+                      <p className="mistake-q wrong">
+                        <strong>שאלה {index + 1}:</strong> {question.question}
+                      </p>
+                      <p className="ans-mis"> ענית לא נכון: {userAnswer || 'לא ענית'}</p>
+                      <p className="ans-mis-cor">תשובה נכונה: {correctAnswer}</p>
+                    </div>
+                  );
+                })}
             </div>
-             <div className='container-endBtn'>
-
-            <button onClick={() => setShowMistakes(false)} className="back-btn-mis" >  חזרה למסך סיום </button>
-          </div>
+            <div className='container-endBtn'>
+              <button onClick={() => setShowMistakes(false)} className="back-btn-mis">
+                חזרה למסך סיום
+              </button>
+            </div>
           </div>
         ) : (
           <div className="results">
@@ -166,14 +179,19 @@ const Quiz = ({ onReset }) => {
                 <p className='message'>מזל טוב!<br /> סיימת את הבוחן בהצלחה!</p>
                 <button className='share-btn' onClick={captureAndShareScreenshot}>שתפו צילום מסך</button>
                 <button className='try-button' onClick={retryQuiz}>נסו שוב</button>
-                <button onClick={onReset} className="reset-btn">להתחלת מחדש</button>
-                <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
+                <button onClick={restartLesson} className="reset-btn">להתחלת הלומדה מחדש</button>
+                {score < 100 && (
+                  <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
+                )}
               </div>
             ) : (
               <div>
                 <p className='message'>אוי, לא נורא</p>
                 <button className='end-btn' onClick={retryQuiz}>נסו שוב</button>
-                <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
+                {score < 100 && (
+                  <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
+                )}
+                <button onClick={restartLesson} className="reset-btn">להתחלת הלומדה מחדש</button>
               </div>
             )}
           </div>

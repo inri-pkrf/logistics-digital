@@ -73,7 +73,7 @@ function Mamal() {
                         <p className='text-lable'>הקודם</p>
                         <img className="arrow right" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Previous" />
                     </div>
-                    <div onClick={() => navigate("/rounds")} className='next'>
+                    <div onClick={() => navigate("/menu")} className='next'>
                         <p className='text-lable'>הבא</p>
                         <img className="arrow left" src={`${process.env.PUBLIC_URL}/assets/imgs/nextArrowGrey.png`} alt="Next" />
                     </div>

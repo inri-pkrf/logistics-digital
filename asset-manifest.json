@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/logistics-digital/static/css/main.c255ec5e.css",
-    "main.js": "/logistics-digital/static/js/main.5047bf8c.js",
+    "main.js": "/logistics-digital/static/js/main.88d7e55c.js",
     "static/js/488.f0036717.chunk.js": "/logistics-digital/static/js/488.f0036717.chunk.js",
     "static/media/Bg2.png": "/logistics-digital/static/media/Bg2.3de7c00957cc70ab562c.png",
     "static/media/Bg2Comp.jpg": "/logistics-digital/static/media/Bg2Comp.520d6aeb6cdc2cb0a809.jpg",
@@ -11,11 +11,11 @@
     "static/media/backgroundland.jpg": "/logistics-digital/static/media/backgroundland.f888e33db16dffe21aa1.jpg",
     "index.html": "/logistics-digital/index.html",
     "main.c255ec5e.css.map": "/logistics-digital/static/css/main.c255ec5e.css.map",
-    "main.5047bf8c.js.map": "/logistics-digital/static/js/main.5047bf8c.js.map",
+    "main.88d7e55c.js.map": "/logistics-digital/static/js/main.88d7e55c.js.map",
     "488.f0036717.chunk.js.map": "/logistics-digital/static/js/488.f0036717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c255ec5e.css",
-    "static/js/main.5047bf8c.js"
+    "static/js/main.88d7e55c.js"
   ]
 }

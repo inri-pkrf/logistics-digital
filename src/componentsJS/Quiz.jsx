@@ -28,7 +28,7 @@ const Quiz = () => {
     setSelectedAnswers(newAnswers);
 
     const newScore = newAnswers.reduce((acc, ans, i) => {
-      return acc + (ans === quizData[i].correctAnswer ? 10 : 0);
+      return acc + (ans === quizData[i].correctAnswer ? 8.5 : 0);
     }, 0);
 
     setScore(Math.min(newScore, 100));

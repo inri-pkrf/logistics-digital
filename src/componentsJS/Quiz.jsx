@@ -70,23 +70,21 @@ const Quiz = () => {
     setShowMistakes(false);
   };
 
-const restartLesson = () => {
-  // מאפס אחסון מקומי ו־session
-  sessionStorage.clear();
-  localStorage.clear();
+  const restartLesson = () => {
+    // מאפס אחסון מקומי ו־session
+    sessionStorage.clear();
+    localStorage.clear();
 
-  // מאפס state מקומי
-  setScore(0);
-  setCurrentIndex(0);
-  setSelectedAnswers([]);
-  setIsSubmitted(false);
-  setShowMistakes(false);
+    // מאפס state מקומי
+    setScore(0);
+    setCurrentIndex(0);
+    setSelectedAnswers([]);
+    setIsSubmitted(false);
+    setShowMistakes(false);
 
-  // ניווט לעמוד ההתחלה עם ריענון מלא
-  window.location.href = '/intro';
-};
-
-
+    // ניווט לעמוד ההתחלה ב־HashRouter
+    window.location.hash = '#/intro';
+  };
 
   const captureAndShareScreenshot = () => {
     const element = document.querySelector('.results');

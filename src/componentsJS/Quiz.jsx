@@ -50,6 +50,16 @@ const Quiz = () => {
 
   const finishQuiz = () => {
     setIsSubmitted(true);
+    if (typeof window.reportComplete === "function") {
+      window.reportComplete();
+    } else {
+      console.log("SCORM לא זמין כרגע");
+    }
+    if (typeof window.finishTestSCROM === "function") {
+      window.finishTestSCROM(score, 70);
+    } else {
+      console.log("finishTestSCROM לא זמין כרגע");
+    }
   };
 
   const retryQuiz = () => {
@@ -60,18 +70,23 @@ const Quiz = () => {
     setShowMistakes(false);
   };
 
-  const restartLesson = () => {
-    // מאפס state
-    sessionStorage.clear();
-    localStorage.clear();
-    // מחזיר לעמוד הבית עם רענון מלא
-    if (window.history && window.history.pushState) {
-      window.history.pushState(null, '', '/intro');
-      window.location.reload(true);
-    } else {
-      window.location = '/intro';
-    }
-  };
+const restartLesson = () => {
+  // מאפס אחסון מקומי ו־session
+  sessionStorage.clear();
+  localStorage.clear();
+
+  // מאפס state מקומי
+  setScore(0);
+  setCurrentIndex(0);
+  setSelectedAnswers([]);
+  setIsSubmitted(false);
+  setShowMistakes(false);
+
+  // ניווט לעמוד ההתחלה עם ריענון מלא
+  window.location.href = '/intro';
+};
+
+
 
   const captureAndShareScreenshot = () => {
     const element = document.querySelector('.results');

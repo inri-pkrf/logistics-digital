@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../componentsCSS/Quiz.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import quizData from '../Data/QuizData';
 import html2canvas from 'html2canvas';
 
 const Quiz = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const { firstName, lastName } = location.state || {};
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,39 +26,20 @@ const Quiz = () => {
     newAnswers[currentIndex] = answer;
     setSelectedAnswers(newAnswers);
 
-    const newScore = newAnswers.reduce((acc, ans, i) => {
-      return acc + (ans === quizData[i].correctAnswer ? 8.5 : 0);
-    }, 0);
-
+    const newScore = newAnswers.reduce((acc, ans, i) => acc + (ans === quizData[i].correctAnswer ? 8.5 : 0), 0);
     setScore(Math.min(newScore, 100));
   };
 
   const nextQuestion = () => {
-    if (currentIndex < quizData.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    } else {
-      setIsSubmitted(true);
-    }
+    if (currentIndex < quizData.length - 1) setCurrentIndex(currentIndex + 1);
+    else setIsSubmitted(true);
   };
-
-  const prevQuestion = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+  const prevQuestion = () => currentIndex > 0 && setCurrentIndex(currentIndex - 1);
 
   const finishQuiz = () => {
     setIsSubmitted(true);
-    if (typeof window.reportComplete === "function") {
-      window.reportComplete();
-    } else {
-      console.log("SCORM לא זמין כרגע");
-    }
-    if (typeof window.finishTestSCROM === "function") {
-      window.finishTestSCROM(score, 70);
-    } else {
-      console.log("finishTestSCROM לא זמין כרגע");
-    }
+    if (typeof window.reportComplete === "function") window.reportComplete();
+    if (typeof window.finishTestSCROM === "function") window.finishTestSCROM(score, 70);
   };
 
   const retryQuiz = () => {
@@ -71,19 +51,16 @@ const Quiz = () => {
   };
 
   const restartLesson = () => {
-    // מאפס אחסון מקומי ו־session
     sessionStorage.clear();
     localStorage.clear();
-
-    // מאפס state מקומי
     setScore(0);
     setCurrentIndex(0);
     setSelectedAnswers([]);
     setIsSubmitted(false);
     setShowMistakes(false);
 
-    // ניווט לעמוד ההתחלה ב־HashRouter
-    window.location.hash = '#/intro';
+    // ניווט ל־Intro ב־HashRouter
+    window.location.hash = '/';
   };
 
   const captureAndShareScreenshot = () => {
@@ -93,23 +70,12 @@ const Quiz = () => {
       const byteString = atob(dataUrl.split(',')[1]);
       const arrayBuffer = new ArrayBuffer(byteString.length);
       const uintArray = new Uint8Array(arrayBuffer);
-
-      for (let i = 0; i < byteString.length; i++) {
-        uintArray[i] = byteString.charCodeAt(i);
-      }
-
+      for (let i = 0; i < byteString.length; i++) uintArray[i] = byteString.charCodeAt(i);
       const blob = new Blob([uintArray], { type: 'image/png' });
       const file = new File([blob], "screenshot.png", { type: 'image/png' });
 
-      if (navigator.share) {
-        navigator.share({
-          title: 'תוצאת הבוחן',
-          text: 'הנה תוצאת הבוחן שלי!',
-          files: [file]
-        }).catch((error) => console.log('שיתוף נכשל:', error));
-      } else {
-        alert('הדפדפן שלך לא תומך בשיתוף');
-      }
+      if (navigator.share) navigator.share({ title: 'תוצאת הבוחן', text: 'הנה תוצאת הבוחן שלי!', files: [file] });
+      else alert('הדפדפן שלך לא תומך בשיתוף');
     });
   };
 
@@ -118,97 +84,33 @@ const Quiz = () => {
       {!isSubmitted ? (
         <div id="quiz">
           <p className="question-number-q">שאלה {currentIndex + 1} מתוך {quizData.length}</p>
-
           <div className="progress-bar-container-q">
             <div className="progress-bar-q" style={{ width: progressWidth }}></div>
           </div>
-
           <p className="question-q">{currentQuestion.question}</p>
-
           <div className="answers-q">
             {currentQuestion.answers.map((answer, index) => (
               <button
                 key={index}
                 onClick={() => handleAnswerSelect(answer)}
                 className={`answer-button-q ${selectedAnswers[currentIndex] === answer ? 'selected' : ''}`}
-              >
-                {answer}
-              </button>
+              >{answer}</button>
             ))}
           </div>
-
           <div className="navigation-buttons">
-            <button
-              className={`${currentIndex === 0 ? 'button-disabled' : 'prev-button'}`}
-              onClick={prevQuestion}
-              disabled={currentIndex === 0}
-            >
-              שאלה קודמת
-            </button>
-            <button
-              className={`${selectedAnswers[currentIndex] === undefined ? 'button-disabled' : 'next-button'}`}
-              onClick={currentIndex === quizData.length - 1 ? finishQuiz : nextQuestion}
-              disabled={selectedAnswers[currentIndex] === undefined}
-            >
+            <button onClick={prevQuestion} disabled={currentIndex === 0} className={currentIndex === 0 ? 'button-disabled' : 'prev-button'}>שאלה קודמת</button>
+            <button onClick={currentIndex === quizData.length - 1 ? finishQuiz : nextQuestion} disabled={selectedAnswers[currentIndex] === undefined} className={selectedAnswers[currentIndex] === undefined ? 'button-disabled' : 'next-button'}>
               {currentIndex === quizData.length - 1 ? 'סיים את המשחק' : 'שאלה הבאה'}
             </button>
           </div>
         </div>
       ) : (
-        showMistakes && score < 100 ? (
-          <div className="mistakes-container">
-            <h2>איפה טעית?</h2>
-            <div className='container-mistakes'>
-              {quizData
-                .map((question, index) => ({ question, index }))
-                .filter(({ question, index }) => selectedAnswers[index] !== question.correctAnswer)
-                .map(({ question, index }) => {
-                  const userAnswer = selectedAnswers[index];
-                  const correctAnswer = question.correctAnswer;
-
-                  return (
-                    <div key={index} className="mistake-item wrong">
-                      <p className="mistake-q wrong">
-                        <strong>שאלה {index + 1}:</strong> {question.question}
-                      </p>
-                      <p className="ans-mis"> ענית לא נכון: {userAnswer || 'לא ענית'}</p>
-                      <p className="ans-mis-cor">תשובה נכונה: {correctAnswer}</p>
-                    </div>
-                  );
-                })}
-            </div>
-            <div className='container-endBtn'>
-              <button onClick={() => setShowMistakes(false)} className="back-btn-mis">
-                חזרה למסך סיום
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="results">
-            <p className='score'>ציון: {score}</p>
-            <p className="user-name">שם: {firstName} {lastName}</p>
-            {score >= 70 ? (
-              <div>
-                <p className='message'>מזל טוב!<br /> סיימת את הבוחן בהצלחה!</p>
-                <button className='share-btn' onClick={captureAndShareScreenshot}>שתפו צילום מסך</button>
-                <button className='try-button' onClick={retryQuiz}>נסו שוב</button>
-                <button onClick={restartLesson} className="reset-btn">להתחלת הלומדה מחדש</button>
-                {score < 100 && (
-                  <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
-                )}
-              </div>
-            ) : (
-              <div>
-                <p className='message'>אוי, לא נורא</p>
-                <button className='end-btn' onClick={retryQuiz}>נסו שוב</button>
-                {score < 100 && (
-                  <button onClick={() => setShowMistakes(true)} className="mistakes-btn">איפה טעיתי?</button>
-                )}
-                <button onClick={restartLesson} className="reset-btn">להתחלת הלומדה מחדש</button>
-              </div>
-            )}
-          </div>
-        )
+        <div className="results">
+          <p className='score'>ציון: {score}</p>
+          <p className="user-name">שם: {firstName} {lastName}</p>
+          <button onClick={retryQuiz} className="try-button">נסו שוב</button>
+          <button onClick={restartLesson} className="reset-btn">להתחלת הלומדה מחדש</button>
+        </div>
       )}
     </div>
   );

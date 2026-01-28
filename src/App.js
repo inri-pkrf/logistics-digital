@@ -32,6 +32,7 @@ import Mamal from './PartThree/Mamal';
 import Fields from './PartFour/Fields';
 import FinalScreen from './componentsJS/FinalScreen';
 import Quiz from './componentsJS/Quiz';
+import FullscreenButton from './componentsJS/FullscreenButton';
 
 function App() {
   const [isLandscape, setIsLandscape] = useState(false);
@@ -66,7 +67,9 @@ function App() {
 
   return (
     <div className="App">
+      <FullscreenButton />
       <Header className="header-fixed" />
+
 
       {isLandscape && !isRestrictedPage && !allowLandscape ? (
         <div className="landscape-block">
